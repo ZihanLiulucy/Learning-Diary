@@ -3,7 +3,7 @@ project:
 
 book:
   title: "learning diary"
-  author: "Norah Jones"
+  author: "Zihan Liu"
   date: "2024/1/23"
   chapters:
     - index.qmd
