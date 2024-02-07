@@ -1,0 +1,48 @@
+# Data Fusion: Principles and Methods
+
+## Introduction
+
+Data Fusion produce more accurate, complete, and reliable information
+
+## 1. Why we need Data Fusion
+
+Data fusion in remote sensing refers to the integration of data from multiple sources or sensors to obtain a more comprehensive understanding of the Earth's surface or atmosphere
+
+It can enhance information content: Different sensors capture different types of information on Earth's surface. By combining data, it can provide a more complete picture of environmental phenomena such as land cover, vegetation health, or atmospheric conditions.
+
+It can also improve accuracy: reduce errors and uncertainties in remote sensing observations. By cross-validating measurements from different sensors or platforms, data fusion techniques can improve the accuracy of derived products such as maps, models, or environmental indicators.
+
+In addition, data fusion can proide complementary information. By fusing data from multiple sources, it's possible to leverage the strengths of each technique and extract more valuable insights than would be possible with any single source alone.
+
+## 2. Data Fusion
+
+Data fusion in remote sensing images typically follows a two-step process:
+
+### Geometric correction solution modelling
+
+x=a0+a1xi+a2yi+ϵi is the formula to regular the biased x. The goal is to match the distorted image with the gold standard image....so we want the pixels to line up
+We sum up (observed - predicted (the residual))^2 and calculate the square root of it to calculate the RMSE, that is to rotate the input grid to a regular 
+
+### Atmospheric correction
+
+To remove the haze, we can reduce the contrast of the image
+### Empirical Line Correction
+
+Reflectance (field spectrum) = gain * radiance (input data)
+Orthorectification correction aim to removing distortions
+
+
+## 3. Remote sensing jargon
+
+Radiance: Radiance refers to the amount of electromagnetic radiation emitted or reflected by a surface in a particular direction. It is typically measured in watts per square meter per steradian (W/(m²·sr)).
+
+Irradiance: Irradiance refers to the amount of electromagnetic radiation incident on a surface per unit area. Specifically, downwelling irradiance refers to the radiation reaching the Earth's surface from the sun. 
+
+Reflectance: Reflectance is a fundamental property of materials that describes the proportion of incident radiation that is reflected by a surface.
+
+
+## 5. Challenges and Future Trends
+
+Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.
+
+------------------------------------------------------------------------
