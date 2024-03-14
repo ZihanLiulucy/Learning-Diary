@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Zihan Liu">
-<meta name="dcterms.date" content="2024-01-23">
 
-<title>learning diary</title>
+<title>learning diary - 5&nbsp; Week 6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./references.html" rel="next">
+<link href="./week_4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_6.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -109,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -139,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_6.html" class="sidebar-item-text sidebar-link">
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span></a>
   </div>
 </li>
@@ -159,7 +158,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#basic-knowledge-of-gee" id="toc-basic-knowledge-of-gee" class="nav-link active" data-scroll-target="#basic-knowledge-of-gee"><span class="header-section-number">5.1</span> Basic knowledge of GEE</a></li>
+  <li><a href="#how-we-use-gee" id="toc-how-we-use-gee" class="nav-link" data-scroll-target="#how-we-use-gee"><span class="header-section-number">5.2</span> How we use GEE</a>
+  <ul class="collapse">
+  <li><a href="#reducing-images" id="toc-reducing-images" class="nav-link" data-scroll-target="#reducing-images"><span class="header-section-number">5.2.1</span> Reducing Images</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6</span> Application</a></li>
   </ul>
 </nav>
     </div>
@@ -168,26 +172,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">learning diary</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Zihan Liu </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -197,10 +189,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<p>#.Summary ## Introduction of Google Earth Engine</p>
+<p>Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities (https://www.google.com/earth/education/tools/google-earth-engine/). Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth’s surface https://www.google.com/earth/education/tools/google-earth-engine/.</p>
+<p>Google Earth Engine’s data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, you can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages (https://www.earthblox.io/blog/advantages-and-disadvantages-of-google-earth-engine).</p>
+<section id="basic-knowledge-of-gee" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="basic-knowledge-of-gee"><span class="header-section-number">5.1</span> Basic knowledge of GEE</h2>
+<p>Raster Data: In GEE, raster data are represented as images, where each image consists of one or more bands. Each band contains values for a specific attribute (e.g., reflectance in a particular wavelength) across the covered area.</p>
+<p>Vector Data: Vector data in GEE is represented as Features or FeatureCollections. This data type is used to represent discrete objects or areas, such as rivers, roads, boundaries, or specific points of interest.</p>
+<p>The JavaScript API, accessible through the Code Editor, is widely used for interactive data exploration and analysis.</p>
+<p>Loops and Mapping: we can’t (or shouldn’t) use a loop for something on the server as the loop doesn’t know what is in the ee object. But GEE provides functionality for iterating over collections (e.g., ImageCollection) using mapping functions, which apply a specified operation to each element in the collection.</p>
+<p>Scale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default.</p>
+</section>
+<section id="how-we-use-gee" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="how-we-use-gee"><span class="header-section-number">5.2</span> How we use GEE</h2>
+<p>In Google Earth Engine, typical processes include geometry operations like spatial analyses, joining datasets, and calculating zonal statistics like average temperature by area. We can filter images or values and use machine learning techniques for supervised and unsupervised classification, including deep learning with TensorFlow.</p>
+<section id="reducing-images" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="reducing-images"><span class="header-section-number">5.2.1</span> Reducing Images</h3>
+<p>Zonal Statistics: This process involves summarizing information within images based on specified zones or regions.</p>
+<p>For regional reduction, users apply statistical operations (e.g., mean, median) within predefined geometries like polygons, using .reduceRegion(). This method is ideal for extracting average values across diverse applications such as agriculture or urban planning.</p>
+<p>Neighborhood reduction, on the other hand, focuses on summarizing data around each pixel within a specified kernel, using .reduceNeighborhood(), suitable for image smoothing, feature enhancement, and local statistics calculation.</p>
+<p>For regression model, Using Google Earth Engine (GEE) for linear regression allows for the analysis of change over time across multiple sensors’ imagery on a per-pixel basis. The linearFit() function, which employs a least squares approach, is particularly useful for this purpose. It requires two bands: one as the dependent variable and the other as the independent variable, often representing time. We can apply linear regression per pixel across an image collection crossing several years for temporal studies, and can also apply regression for all pixels within a specific polygon on a particular date for spatial studies.</p>
+</section>
+</section>
+<section id="application" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Application</h1>
+<p>In the study “Using Google Earth Engine to detect land cover change: Singapore as a use case,” Google Earth Engine (GEE) was employed to analyze land cover changes in Singapore, focusing on the Tuas industrial zone and the Central Catchment Reserve (CCR). The study aimed to evaluate GEE’s capabilities in processing raster and vector data, conducting spatial and temporal analyses, and handling big Earth Observation (EO) data.</p>
+<p>The results indicated that GEE was effective in managing and processing large-scale satellite imagery data, providing access to diverse datasets, and facilitating spatial and temporal analyses. For Tuas, the analysis revealed rapid industrialization and land transformation, particularly through land reclamation processes. Meanwhile, in the CCR, a protected area, forest cover remained stable, largely unaffected by human activities and influenced more by natural monsoon cycles.</p>
+<p>Overall, GEE’s robust platform supported detailed analysis of land cover changes in Singapore, demonstrating its utility for urban and environmental studies.</p>
+<p>Source from: https://www.tandfonline.com/doi/full/10.1080/22797254.2018.1451782</p>
+<p>Compare with the use of GEE in developed modern cities, my next article will focus on the less developed agriculture areas.</p>
+<p>The research article “Automated cropland mapping of continental Africa using Google Earth Engine cloud computing” discusses the use of Google Earth Engine (GEE) for creating automated cropland maps across Africa. Used Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, the study produced reference cropland layers for 2014 with high accuracy (around 90% for crop extent) across different agriculture zones.</p>
+<p>The study’s results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rainfed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa.</p>
+<p>In conclusion, the research demonstrated GEE’s strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.</p>
+<p>Google Earth Engine (GEE) has been effectively used in diverse areas, from urban land cover change analysis in Singapore to large-scale agricultural mapping in Africa. In Singapore, GEE facilitated detailed studies of industrialization and natural reserves, while in Africa, it supported cropland monitoring. These applications highlighted GEE’s capacity to manage satellite imagery datasets as well as spatial and temporal analyses across different scales and contexts. As a powerful tool for environmental monitoring, agricultural development, and many other areas, GEE may play more and more important role in urban planning.</p>
+<ol>
+<li>Reflection</li>
+</ol>
+<p>Reflecting on my study of Google Earth Engine, I have understood its capabilities in environmental data analysis. GEE can process and analyze massive datasets, its ability of analyzing satellite imagery and geospatial datasets gave me the idea of how important and efficient a cloud-based platform can be used to understand and manage Earth’s complexities.</p>
+<p>What interesed me the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only more developed cities but also less developed places.</p>
+<p>GEE integrates various data types, from raster to vector, and employs advanced analysis techniques like zonal and neighborhood reduction, linear regression, and machine learning. These complex processes can be managed from a simple web browser or even a mobile device, using programming languages like JavaScript or Python.</p>
+<p>Before, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes on the map, which is a new and interesting try.</p>
 
 
 </section>
@@ -595,10 +623,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./week_4.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Introduction</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
