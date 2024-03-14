@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>learning diary - References</title>
+<title>learning diary - 3&nbsp; Data Fusion: Principles and Methods</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week_3.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./week1.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -99,7 +81,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -144,13 +126,13 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_3.html" class="sidebar-item-text sidebar-link">
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -160,14 +142,28 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#why-we-need-data-fusion" id="toc-why-we-need-data-fusion" class="nav-link" data-scroll-target="#why-we-need-data-fusion"><span class="header-section-number">3.2</span> 1. Why we need Data Fusion</a></li>
+  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">3.3</span> 2. Data Fusion</a>
+  <ul class="collapse">
+  <li><a href="#geometric-correction-solution-modelling" id="toc-geometric-correction-solution-modelling" class="nav-link" data-scroll-target="#geometric-correction-solution-modelling"><span class="header-section-number">3.3.1</span> Geometric correction solution modelling</a></li>
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">3.3.2</span> Atmospheric correction</a></li>
+  </ul></li>
+  <li><a href="#remote-sensing-jargon" id="toc-remote-sensing-jargon" class="nav-link" data-scroll-target="#remote-sensing-jargon"><span class="header-section-number">3.4</span> 3. Remote sensing jargon</a></li>
+  <li><a href="#applicationunfinished" id="toc-applicationunfinished" class="nav-link" data-scroll-target="#applicationunfinished"><span class="header-section-number">3.5</span> 4. Application(unfinished)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></h1>
 </div>
 
 
@@ -184,11 +180,42 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" role="list">
+<section id="introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>Data Fusion produce more accurate, complete, and reliable information</p>
+</section>
+<section id="why-we-need-data-fusion" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="why-we-need-data-fusion"><span class="header-section-number">3.2</span> 1. Why we need Data Fusion</h2>
+<p>Data fusion in remote sensing refers to the integration of data from multiple sources or sensors to obtain a more comprehensive understanding of the Earth’s surface or atmosphere</p>
+<p>It can enhance information content: Different sensors capture different types of information on Earth’s surface. By combining data, it can provide a more complete picture of environmental phenomena such as land cover, vegetation health, or atmospheric conditions.</p>
+<p>It can also improve accuracy: reduce errors and uncertainties in remote sensing observations. By cross-validating measurements from different sensors or platforms, data fusion techniques can improve the accuracy of derived products such as maps, models, or environmental indicators.</p>
+<p>In addition, data fusion can proide complementary information. By fusing data from multiple sources, it’s possible to leverage the strengths of each technique and extract more valuable insights than would be possible with any single source alone.</p>
+</section>
+<section id="data-fusion" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">3.3</span> 2. Data Fusion</h2>
+<p>Data fusion in remote sensing images typically follows a two-step process:</p>
+<section id="geometric-correction-solution-modelling" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="geometric-correction-solution-modelling"><span class="header-section-number">3.3.1</span> Geometric correction solution modelling</h3>
+<p>x=a0+a1xi+a2yi+ϵi is the formula to regular the biased x. The goal is to match the distorted image with the gold standard image….so we want the pixels to line up We sum up (observed - predicted (the residual))^2 and calculate the square root of it to calculate the RMSE, that is to rotate the input grid to a regular</p>
+</section>
+<section id="atmospheric-correction" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.3.2</span> Atmospheric correction</h3>
+<p>To remove the haze, we can reduce the contrast of the image. Atmospheric correlation facilitates the derivation of precise surface reflectance measurements, which play a crucial role in various remote sensing tasks including land cover classification, vegetation assessment, and water quality analysis. ### Empirical Line Correction</p>
+<p>Reflectance (field spectrum) = gain * radiance (input data) Orthorectification correction aim to removing distortions</p>
+</section>
+</section>
+<section id="remote-sensing-jargon" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="remote-sensing-jargon"><span class="header-section-number">3.4</span> 3. Remote sensing jargon</h2>
+<p>Radiance: Radiance refers to the amount of electromagnetic radiation emitted or reflected by a surface in a particular direction. It is typically measured in watts per square meter per steradian (W/(m²·sr)).</p>
+<p>Irradiance: Irradiance refers to the amount of electromagnetic radiation incident on a surface per unit area. Specifically, downwelling irradiance refers to the radiation reaching the Earth’s surface from the sun.</p>
+<p>Reflectance: Reflectance is a fundamental property of materials that describes the proportion of incident radiation that is reflected by a surface.</p>
+</section>
+<section id="applicationunfinished" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="applicationunfinished"><span class="header-section-number">3.5</span> 4. Application(unfinished)</h2>
+<p>Literature 1: One of the objectives of remote sensing is to go beyond simple visual interpretation in order to provide the user with quantitative information for producing documents that conform to cartographic standards and for deriving digital data files compatible with geographical information systems (GIS). In this framework, rigorous geometrical correction is essential. Error sources which introduce geometrical image distortions are related to the platform vector (attitude, altitude, speed), the sensor (distortions, oblique viewing), and to the earth (rotation, earth curvature, ellipsoid, relief).&nbsp;Wald’s definition of data fusion in remote sensing emphasizes integrating data from diverse sources to improve overall information quality, aligning with the specific needs of remote sensing applications. Ruser and Puente Leon’s definition highlights the process of combining data from various sensors to enhance understanding of physical phenomena, emphasizing dynamic analysis for insights into both static and evolving scenarios relevant to remote sensing. Li et al.’s definition underscores the aim of enhancing signal quality and reliability through the fusion of data from multiple sensors, in line with the objectives of remote sensing data processing. Overall, these definitions collectively stress the importance of integrating data from different sources to enhance knowledge and achieve better outcomes in remote sensing endeavors.</p>
 
-</div>
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -580,11 +607,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_3.html" class="pagination-link  aria-label=" &lt;span="" fusion:="" principles="" and="" methods&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span>
+      <a href="./week1.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week01</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

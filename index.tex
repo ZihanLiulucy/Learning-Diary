@@ -262,58 +262,110 @@ See Knuth (1984) for additional discussion of literate programming.
 
 The definition of remote sensing
 
-\section{Summary：}\label{summary}
+\bookmarksetup{startatroot}
 
-\subsection{definatiuon and formular}\label{definatiuon-and-formular}
+\chapter{Summary：}\label{summary}
 
-Remotely sensed images and the corresponding analytical techniques
-offer~a comprehensive approach to observing and monitoring urban
-environments in real-time through high
-spatial-temporal-spectral-resolution data. There are passive sensor and
-active sensors, which the difference is the passive sensor reflect
-energy from the sun, but active sensors Actively emits electormagentic
-waves and then waits to receive them.Remotely sensed data and
-applications will vary based on the four resolutions: spatial, spectral,
-temporal, radiometric. Every feature on earth will have a unique
-spectral signature, We classify the type or spectral resolution based on
-the number of bands it observes, can be discrete or continuous
+Basic knowledge of remote sensing Remotely sensed images and the
+corresponding analytical techniques offer~a comprehensive approach to
+observing and monitoring urban environments in real-time through high
+spatial-temporal-spectral-resolution data
+
+\section{Passive sensor and active
+sensors}\label{passive-sensor-and-active-sensors}
+
+There are passive sensor and active sensors, which the difference is the
+passive sensor reflect energy from the sun, but active sensors Actively
+emits electormagentic waves and then waits to receive them. Example of
+passive sensors: Camera, infrared,Thermometers, human eyes Example of
+active sensors: Radar, Sonar, X-ray
+
+\section{Formula}\label{formula}
 
 Λ(wavelength)~=~c (velocity of light)~/~v (frequency)
 
-\subsection{wavelengths and color}\label{wavelengths-and-color}
+\section{Scatter in action}\label{scatter-in-action}
 
 On the way prior to hitting the sensor, energy maybe absorbed by the
-surface or can be scattered by particles in the atmosphere e.g.~Why the
-sky is blue: blue hues have smaller wavelengths which can scatter
-easier. In contrast, when the sun's angle changes the blue light scatter
-doesn't reach our eyes as the distance is increased , so longer
-wavelengths like reds and oranges can be seen as they are the longest
-wavelengths. We can see the color since there is atmosphere so molecules
-scatter the light. The other colors are scattered so we can only see
-orange or red color.
+surface or can be scattered by particles in the atmosphere
 
-\subsection{difficulty of getting remote sensed
-data}\label{difficulty-of-getting-remote-sensed-data}
+Why the sky is blue: blue hues have smaller wavelengths which can
+scatter easier.
 
-However, in UK, there are always many clouds, together with many other
-reasons, many interactions are influencing the data since the atmosphere
-block parts of the the spectrum.
+When the sun's angle changes the blue light scatter doesn't reach our
+eyes as the distance is increased , so longer wavelengths like reds and
+oranges can be seen as they are the longest wavelengths. We can see the
+color since there is atmosphere so molecules scatter the light. The
+other colors are scattered so we can only see orange or red color.
 
-\section{Application:}\label{application}
+\section{Interacting with earth's
+surface}\label{interacting-with-earths-surface}
 
-International society for photogrammetry and remote sensing (ISPRS)
+BRDF explains light reflection variations on surfaces, influenced by
+observation and illumination angles, highlighting changes in surface
+visibility.
+
+SAR data, enhanced by polarization, reveals surface characteristics like
+roughness and moisture, with single, dual, and quad polarizations
+providing different levels of detail.
+
+\section{four resolutions}\label{four-resolutions}
+
+\subsection{Spatial}\label{spatial}
+
+Spatial resolution: Size of raster cells varies from 10cm to several
+kilometers.
+
+\subsection{Spectral}\label{spectral}
+
+refers to detecting different wavelengths across the electromagnetic
+spectrum, not just the visible light (red, green, blue). An object's
+color depend on which wavelengths they reflect, with others being
+absorbed or scattered. Our observation are limited due to the
+wavelengths absorbed by water vapour, ozone, and other gases. Spectral
+resolution classification is based on the number of observed bands
+Measuring spectral reflectance~ isn't limited to remote sensors; it can
+also be conducted using `spectroradiometers' in labs or fields,
+requiring calibration with a pure white reference panel
+
+\subsection{Temporal}\label{temporal}
+
+Sensor's sensitivity to energy is different, with higher resolution
+offering more detail (8 bit = 256 values, 4 bit = 16 values).
+
+\subsection{Radiometric}\label{radiometric}
+
+Sensor revisit time, with lower resolution indicating larger pixel size.
+Fluorescence in remote sensing is used to identify materials and assess
+conditions based on wavelength emissions following radiation exposure.
+
+\section{Biases}\label{biases}
+
+In the UK, cloud cover and atmospheric constituents like water vapor and
+carbon dioxide can significantly impact remote sensing data. These
+factors obstruct parts of the electromagnetic spectrum, preventing
+certain wavelengths from reaching the Earth's surface or sensors. This
+interference distorts accurate observations and analysis, leading to
+challenges in capturing clear remote sensing imagery. Thus, atmospheric
+conditions and clouds are key considerations in remote sensing
+applications in the UK.
+
+\bookmarksetup{startatroot}
+
+\chapter{Application:}\label{application}
 
 The International Archives of the Photogrammetry, Remote Sensing and
 Spatial Information Sciences~(ISPRS Archives) is the series of
 peer-reviewed proceedings published by the International Society of
-Photogrammetry and Remote Sensing (ISPRS). I am interested in disaster,
-so I picked Gi4DM 2020 -- 13th GeoInformation for Disaster Management
-conference.
+Photogrammetry and Remote Sensing (ISPRS). I am interested in disaster
+environment and climate, so I picked Gi4DM 2020 -- 13th GeoInformation
+for Disaster Management conference and did analysis.
 
 Across the world, nature-triggered disasters fuelled by climate change
 are worsening. Some two billion people have been affected by the
 consequences of natural hazards over the last ten years, 95\% of which
 were weather-related (such as floods and windstorms).
+https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/1/2020/
 
 Australia frequently experiences extended periods of severe droughts
 which have a significant negative impact on populations and economy.
@@ -321,14 +373,11 @@ Drought indicators selected to compute drought hazard -- the
 Standardised Precipitation Index (SPI), the Vegetation Health Index
 (VHI) and Soil Moisture -- were obtained through the World
 Meteorological Organization (WMO) Space-based Weather and Climate
-Extremes Monitoring (SWCEM) international initiative.
+Extremes Monitoring (SWCEM) international initiative (Name 2020).
 
-To decrease the frequency of disaster and decline the negative results
-to economy and residents, remote sense data is also used to evaluate the
-nature. For instance, ~Land cover maps, derived from remote sensing
-data, are essential for understanding long-term changes in vegetation
-cover and land use and assessing the impact of land use changes on
-grassland ecosystems.
+https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/139/2020/
+
+original
 
 Understanding habitat dynamics in space and time is crucial for
 assessing the protection measures' effectiveness and supporting the
@@ -342,22 +391,149 @@ multi-platform, multi-sensor, and multi-temporal satellite remote
 sensing data sources and ground observation data, through remote sensing
 inversion and data assimilation (Li et al.~Citation2021).
 
-The two articles Critically analyzing both paragraphs, the integration
-of remote sensing in disaster assessment and management is evident. In
-the first paragraph, remote sensing data, particularly from the WMO
-initiative, is utilized for monitoring drought indicators. The second
-paragraph expands on the broader applications of remote sensing,
-particularly in assessing land cover changes and vegetation dynamics.
-The incorporation of citations adds credibility to the information
-provided. However, both papers lack specific details on the spatial and
-temporal resolutions, or the potential challenges associated with remote
-sensing applications.
+~Parracciani,~Daniela~Gigante,~Onisimo~Mutanga,~Stefania~Bonafoni~\&~Marco~Vizzari~(2024)~Land
+cover changes in grassland landscapes: combining enhanced Landsat data
+composition, LandTrendr, and machine learning classification in google
+earth engine with MLP-ANN scenario forecasting,~GIScience \& Remote
+Sensing,~61:1,~DOI:~10.1080/15481603.2024.2302221 Critically analyzing
+both articles, the integration of remote sensing in disaster assessment
+and management is evident. In the articles, remote sensing data,
+particularly from the WMO initiative, is utilized for monitoring drought
+indicators. The second paragraph expands on the broader applications of
+remote sensing, particularly in assessing land cover changes and
+vegetation dynamics. It mentioned thye temporal analysis from remote
+sensing, which gave me a more comprehensive knowledge about it. To
+manage disasters and reduce their bad effects, we can use data from
+remote sensing. An example of this is land cover maps, they can help us
+understand how vegetation and land use have changed over time as well as
+see changes in how land is used.
 
 \section{Reflection:}\label{reflection}
 
+Reflecting on my journey through learning remote sensing, I noticed the
+depth and of this field. Initially, I thought it as a straightforward
+method of observing the Earth from space, but have understood the
+complex of its technologies and principles. Understanding the difference
+between passive and active sensors was a key learning moment for me. And
+the example of passive sensor of human eye helped me to leern the
+knowledge. Sensors could either rely on the Earth's natural energy or
+create their own to study the environment. It's interesting how these
+sensors, through different mechanisms, contribute to a comprehensive
+view of our planet's surface and atmosphere. The scientific foundation,
+particularly the principles of light wavelength, speed, and frequency
+has remind me the basic knowledge from a-level physics. The explanation
+of why the sky is blue, based on the scattering of light, provided a
+down-to-earth example of how remote sensing blends physics with
+environmental science, making the abstract more understandable. Facing
+the challenges of atmospheric interference in remote sensing, especially
+in regions like the UK where there are always cloud cover, emphasized
+the complexities and limitations. It made me realize the importance of
+keeping low bias when practice. What I'm most interested in this
+learning journey is how remote sensing serves as a critical tool in
+disaster management and environmental monitoring. The ability to use
+this technology to track spatial and temporal changes, assess damage,
+and support sustainable practices brings a hopeful perspective on
+addressing global climate and environmental challenges.
+
+\section{\texorpdfstring{\textbf{References}}{References}}\label{references}
+
 \bookmarksetup{startatroot}
 
-\chapter*{References}\label{references}
+\chapter{Data Fusion: Principles and
+Methods}\label{data-fusion-principles-and-methods}
+
+\section{Introduction}\label{introduction-1}
+
+Data Fusion produce more accurate, complete, and reliable information
+
+\section{1. Why we need Data Fusion}\label{why-we-need-data-fusion}
+
+Data fusion in remote sensing refers to the integration of data from
+multiple sources or sensors to obtain a more comprehensive understanding
+of the Earth's surface or atmosphere
+
+It can enhance information content: Different sensors capture different
+types of information on Earth's surface. By combining data, it can
+provide a more complete picture of environmental phenomena such as land
+cover, vegetation health, or atmospheric conditions.
+
+It can also improve accuracy: reduce errors and uncertainties in remote
+sensing observations. By cross-validating measurements from different
+sensors or platforms, data fusion techniques can improve the accuracy of
+derived products such as maps, models, or environmental indicators.
+
+In addition, data fusion can proide complementary information. By fusing
+data from multiple sources, it's possible to leverage the strengths of
+each technique and extract more valuable insights than would be possible
+with any single source alone.
+
+\section{2. Data Fusion}\label{data-fusion}
+
+Data fusion in remote sensing images typically follows a two-step
+process:
+
+\subsection{Geometric correction solution
+modelling}\label{geometric-correction-solution-modelling}
+
+x=a0+a1xi+a2yi+ϵi is the formula to regular the biased x. The goal is to
+match the distorted image with the gold standard image\ldots.so we want
+the pixels to line up We sum up (observed - predicted (the
+residual))\^{}2 and calculate the square root of it to calculate the
+RMSE, that is to rotate the input grid to a regular
+
+\subsection{Atmospheric correction}\label{atmospheric-correction}
+
+To remove the haze, we can reduce the contrast of the image. Atmospheric
+correlation facilitates the derivation of precise surface reflectance
+measurements, which play a crucial role in various remote sensing tasks
+including land cover classification, vegetation assessment, and water
+quality analysis. \#\#\# Empirical Line Correction
+
+Reflectance (field spectrum) = gain * radiance (input data)
+Orthorectification correction aim to removing distortions
+
+\section{3. Remote sensing jargon}\label{remote-sensing-jargon}
+
+Radiance: Radiance refers to the amount of electromagnetic radiation
+emitted or reflected by a surface in a particular direction. It is
+typically measured in watts per square meter per steradian (W/(m²·sr)).
+
+Irradiance: Irradiance refers to the amount of electromagnetic radiation
+incident on a surface per unit area. Specifically, downwelling
+irradiance refers to the radiation reaching the Earth's surface from the
+sun.
+
+Reflectance: Reflectance is a fundamental property of materials that
+describes the proportion of incident radiation that is reflected by a
+surface.
+
+\section{4. Application(unfinished)}\label{applicationunfinished}
+
+Literature 1: One of the objectives of remote sensing is to go beyond
+simple visual interpretation in order to provide the user with
+quantitative information for producing documents that conform to
+cartographic standards and for deriving digital data files compatible
+with geographical information systems (GIS). In this framework, rigorous
+geometrical correction is essential. Error sources which introduce
+geometrical image distortions are related to the platform vector
+(attitude, altitude, speed), the sensor (distortions, oblique viewing),
+and to the earth (rotation, earth curvature, ellipsoid, relief).~Wald's
+definition of data fusion in remote sensing emphasizes integrating data
+from diverse sources to improve overall information quality, aligning
+with the specific needs of remote sensing applications. Ruser and Puente
+Leon's definition highlights the process of combining data from various
+sensors to enhance understanding of physical phenomena, emphasizing
+dynamic analysis for insights into both static and evolving scenarios
+relevant to remote sensing. Li et al.'s definition underscores the aim
+of enhancing signal quality and reliability through the fusion of data
+from multiple sensors, in line with the objectives of remote sensing
+data processing. Overall, these definitions collectively stress the
+importance of integrating data from different sources to enhance
+knowledge and achieve better outcomes in remote sensing endeavors.
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references-1}
 \addcontentsline{toc}{chapter}{References}
 
 \markboth{References}{References}
@@ -367,6 +543,11 @@ sensing applications.
 \bibitem[\citeproctext]{ref-knuth84}
 Knuth, Donald E. 1984. {``Literate Programming.''} \emph{Comput. J.} 27
 (2): 97--111. \url{https://doi.org/10.1093/comjnl/27.2.97}.
+
+\bibitem[\citeproctext]{ref-YourLabel}
+Name, Author(s). 2020. {``Title of the Article.''} \emph{ISPRS Archives}
+XLIV-3-W1-2020: 139.
+\url{https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/139/2020/}.
 
 \end{CSLReferences}
 

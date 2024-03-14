@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./week_3.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -126,6 +146,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -140,14 +166,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">2.1</span> Summary：</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3</span> Summary：</a>
   <ul class="collapse">
-  <li><a href="#definatiuon-and-formular" id="toc-definatiuon-and-formular" class="nav-link" data-scroll-target="#definatiuon-and-formular"><span class="header-section-number">2.1.1</span> definatiuon and formular</a></li>
-  <li><a href="#wavelengths-and-color" id="toc-wavelengths-and-color" class="nav-link" data-scroll-target="#wavelengths-and-color"><span class="header-section-number">2.1.2</span> wavelengths and color</a></li>
-  <li><a href="#difficulty-of-getting-remote-sensed-data" id="toc-difficulty-of-getting-remote-sensed-data" class="nav-link" data-scroll-target="#difficulty-of-getting-remote-sensed-data"><span class="header-section-number">2.1.3</span> difficulty of getting remote sensed data</a></li>
+  <li><a href="#passive-sensor-and-active-sensors" id="toc-passive-sensor-and-active-sensors" class="nav-link" data-scroll-target="#passive-sensor-and-active-sensors"><span class="header-section-number">3.1</span> Passive sensor and active sensors</a></li>
+  <li><a href="#formula" id="toc-formula" class="nav-link" data-scroll-target="#formula"><span class="header-section-number">3.2</span> Formula</a></li>
+  <li><a href="#scatter-in-action" id="toc-scatter-in-action" class="nav-link" data-scroll-target="#scatter-in-action"><span class="header-section-number">3.3</span> Scatter in action</a></li>
+  <li><a href="#interacting-with-earths-surface" id="toc-interacting-with-earths-surface" class="nav-link" data-scroll-target="#interacting-with-earths-surface"><span class="header-section-number">3.4</span> Interacting with earth’s surface</a></li>
+  <li><a href="#four-resolutions" id="toc-four-resolutions" class="nav-link" data-scroll-target="#four-resolutions"><span class="header-section-number">3.5</span> four resolutions</a>
+  <ul class="collapse">
+  <li><a href="#spatial" id="toc-spatial" class="nav-link" data-scroll-target="#spatial"><span class="header-section-number">3.5.1</span> Spatial</a></li>
+  <li><a href="#spectral" id="toc-spectral" class="nav-link" data-scroll-target="#spectral"><span class="header-section-number">3.5.2</span> Spectral</a></li>
+  <li><a href="#temporal" id="toc-temporal" class="nav-link" data-scroll-target="#temporal"><span class="header-section-number">3.5.3</span> Temporal</a></li>
+  <li><a href="#radiometric" id="toc-radiometric" class="nav-link" data-scroll-target="#radiometric"><span class="header-section-number">3.5.4</span> Radiometric</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">2.2</span> Application:</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">2.3</span> Reflection:</a></li>
+  <li><a href="#biases" id="toc-biases" class="nav-link" data-scroll-target="#biases"><span class="header-section-number">3.6</span> Biases</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4</span> Application:</a>
+  <ul class="collapse">
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.1</span> Reflection:</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.2</span> <strong>References</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -174,36 +212,75 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>The definition of remote sensing</p>
-<section id="summary" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1</span> Summary：</h2>
-<section id="definatiuon-and-formular" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="definatiuon-and-formular"><span class="header-section-number">2.1.1</span> definatiuon and formular</h3>
-<p>Remotely sensed images and the corresponding analytical techniques offer&nbsp;a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data. There are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors Actively emits electormagentic waves and then waits to receive them.Remotely sensed data and applications will vary based on the four resolutions: spatial, spectral, temporal, radiometric. Every feature on earth will have a unique spectral signature, We classify the type or spectral resolution based on the number of bands it observes, can be discrete or continuous</p>
+<section id="summary" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Summary：</h1>
+<p>Basic knowledge of remote sensing Remotely sensed images and the corresponding analytical techniques offer&nbsp;a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data</p>
+<section id="passive-sensor-and-active-sensors" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="passive-sensor-and-active-sensors"><span class="header-section-number">3.1</span> Passive sensor and active sensors</h2>
+<p>There are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors Actively emits electormagentic waves and then waits to receive them. Example of passive sensors: Camera, infrared,Thermometers, human eyes Example of active sensors: Radar, Sonar, X-ray</p>
+</section>
+<section id="formula" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="formula"><span class="header-section-number">3.2</span> Formula</h2>
 <p>Λ(wavelength)&nbsp;=&nbsp;c (velocity of light)&nbsp;/&nbsp;v (frequency)</p>
 </section>
-<section id="wavelengths-and-color" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="wavelengths-and-color"><span class="header-section-number">2.1.2</span> wavelengths and color</h3>
-<p>On the way prior to hitting the sensor, energy maybe absorbed by the surface or can be scattered by particles in the atmosphere e.g.&nbsp;Why the sky is blue: blue hues have smaller wavelengths which can scatter easier. In contrast, when the sun’s angle changes the blue light scatter doesn’t reach our eyes as the distance is increased , so longer wavelengths like reds and oranges can be seen as they are the longest wavelengths. We can see the color since there is atmosphere so molecules scatter the light. The other colors are scattered so we can only see orange or red color.</p>
+<section id="scatter-in-action" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="scatter-in-action"><span class="header-section-number">3.3</span> Scatter in action</h2>
+<p>On the way prior to hitting the sensor, energy maybe absorbed by the surface or can be scattered by particles in the atmosphere</p>
+<p>Why the sky is blue: blue hues have smaller wavelengths which can scatter easier.</p>
+<p>When the sun’s angle changes the blue light scatter doesn’t reach our eyes as the distance is increased , so longer wavelengths like reds and oranges can be seen as they are the longest wavelengths. We can see the color since there is atmosphere so molecules scatter the light. The other colors are scattered so we can only see orange or red color.</p>
 </section>
-<section id="difficulty-of-getting-remote-sensed-data" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="difficulty-of-getting-remote-sensed-data"><span class="header-section-number">2.1.3</span> difficulty of getting remote sensed data</h3>
-<p>However, in UK, there are always many clouds, together with many other reasons, many interactions are influencing the data since the atmosphere block parts of the the spectrum.</p>
+<section id="interacting-with-earths-surface" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="interacting-with-earths-surface"><span class="header-section-number">3.4</span> Interacting with earth’s surface</h2>
+<p>BRDF explains light reflection variations on surfaces, influenced by observation and illumination angles, highlighting changes in surface visibility.</p>
+<p>SAR data, enhanced by polarization, reveals surface characteristics like roughness and moisture, with single, dual, and quad polarizations providing different levels of detail.</p>
+</section>
+<section id="four-resolutions" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="four-resolutions"><span class="header-section-number">3.5</span> four resolutions</h2>
+<section id="spatial" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="spatial"><span class="header-section-number">3.5.1</span> Spatial</h3>
+<p>Spatial resolution: Size of raster cells varies from 10cm to several kilometers.</p>
+</section>
+<section id="spectral" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="spectral"><span class="header-section-number">3.5.2</span> Spectral</h3>
+<p>refers to detecting different wavelengths across the electromagnetic spectrum, not just the visible light (red, green, blue). An object’s color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands Measuring spectral reflectance&nbsp; isn’t limited to remote sensors; it can also be conducted using ‘spectroradiometers’ in labs or fields, requiring calibration with a pure white reference panel</p>
+</section>
+<section id="temporal" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="temporal"><span class="header-section-number">3.5.3</span> Temporal</h3>
+<p>Sensor’s sensitivity to energy is different, with higher resolution offering more detail (8 bit = 256 values, 4 bit = 16 values).</p>
+</section>
+<section id="radiometric" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="radiometric"><span class="header-section-number">3.5.4</span> Radiometric</h3>
+<p>Sensor revisit time, with lower resolution indicating larger pixel size. Fluorescence in remote sensing is used to identify materials and assess conditions based on wavelength emissions following radiation exposure.</p>
 </section>
 </section>
-<section id="application" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="application"><span class="header-section-number">2.2</span> Application:</h2>
-<p>International society for photogrammetry and remote sensing (ISPRS)</p>
-<p>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences&nbsp;(ISPRS Archives) is the series of peer-reviewed proceedings published by the International Society of Photogrammetry and Remote Sensing (ISPRS). I am interested in disaster, so I picked Gi4DM 2020 – 13th GeoInformation for Disaster Management conference.</p>
-<p>Across the world, nature-triggered disasters fuelled by climate change are worsening. Some two billion people have been affected by the consequences of natural hazards over the last ten years, 95% of which were weather-related (such as floods and windstorms).</p>
-<p>Australia frequently experiences extended periods of severe droughts which have a significant negative impact on populations and economy. Drought indicators selected to compute drought hazard – the Standardised Precipitation Index (SPI), the Vegetation Health Index (VHI) and Soil Moisture – were obtained through the World Meteorological Organization (WMO) Space-based Weather and Climate Extremes Monitoring (SWCEM) international initiative.</p>
-<p>To decrease the frequency of disaster and decline the negative results to economy and residents, remote sense data is also used to evaluate the nature. For instance, &nbsp;Land cover maps, derived from remote sensing data, are essential for understanding long-term changes in vegetation cover and land use and assessing the impact of land use changes on grassland ecosystems.</p>
+<section id="biases" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="biases"><span class="header-section-number">3.6</span> Biases</h2>
+<p>In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the Earth’s surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK.</p>
+</section>
+</section>
+<section id="application" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Application:</h1>
+<p>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences&nbsp;(ISPRS Archives) is the series of peer-reviewed proceedings published by the International Society of Photogrammetry and Remote Sensing (ISPRS). I am interested in disaster environment and climate, so I picked Gi4DM 2020 – 13th GeoInformation for Disaster Management conference and did analysis.</p>
+<p>Across the world, nature-triggered disasters fuelled by climate change are worsening. Some two billion people have been affected by the consequences of natural hazards over the last ten years, 95% of which were weather-related (such as floods and windstorms). https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/1/2020/</p>
+<p>Australia frequently experiences extended periods of severe droughts which have a significant negative impact on populations and economy. Drought indicators selected to compute drought hazard – the Standardised Precipitation Index (SPI), the Vegetation Health Index (VHI) and Soil Moisture – were obtained through the World Meteorological Organization (WMO) Space-based Weather and Climate Extremes Monitoring (SWCEM) international initiative <span class="citation" data-cites="YourLabel">(<a href="#ref-YourLabel" role="doc-biblioref">Name 2020</a>)</span>.</p>
+<p>https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/139/2020/</p>
+<p>original</p>
 <p>Understanding habitat dynamics in space and time is crucial for assessing the protection measures’ effectiveness and supporting the definition of sustainable management practices (Orsenigo et al.&nbsp;Citation2018). Earth observation by satellite remote sensing (RS) offers many possibilities for cost-effective, timely, and reproducible vegetation analysis (Royimani, Mutanga, and Dube&nbsp;Citation2021; Vizzari&nbsp;Citation2022). Grassland remote sensing research may substantially support ecological studies because it utilizes multi-platform, multi-sensor, and multi-temporal satellite remote sensing data sources and ground observation data, through remote sensing inversion and data assimilation (Li et al.&nbsp;Citation2021).</p>
-<p>The two articles Critically analyzing both paragraphs, the integration of remote sensing in disaster assessment and management is evident. In the first paragraph, remote sensing data, particularly from the WMO initiative, is utilized for monitoring drought indicators. The second paragraph expands on the broader applications of remote sensing, particularly in assessing land cover changes and vegetation dynamics. The incorporation of citations adds credibility to the information provided. However, both papers lack specific details on the spatial and temporal resolutions, or the potential challenges associated with remote sensing applications.</p>
+<p>&nbsp;Parracciani,&nbsp;Daniela&nbsp;Gigante,&nbsp;Onisimo&nbsp;Mutanga,&nbsp;Stefania&nbsp;Bonafoni&nbsp;&amp;&nbsp;Marco&nbsp;Vizzari&nbsp;(2024)&nbsp;Land cover changes in grassland landscapes: combining enhanced Landsat data composition, LandTrendr, and machine learning classification in google earth engine with MLP-ANN scenario forecasting,&nbsp;GIScience &amp; Remote Sensing,&nbsp;61:1,&nbsp;DOI:&nbsp;10.1080/15481603.2024.2302221 Critically analyzing both articles, the integration of remote sensing in disaster assessment and management is evident. In the articles, remote sensing data, particularly from the WMO initiative, is utilized for monitoring drought indicators. The second paragraph expands on the broader applications of remote sensing, particularly in assessing land cover changes and vegetation dynamics. It mentioned thye temporal analysis from remote sensing, which gave me a more comprehensive knowledge about it. To manage disasters and reduce their bad effects, we can use data from remote sensing. An example of this is land cover maps, they can help us understand how vegetation and land use have changed over time as well as see changes in how land is used.</p>
+<section id="reflection" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.1</span> Reflection:</h2>
+<p>Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the Earth from space, but have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to leern the knowledge. Sensors could either rely on the Earth’s natural energy or create their own to study the environment. It’s interesting how these sensors, through different mechanisms, contribute to a comprehensive view of our planet’s surface and atmosphere. The scientific foundation, particularly the principles of light wavelength, speed, and frequency has remind me the basic knowledge from a-level physics. The explanation of why the sky is blue, based on the scattering of light, provided a down-to-earth example of how remote sensing blends physics with environmental science, making the abstract more understandable. Facing the challenges of atmospheric interference in remote sensing, especially in regions like the UK where there are always cloud cover, emphasized the complexities and limitations. It made me realize the importance of keeping low bias when practice. What I’m most interested in this learning journey is how remote sensing serves as a critical tool in disaster management and environmental monitoring. The ability to use this technology to track spatial and temporal changes, assess damage, and support sustainable practices brings a hopeful perspective on addressing global climate and environmental challenges.</p>
 </section>
-<section id="reflection" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">2.3</span> Reflection:</h2>
+<section id="references" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="references"><span class="header-section-number">4.2</span> <strong>References</strong></h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-YourLabel" class="csl-entry" role="listitem">
+Name, Author(s). 2020. <span>“Title of the Article.”</span> <em>ISPRS Archives</em> XLIV-3-W1-2020: 139. <a href="https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/139/2020/">https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/139/2020/</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -601,8 +678,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_3.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Data Fusion: Principles and Methods</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
