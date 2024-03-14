@@ -25,7 +25,7 @@ We sum up (observed - predicted (the residual))^2 and calculate the square root 
 
 ### Atmospheric correction
 
-To remove the haze, we can reduce the contrast of the image
+To remove the haze, we can reduce the contrast of the image. Atmospheric correlation facilitates the derivation of precise surface reflectance measurements, which play a crucial role in various remote sensing tasks including land cover classification, vegetation assessment, and water quality analysis.
 ### Empirical Line Correction
 
 Reflectance (field spectrum) = gain * radiance (input data)
@@ -40,9 +40,7 @@ Irradiance: Irradiance refers to the amount of electromagnetic radiation inciden
 
 Reflectance: Reflectance is a fundamental property of materials that describes the proportion of incident radiation that is reflected by a surface.
 
+## 4. Application(unfinished)
 
-## 5. Challenges and Future Trends
+Literature 1: One of the objectives of remote sensing is to go beyond simple visual interpretation in order to provide the user with quantitative information for producing documents that conform to cartographic standards and for deriving digital data files compatible with geographical information systems (GIS). In this framework, rigorous geometrical correction is essential. Error sources which introduce geometrical image distortions are related to the platform vector (attitude, altitude, speed), the sensor (distortions, oblique viewing), and to the earth (rotation, earth curvature, ellipsoid, relief). Wald's definition of data fusion in remote sensing emphasizes integrating data from diverse sources to improve overall information quality, aligning with the specific needs of remote sensing applications. Ruser and Puente Leon's definition highlights the process of combining data from various sensors to enhance understanding of physical phenomena, emphasizing dynamic analysis for insights into both static and evolving scenarios relevant to remote sensing. Li et al.'s definition underscores the aim of enhancing signal quality and reliability through the fusion of data from multiple sensors, in line with the objectives of remote sensing data processing. Overall, these definitions collectively stress the importance of integrating data from different sources to enhance knowledge and achieve better outcomes in remote sensing endeavors.
 
-Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.
-
-------------------------------------------------------------------------

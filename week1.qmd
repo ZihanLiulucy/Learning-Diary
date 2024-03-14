@@ -2,36 +2,84 @@
 
 The definition of remote sensing
 
-## Summary：
+# Summary：
 
-### definatiuon and formular
+Basic knowledge of remote sensing
+Remotely sensed images and the corresponding analytical techniques offer a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data 
 
-Remotely sensed images and the corresponding analytical techniques offer a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data. There are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors Actively emits electormagentic waves and then waits to receive them.Remotely sensed data and applications will vary based on the four resolutions: spatial, spectral, temporal, radiometric. Every feature on earth will have a unique spectral signature, We classify the type or spectral resolution based on the number of bands it observes, can be discrete or continuous
+## Passive sensor and active sensors
+
+There are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors Actively emits electormagentic waves and then waits to receive them. 
+Example of passive sensors: Camera, infrared,Thermometers, human eyes
+Example of active sensors: Radar, Sonar, X-ray
+
+## Formula
 
 Λ(wavelength) = c (velocity of light) / v (frequency)
 
-### wavelengths and color
+## Scatter in action
 
-On the way prior to hitting the sensor, energy maybe absorbed by the surface or can be scattered by particles in the atmosphere e.g. Why the sky is blue: blue hues have smaller wavelengths which can scatter easier. In contrast, when the sun's angle changes the blue light scatter doesn't reach our eyes as the distance is increased , so longer wavelengths like reds and oranges can be seen as they are the longest wavelengths. We can see the color since there is atmosphere so molecules scatter the light. The other colors are scattered so we can only see orange or red color.
+On the way prior to hitting the sensor, energy maybe absorbed by the surface or can be scattered by particles in the atmosphere 
 
-### difficulty of getting remote sensed data
+Why the sky is blue: blue hues have smaller wavelengths which can scatter easier. 
 
-However, in UK, there are always many clouds, together with many other reasons, many interactions are influencing the data since the atmosphere block parts of the the spectrum.
+When the sun's angle changes the blue light scatter doesn't reach our eyes as the distance is increased , so longer wavelengths like reds and oranges can be seen as they are the longest wavelengths. We can see the color since there is atmosphere so molecules scatter the light. The other colors are scattered so we can only see orange or red color.
 
-## Application:
+## Interacting with earth’s surface
 
-International society for photogrammetry and remote sensing (ISPRS)
+BRDF explains light reflection variations on surfaces, influenced by observation and illumination angles, highlighting changes in surface visibility.
 
-The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences (ISPRS Archives) is the series of peer-reviewed proceedings published by the International Society of Photogrammetry and Remote Sensing (ISPRS). I am interested in disaster, so I picked Gi4DM 2020 -- 13th GeoInformation for Disaster Management conference.
+SAR data, enhanced by polarization, reveals surface characteristics like roughness and moisture, with single, dual, and quad polarizations providing different levels of detail.
+
+## four resolutions
+
+### Spatial
+Spatial resolution: Size of raster cells varies from 10cm to several kilometers.
+
+### Spectral
+refers to detecting different wavelengths across the electromagnetic spectrum, not just the visible light (red, green, blue).
+An object’s color depend on which wavelengths they reflect, with others being absorbed or scattered.
+Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases.
+Spectral resolution classification is based on the number of observed bands
+Measuring spectral reflectance  isn't limited to remote sensors; it can also be conducted using ‘spectroradiometers’ in labs or fields, requiring calibration with a pure white reference panel
+
+### Temporal
+Sensor's sensitivity to energy is different, with higher resolution offering more detail (8 bit = 256 values, 4 bit = 16 values).
+
+### Radiometric
+Sensor revisit time, with lower resolution indicating larger pixel size.
+Fluorescence in remote sensing is used to identify materials and assess conditions based on wavelength emissions following radiation exposure.
+
+## Biases
+
+In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the Earth's surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK.
+
+# Application:
+
+The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences (ISPRS Archives) is the series of peer-reviewed proceedings published by the International Society of Photogrammetry and Remote Sensing (ISPRS). I am interested in disaster environment and climate, so I picked Gi4DM 2020 – 13th GeoInformation for Disaster Management conference and did analysis.
 
 Across the world, nature-triggered disasters fuelled by climate change are worsening. Some two billion people have been affected by the consequences of natural hazards over the last ten years, 95% of which were weather-related (such as floods and windstorms).
+https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/1/2020/
 
-Australia frequently experiences extended periods of severe droughts which have a significant negative impact on populations and economy. Drought indicators selected to compute drought hazard -- the Standardised Precipitation Index (SPI), the Vegetation Health Index (VHI) and Soil Moisture -- were obtained through the World Meteorological Organization (WMO) Space-based Weather and Climate Extremes Monitoring (SWCEM) international initiative.
+Australia frequently experiences extended periods of severe droughts which have a significant negative impact on populations and economy. Drought indicators selected to compute drought hazard – the Standardised Precipitation Index (SPI), the Vegetation Health Index (VHI) and Soil Moisture – were obtained through the World Meteorological Organization (WMO) Space-based Weather and Climate Extremes Monitoring (SWCEM) international initiative [@YourLabel].
 
-To decrease the frequency of disaster and decline the negative results to economy and residents, remote sense data is also used to evaluate the nature. For instance,  Land cover maps, derived from remote sensing data, are essential for understanding long-term changes in vegetation cover and land use and assessing the impact of land use changes on grassland ecosystems.
+https://isprs-archives.copernicus.org/articles/XLIV-3-W1-2020/139/2020/
 
-Understanding habitat dynamics in space and time is crucial for assessing the protection measures' effectiveness and supporting the definition of sustainable management practices (Orsenigo et al. Citation2018). Earth observation by satellite remote sensing (RS) offers many possibilities for cost-effective, timely, and reproducible vegetation analysis (Royimani, Mutanga, and Dube Citation2021; Vizzari Citation2022). Grassland remote sensing research may substantially support ecological studies because it utilizes multi-platform, multi-sensor, and multi-temporal satellite remote sensing data sources and ground observation data, through remote sensing inversion and data assimilation (Li et al. Citation2021).
+original
 
-The two articles Critically analyzing both paragraphs, the integration of remote sensing in disaster assessment and management is evident. In the first paragraph, remote sensing data, particularly from the WMO initiative, is utilized for monitoring drought indicators. The second paragraph expands on the broader applications of remote sensing, particularly in assessing land cover changes and vegetation dynamics. The incorporation of citations adds credibility to the information provided. However, both papers lack specific details on the spatial and temporal resolutions, or the potential challenges associated with remote sensing applications.
+Understanding habitat dynamics in space and time is crucial for assessing the protection measures’ effectiveness and supporting the definition of sustainable management practices (Orsenigo et al. Citation2018). Earth observation by satellite remote sensing (RS) offers many possibilities for cost-effective, timely, and reproducible vegetation analysis (Royimani, Mutanga, and Dube Citation2021; Vizzari Citation2022). Grassland remote sensing research may substantially support ecological studies because it utilizes multi-platform, multi-sensor, and multi-temporal satellite remote sensing data sources and ground observation data, through remote sensing inversion and data assimilation (Li et al. Citation2021).
+
+ Parracciani, Daniela Gigante, Onisimo Mutanga, Stefania Bonafoni & Marco Vizzari (2024) Land cover changes in grassland landscapes: combining enhanced Landsat data composition, LandTrendr, and machine learning classification in google earth engine with MLP-ANN scenario forecasting, GIScience & Remote Sensing, 61:1, DOI: 10.1080/15481603.2024.2302221
+Critically analyzing both articles, the integration of remote sensing in disaster assessment and management is evident. In the articles, remote sensing data, particularly from the WMO initiative, is utilized for monitoring drought indicators. The second paragraph expands on the broader applications of remote sensing, particularly in assessing land cover changes and vegetation dynamics. It mentioned thye temporal analysis from remote sensing, which gave me a more comprehensive knowledge about it. To manage disasters and reduce their bad effects, we can use data from remote sensing. An example of this is land cover maps, they can help us understand how vegetation and land use have changed over time as well as see changes in how land is used.
 
 ## Reflection:
+
+Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the Earth from space, but have understood the complex of its technologies and principles.
+Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to leern the knowledge. Sensors could either rely on the Earth's natural energy or create their own to study the environment. It's interesting how these sensors, through different mechanisms, contribute to a comprehensive view of our planet's surface and atmosphere.
+The scientific foundation, particularly the principles of light wavelength, speed, and frequency has remind me the basic knowledge from a-level physics. The explanation of why the sky is blue, based on the scattering of light, provided a down-to-earth example of how remote sensing blends physics with environmental science, making the abstract more understandable.
+Facing the challenges of atmospheric interference in remote sensing, especially in regions like the UK where there are always cloud cover, emphasized the complexities and limitations. It made me realize the importance of keeping low bias when practice.
+What I’m most interested in this learning journey is how remote sensing serves as a critical tool in disaster management and environmental monitoring. The ability to use this technology to track spatial and temporal changes, assess damage, and support sustainable practices brings a hopeful perspective on addressing global climate and environmental challenges.
+
+## **References**
+
+
