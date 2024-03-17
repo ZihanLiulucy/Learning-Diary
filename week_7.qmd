@@ -18,7 +18,7 @@ Purpose: Classify data into discrete categories based on certain features.
 
 Example: Deciding whether to play golf based on weather conditions (temperature, rainfall, wind).
 
-Classification trees, similar with flowcharts, systematically classify data into discrete categories based on its features, like deciding to play golf depending on weather conditions. Starting from the root node, a split is established by solving an optimization problem (usually minimizing an impurity measure), before proceeding to recurse on the two resulting child nodes ([@BertsimasDunn2017]). Each node in the tree makes a decision, categorizing the data into different paths based on specific criteria or thresholds. The decision to split at each node is often based on criteria such as Gini impurity, the goal is to choose splits that decrease Gini impurity, leading to a more accurate classification.
+Classification trees, similar with flowcharts, systematically classify data into discrete categories based on its features, like deciding to play golf depending on weather conditions. Starting from the root node, a split is established by solving an optimization problem (usually minimizing an impurity measure), before proceeding to recurse on the two resulting child nodes [@BertsimasDunn2017]. Each node in the tree makes a decision, categorizing the data into different paths based on specific criteria or thresholds. The decision to split at each node is often based on criteria such as Gini impurity, the goal is to choose splits that decrease Gini impurity, leading to a more accurate classification.
 
 ### Regression Trees
 
@@ -36,11 +36,9 @@ Thus we are aiming for good balance with low bias and low variance, performs wel
 
 ### Random Forests
 
-![[@BelgiuDragut2016]](RF.png)
+Fig from![](RF.png)
 
-Fig from (Belgiu and Drăguţ, 2016)
-
-A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees ([@BelgiuDragut2016]). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting ([@WangEtAl2016])
+A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees ([@BelgiuDragut2016]). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting [@WangEtAl2016]
 
 It enhance decision tree performance by aggregating predictions from multiple trees, reducing overfitting and improving accuracy: Uses random samples with replacement to create diverse trees. At each split, selects a random subset of features, increasing tree diversity. Repeats sampling and feature selection to create many trees, forming a forest. Each tree votes on predictions; the majority vote decides the final prediction. Estimates prediction error using data not sampled for each tree, providing an unbiased error estimate. Trees grow to their full size without pruning, relying on the ensemble to prevent overfitting. Typically, the number of features considered at each split is the square root of the total number of features.
 
@@ -68,19 +66,19 @@ Sometimes data isn't easily separable with a straight line. SVM can twist and tu
 
 ![](CART.png)
 
-Fig from ([@DeathFabricius2000])
+Fig from [@DeathFabricius2000]
 
-Classification and regression trees are ideally suited for the analysis of complex ecological data. In this study ([@DeathFabricius2000]) we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​
+Classification and regression trees are ideally suited for the analysis of complex ecological data. In this study [@DeathFabricius2000] we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​
 
 Regression trees connecting the four spatial variables (shelf position, location, reef type, and depth) to the distributions of the four physical variables (sediment, visibility, waves, and slope).
 
-In the case study conducted in Bangladesh ([@ZhaoEtAl2019]), the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model's effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.
+In the case study conducted in Bangladesh [@ZhaoEtAl2019], the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model's effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.
 
 Here is the dataset used in this study.
 
 ![](RFR.png){width="654"}
 
-Fig from ([@ZhaoEtAl2019])
+Fig from [@ZhaoEtAl2019]
 
 (a) Wealth Index (WI) map, (b) National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light (NTL) image, (c) Open Street Map (OSM) primary and secondary road map, (d) land cover map
 
@@ -100,13 +98,3 @@ Unsupervised methods like k-means and supervised techniques, including Support V
 Through these insights, I gained a holistic view of machine learning's role in data analysis, from theoretical foundations to real-world applications.
 
 ## **Reference**
-
-Bertsimas, D. & Dunn, J. (2017) Optimal classification trees. Machine learning. \[Online\] 106 (7), 1039--1082.
-
-Belgiu, M. & Drăguţ, L. (2016) Random forest in remote sensing: A review of applications and future directions. ISPRS journal of photogrammetry and remote sensing. \[Online\] 11424--31.
-
-Glenn De'ath & Fabricius, K. E. (2000) Classification and Regression Trees: A Powerful Yet Simple Technique for Ecological Data Analysis. Ecology (Durham). \[Online\] 81 (11), 3178--3192.
-
-Zhao, X. et al. (2019) Estimation of Poverty Using Random Forest Regression with Multi-Source Data: A Case Study in Bangladesh. Remote sensing (Basel, Switzerland). \[Online\] 11 (4), 375-.
-
-Wang, L.a.; Zhou, X.; Zhu, X.; Dong, Z.; Guo, W. Estimation of biomass in wheat using random forest regression algorithm and remote sensing data. The Crop Journal 2016, 4, 212--219. 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Zihan Liu">
 
-<title>learning diary - 4&nbsp; Week4</title>
+<title>learning diary - 7&nbsp; week_8</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +51,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week_6.html" rel="next">
-<link href="./week_3.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./week_7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_8.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_4.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></span></a>
   </div>
 </li>
@@ -150,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></span></a>
   </div>
 </li>
@@ -170,26 +191,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#jakarta-city-challenge" id="toc-jakarta-city-challenge" class="nav-link active" data-scroll-target="#jakarta-city-challenge"><span class="header-section-number">5</span> Jakarta city challenge</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">8</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#flood" id="toc-flood" class="nav-link" data-scroll-target="#flood"><span class="header-section-number">5.1</span> Flood</a></li>
-  <li><a href="#city-sinking" id="toc-city-sinking" class="nav-link" data-scroll-target="#city-sinking"><span class="header-section-number">5.2</span> City sinking</a></li>
+  <li><a href="#object-based-image-analysis-obia" id="toc-object-based-image-analysis-obia" class="nav-link" data-scroll-target="#object-based-image-analysis-obia"><span class="header-section-number">8.1</span> Object-Based Image Analysis (OBIA)</a></li>
+  <li><a href="#sub-pixel-analysis" id="toc-sub-pixel-analysis" class="nav-link" data-scroll-target="#sub-pixel-analysis"><span class="header-section-number">8.2</span> Sub pixel analysis</a></li>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="header-section-number">8.3</span> Accuracy assessment</a></li>
+  <li><a href="#cross-validation-and-spatial-autocorrelation." id="toc-cross-validation-and-spatial-autocorrelation." class="nav-link" data-scroll-target="#cross-validation-and-spatial-autocorrelation."><span class="header-section-number">8.4</span> Cross validation and spatial autocorrelation.</a></li>
+  <li><a href="#svm-support-vector-machine-classifier" id="toc-svm-support-vector-machine-classifier" class="nav-link" data-scroll-target="#svm-support-vector-machine-classifier"><span class="header-section-number">8.5</span> SVM (Support Vector Machine classifier)</a></li>
   </ul></li>
-  <li><a href="#policy-goal" id="toc-policy-goal" class="nav-link" data-scroll-target="#policy-goal"><span class="header-section-number">6</span> Policy goal</a></li>
-  <li><a href="#the-actions-we-can-do" id="toc-the-actions-we-can-do" class="nav-link" data-scroll-target="#the-actions-we-can-do"><span class="header-section-number">7</span> The actions we can do</a>
-  <ul class="collapse">
-  <li><a href="#water-management-to-reduce-groundwater-extraction" id="toc-water-management-to-reduce-groundwater-extraction" class="nav-link" data-scroll-target="#water-management-to-reduce-groundwater-extraction"><span class="header-section-number">7.1</span> Water management to reduce groundwater extraction</a></li>
-  <li><a href="#add-more-green-plants-to-improve-the-environment" id="toc-add-more-green-plants-to-improve-the-environment" class="nav-link" data-scroll-target="#add-more-green-plants-to-improve-the-environment"><span class="header-section-number">7.2</span> Add more green plants to improve the environment</a></li>
-  <li><a href="#reduce-emission" id="toc-reduce-emission" class="nav-link" data-scroll-target="#reduce-emission"><span class="header-section-number">7.3</span> Reduce emission</a></li>
-  </ul></li>
-  <li><a href="#to-manage-the-emission-using-remotely-sensed-data" id="toc-to-manage-the-emission-using-remotely-sensed-data" class="nav-link" data-scroll-target="#to-manage-the-emission-using-remotely-sensed-data"><span class="header-section-number">8</span> To manage the emission using remotely sensed data</a>
-  <ul class="collapse">
-  <li><a href="#no2-and-co2-monitoring" id="toc-no2-and-co2-monitoring" class="nav-link" data-scroll-target="#no2-and-co2-monitoring"><span class="header-section-number">8.1</span> NO2 and CO2 monitoring</a></li>
-  <li><a href="#vegetation-mapping-and-monitoring" id="toc-vegetation-mapping-and-monitoring" class="nav-link" data-scroll-target="#vegetation-mapping-and-monitoring"><span class="header-section-number">8.2</span> Vegetation Mapping and Monitoring</a></li>
-  </ul></li>
-  <li><a href="#link-with-global-agendas-goals" id="toc-link-with-global-agendas-goals" class="nav-link" data-scroll-target="#link-with-global-agendas-goals"><span class="header-section-number">9</span> Link with global agendas / goals</a></li>
-  <li><a href="#advances-of-current-local-national-or-global-approaches." id="toc-advances-of-current-local-national-or-global-approaches." class="nav-link" data-scroll-target="#advances-of-current-local-national-or-global-approaches."><span class="header-section-number">10</span> Advances of current local, national or global approaches.</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">11</span> Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">9</span> Application:</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">10</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -198,13 +209,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zihan Liu </p>
+          </div>
+  </div>
     
   
     
@@ -215,68 +232,86 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="jakarta-city-challenge" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Jakarta city challenge</h1>
-<section id="flood" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="flood"><span class="header-section-number">5.1</span> Flood</h2>
-<p>Flood-prone Jakarta is the world’s fastest sinking city — as fast as 10 centimetres per year. In parts of North Jakarta, which is particularly susceptible to flooding, the ground has sunk 2.5 metres in 10 years. Excessive extraction of groundwater for drinking and commercial use is largely responsible for this: When water is pumped out of an underground aquifer, the land above it sinks Source from: https://www.channelnewsasia.com/cnainsider/why-jakarta-is-world-fastest-sinking-city-floods-climate-change-781491</p>
+<section id="summary" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Summary</h1>
+<section id="object-based-image-analysis-obia" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">8.1</span> Object-Based Image Analysis (OBIA)</h2>
+<p>OBIA shifts focus from individual pixels to shapes or superpixels, based on their homogeneity (similarity) or heterogeneity (difference). SLIC (Simple Linear Iterative Clustering) is a common method for generating superpixels, analyzing spatial and color distances to define groups. Iterative process, typically 4-10 rounds, refines superpixel centers and boundaries, similar to k-means. Uses LAB color space for nuanced color analysis, classifying objects based on average values for interpretation.</p>
+<p>The basic logic is: Divide the image into items that correspond to land-based features, and then categorize them based on their dimensions, spectral characteristics, form, and size <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span>.</p>
+<p><img src="OBIA1.png" class="img-fluid"></p>
+<p>Object-Based Image Analysis (OBIA) segmentation is a process that groups similar pixels into objects <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span>.</p>
+<p><img src="OBIA2.png" class="img-fluid"></p>
+<p>OBIA classification uses shape, size, and spectral properties of objects to classify each object <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span>.</p>
 </section>
-<section id="city-sinking" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="city-sinking"><span class="header-section-number">5.2</span> City sinking</h2>
-<p>With global temperatures rising and ice sheets melting, plenty of coastal cities face a growing risk of flooding due to&nbsp;sea level rise.&nbsp;Few places, however, face challenges like those in front of the Jakarta metropolitan area. In recent decades, Jakarta flooding problems have grown even worse, driven partly by widespread pumping of groundwater that has caused the land to sink, or subside, at rapid rates. By&nbsp;some estimates, as much as 40 percent of the city now sits below sea level. There are signs showing that rainstorms are getting more intense as the atmosphere heats up, damaging floods have become commonplace.</p>
-<p>The picture below shows The Landsat images above show the evolution of the city over the past three decades. The widespread replacement of forests and other vegetation with impervious surfaces in inland areas along the Ciliwung and Cisadane rivers has reduced how much water the landscape can absorb, contributing to runoff and flash floods.</p>
+<section id="sub-pixel-analysis" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">8.2</span> Sub pixel analysis</h2>
+<p>Allows us to deconstruct the observed spectral data of a pixel into its constituent materials, giving us a clearer understanding of what is present on the ground in that area.</p>
+<p>End Members: In the context of remote sensing, “end members” are pure spectral signatures representing specific materials or objects on the ground, such as water, vegetation, and soil.</p>
+<p>Pixel Modeling: The goal here is to determine what mixture of these end members (water, vegetation, soil) makes up a single pixel in an image</p>
+<p>Calculkation method: The left side of the equation represents the spectral signature of a pixel in bands 3 and 4, plus the condition that the sum of the fractions of end members equals 1. The matrix in the middle represents the spectral signatures of the end members (water, vegetation, soil) for bands 3 and 4, with an additional row of ones to enforce the sum-to-one constraint. The right side represents the fractions of each end member within the pixel that we are trying to find. Then calculate fraction by forming a new matrix with the left hand side being the fraction matrix, and the calculated value is the proportion of the different end members.</p>
+</section>
+<section id="accuracy-assessment" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">8.3</span> Accuracy assessment</h2>
+<p>in machine learning is a process to evaluate how well a model’s predictions match the actual reality</p>
+<p>True Positive (TP): The model correctly predicts the positive class.</p>
+<p>False Positive (FP): The model incorrectly predicts the positive class.</p>
+<p>True Negative (TN): The model correctly predicts the negative class.</p>
+<p>False Negative (FN): The model incorrectly predicts the negative class.</p>
+<p>Accuracy assessment is can be divided into producer’s accuracy ((TP)/(TP+FN), user’s accuracy (TP)/(TP+FP), and overall accuracy&nbsp;(TP)+(TN)/(TP+TN+FP+FN).</p>
+<p>Sometimes producer’s accuracy is high as for example, 21 out of 22 urban areas were being recognized, however a user may find that only 22/31 of the time visit an urban area is it actually urban. 1.4 Receiver Operating Characteristic Curve Developed during WW2 by the USA to enhance radar signal detection, aiming to identify aircraft (true positives) while minimizing false alarms (false positives) from other objects like clouds.</p>
+<p>Threshold Adjustment: Altering the classifier’s threshold affects the TPR and FPR, allowing for the optimization of the classifier’s performance based on the ROC curve.</p>
+<p>The aim is to maximize true positives (aiming for a TPR of 1) while minimizing false positives (aiming for an FPR of 0), optimizing the classifier’s accuracy</p>
+<p>A perfect model scores 1, while a random guess scores 0.5, the higher the AUC, the better the model is at predicting true positives</p>
+</section>
+<section id="cross-validation-and-spatial-autocorrelation." class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="cross-validation-and-spatial-autocorrelation."><span class="header-section-number">8.4</span> Cross validation and spatial autocorrelation.</h2>
+<p>When we’re working with data in geography or maps, we usually divide our data into two parts: one part to learn from (train) and another part to see how well we’ve learned (test). However, there’s an important idea by Waldo Tobler, called the “First Law of Geography,” which says that things that are closer to each other are more alike than things that are far apart. This means when we’re training our model, if the training data includes information that’s very close to the test data, it might provide ‘sneak peek’ because the training data shouldn’t know anything about the test data.</p>
+<p>In this figure, we prefer the lower row as the upper one’s training data and test data are near each other.</p>
+</section>
+<section id="svm-support-vector-machine-classifier" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="svm-support-vector-machine-classifier"><span class="header-section-number">8.5</span> SVM (Support Vector Machine classifier)</h2>
+<p>SVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification <span class="citation" data-cites="ScikitLearnSVM">(<a href="#ref-ScikitLearnSVM" role="doc-biblioref"><span>“Support Vector Machines in Scikit-Learn”</span> 2023</a>)</span>.&nbsp;</p>
+<p>C (Penalty parameter): Controls the strictness of the SVM; lower C allows more misclassifications, higher C aims for precise classification.</p>
+<p>Gamma (σ): Affects the influence of data points; lower Gamma leads to broader grouping, higher Gamma results in tighter, smaller groups.</p>
+<p>To optimize C and Gamma, they employ spatial fold division, using k-means to separate data into distinct spatial folds, ensuring unbiased training and testing.</p>
+<p>They conduct cross-validation within these folds, with each spatial partition undergoing 5-fold validation, assessing 50 random hyperparameter sets, resulting in 1,250 models per cycle.</p>
+<p>Repeating the process 100 times, they evaluate 125,000 models to determine the ideal SVM settings.</p>
 </section>
 </section>
-<section id="policy-goal" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Policy goal</h1>
-<p>In September 2022, the Jakarta Environmental Agency introduced a&nbsp;Strategy for Air Pollution Control (SPPU), which included more than 70 action plans to improve air quality.&nbsp;Focusing on 1) governing air pollution controls, 2) reducing emissions from mobile sources, and 3) reducing emissions from stationary sources.</p>
+<section id="application" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Application:</h1>
+<p>In the case study VerbeirenEtAl2008 <span class="citation" data-cites="VerbeirenEtAl2008">(<a href="#ref-VerbeirenEtAl2008" role="doc-biblioref">Verbeiren et al. 2008</a>)</span>, sub-pixel classification was used to estimate regional crop areas in Belgium using low-resolution SPOT-VEGETATION NDVI images. It proved effective for generating reliable area estimates in regions with limited high-resolution data.</p>
+<p><img src="sub-pixel.png" class="img-fluid"></p>
+<p>Figure from <span class="citation" data-cites="VerbeirenEtAl2008">(<a href="#ref-VerbeirenEtAl2008" role="doc-biblioref">Verbeiren et al. 2008</a>)</span></p>
+<p>These AFIs (area fraction images) have the same 1&nbsp;km resolution as the satellite images and they give for each pixel the area fraction occupied by the considered classes (per pixel, the fractions sum up to 1). The procedure for the AFI-creation is outlined in&nbsp;the picture. First, a 1&nbsp;km&nbsp;×&nbsp;1&nbsp;km grid was created with the same spatial characteristics (projection, resolution, framing) as the NDVI-images. This grid was superimposed over the vectorial land use map, and the area fractions of the eight classes (Winter wheat, Winter barley, All maize, Sugar beets, All grassland, All forests, Urban areas, and All other vegetation) within each grid cell were computed and stored in a database. The latter numbers were then transferred to eight separate images: the (reference) AFIs.</p>
+<p>Literature 2</p>
+<p>Object - based image analysis is also very useful. Building damage detection after earthquake would help to rapid relief and response of disaster. In this study <span class="citation" data-cites="JanalipourMohammadzadeh2016">(<a href="#ref-JanalipourMohammadzadeh2016" role="doc-biblioref">Janalipour and Mohammadzadeh 2016</a>)</span>, an efficient method was proposed for building damage detection in urban area after earthquake using pre-event vector map and postevent pan-sharpened high spatial resolution image. At first, preprocessing was applied on the postevent satellite image. Second, results of pixel- and object-based classifications were integrated. In the following, geometric features of buildings were extracted including area, rectangular fit (rect_fit), and convexity.&nbsp;</p>
+<p>After a series of image analysis, we are able to define the category of the land as well as the degree of damage.</p>
+<p><img src="OBIA.png" class="img-fluid" width="316"><img src="OBIA_b.png" class="img-fluid" width="316"></p>
+<p>Figures from <span class="citation" data-cites="JanalipourMohammadzadeh2016">(<a href="#ref-JanalipourMohammadzadeh2016" role="doc-biblioref">Janalipour and Mohammadzadeh 2016</a>)</span></p>
 </section>
-<section id="the-actions-we-can-do" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> The actions we can do</h1>
-<section id="water-management-to-reduce-groundwater-extraction" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="water-management-to-reduce-groundwater-extraction"><span class="header-section-number">7.1</span> Water management to reduce groundwater extraction</h2>
-<p>Implementing effective water management to reduce groundwater extraction can align with sustainable urban development goals. As the widespread pumping of groundwater is the human factor of sinking and flooding, it is necessary to pretend residents from doing it and worsen the situation.</p>
-</section>
-<section id="add-more-green-plants-to-improve-the-environment" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="add-more-green-plants-to-improve-the-environment"><span class="header-section-number">7.2</span> Add more green plants to improve the environment</h2>
-<p>Investing in green infrastructure, can mitigate sinking and enhance urban resilience, aligning with global climate action and sustainable city planning. It is obvious from the picture before that the greenery has been replaced by city land.</p>
-<p>Here are benefits from greenery. rain hits the ground at higher speeds where there is a lack of tree cover. A canopy of leaves, branches and trunks slows down the rain before it hits the ground simply by getting in the way. In addition, root systems help water penetrate deeper into the soil at a faster rate under and around trees.</p>
-<p>https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/flooding/</p>
-</section>
-<section id="reduce-emission" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="reduce-emission"><span class="header-section-number">7.3</span> Reduce emission</h2>
-<p>Jakarta was again ranked the&nbsp;most polluted city&nbsp;in the world by Swiss technology company IQAir in 2023. Transport is a very important source of Jakarta’s Pollution while &nbsp;Industry and Power Plants Are Also Contributors。 In September 2022, the Jakarta Environmental Agency introduced a&nbsp;Strategy for Air Pollution Control (SPPU), which included more than 70 action plans to improve air quality.&nbsp;Focusing on 1) governing air pollution controls, 2) reducing emissions from mobile sources, and 3) reducing emissions from stationary sources. Source from: https://urban-links.org/insight/7-things-to-know-about-jakartas-air-pollution-crisis/</p>
-<p>Warmer temperatures caused by pollution could lead to the ground swelling and expanding upwards by up to 12mm (0.5 inches) and&nbsp;the ground could sink downwards, beneath the weight of a building, by as much as 8mm (0.3 inches).</p>
-<p>Source from: https://news.sky.com/story/chicago-underground-climate-change-is-deforming-land-under-buildings-and-things-are-sinking-says-study-12923119</p>
-</section>
-</section>
-<section id="to-manage-the-emission-using-remotely-sensed-data" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> To manage the emission using remotely sensed data</h1>
-<section id="no2-and-co2-monitoring" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="no2-and-co2-monitoring"><span class="header-section-number">8.1</span> NO2 and CO2 monitoring</h2>
-<p>Use data from NO2 from https://energyandcleanair.org/&nbsp;, there are before and after maps that we can decide the time period and the highly polluted areas are shown in red. CO2 can be found from our world in data and the analysis should be in python.</p>
-</section>
-<section id="vegetation-mapping-and-monitoring" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="vegetation-mapping-and-monitoring"><span class="header-section-number">8.2</span> Vegetation Mapping and Monitoring</h2>
-<p>To manage the pollution, greenery is an indirect method. Satellite and aerial imagery provide detailed information on vegetation cover, allowing for the assessment of the extent and health of greenery across large areas. This helps in tracking changes over time, such as the growth or decline of forests, parks, and urban green spaces.</p>
-</section>
-</section>
-<section id="link-with-global-agendas-goals" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Link with global agendas / goals</h1>
-<p>Sustainable Development Goals (SDGs): Particularly relevant are SDG 11 (Sustainable Cities and Communities), SDG 13 (Climate Action), and SDG 15 (Life on Land). Addressing Jakarta’s issues contributes to creating sustainable and resilient cities, taking urgent action to manage climate change and its impacts, and managing forests and combating desertification, halting and reversing land degradation, and halting biodiversity loss.</p>
-<p>New Urban Agenda: This agenda emphasizes the need for cities to be inclusive, safe, resilient, and sustainable. By addressing its sinking and flooding issues, Jakarta works towards creating a more inclusive urban environment, ensuring safety and resilience for all its inhabitants.</p>
-</section>
-<section id="advances-of-current-local-national-or-global-approaches." class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Advances of current local, national or global approaches.</h1>
-<p>Jakarta may set a practical example for sustainable urban development. By addressing issues related to flood, land subsidence and sea-level rise, Jakarta contributes to global efforts in climate change mitigation, providing a case study for coastal city management under climate threats. Jakarta’s initiatives align with the SDGs, demonstrating how urban areas can deal with complex challenges like rapid urbanization, climate change, and greenery lose in an integrated manner.</p>
-</section>
-<section id="reflection" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Reflection</h1>
-<p>My research revealed plenty of existing strategies addressing urban challenges; however, it seemed like many straightforward, sensible solutions are often overlooked by local governments. For Jakarta, the issue isn’t just about addressing the immediate impacts of these problems but also about considering long-term, sustainable solutions.</p>
-<p>While exploring Jakarta’s situation, I noticed a tendency for short-term, reactive measures rather than long-term systemic changes. For instance, the focus has often been on building sea walls or improving drainage, which, although necessary, failed to manage the root causes such as excessive groundwater extraction and less comprehensive urban planning.</p>
-<p>Jakarta requires comprehensive urban planning that considers environmental sustainability, infrastructure resilience, and community safe water.</p>
+<section id="reflection" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Reflection</h1>
+<p>Reflecting on my learning journey through the class, I’ve learned many image analysis techniques, notably Object-Based Image Analysis (OBIA) and sub-pixel analysis. The OBIA method, groups pixels into objects based on their spectral, spatial, and textural characteristics, I found it particularly useful in areas like land use classification. Sub-pixel analysis helped me understand image analysis further by breaking down the spectral signatures within a pixel, thereby providing a clearer picture of the ground realities.</p>
+<p>It was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models’ reliability.</p>
+<p>The application in assessing building damage after earthquake demonstrated the key use of OBIA, showing how these technologies can significantly contribute to disaster response and management.</p>
+<p>Overall, this class deepened my knowledge of the image analysis techniques and their practical implications in environmental monitoring and disaster management.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-GISGeographyOBIA2024" class="csl-entry" role="listitem">
+Geography, GIS. 2024. <span>“OBIA - Object-Based Image Analysis (GEOBIA).”</span> <a href="https://gisgeography.com/obia-object-based-image-analysis-geobia/">https://gisgeography.com/obia-object-based-image-analysis-geobia/</a>.
+</div>
+<div id="ref-JanalipourMohammadzadeh2016" class="csl-entry" role="listitem">
+Janalipour, M., and A. Mohammadzadeh. 2016. <span>“Building Damage Detection Using Object-Based Image Analysis and ANFIS from High-Resolution Image (Case Study: BAM Earthquake, Iran).”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 9 (5): 1937–45.
+</div>
+<div id="ref-ScikitLearnSVM" class="csl-entry" role="listitem">
+<span>“Support Vector Machines in Scikit-Learn.”</span> 2023. <a href="https://scikit-learn.org/stable/modules/svm.html" class="uri">https://scikit-learn.org/stable/modules/svm.html</a>.
+</div>
+<div id="ref-VerbeirenEtAl2008" class="csl-entry" role="listitem">
+Verbeiren, S. et al. 2008. <span>“Sub-Pixel Classification of SPOT-VEGETATION Time Series for the Assessment of Regional Crop Areas in Belgium.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 10 (4): 486–97.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -669,13 +704,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_3.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week3</span></span>
+      <a href="./week_7.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week_7</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_6.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Week 6</span>">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

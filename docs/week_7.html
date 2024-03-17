@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./week_8.html" rel="next">
 <link href="./week_6.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -170,6 +170,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -241,7 +247,7 @@ div.csl-indent {
 <p><img src="classification tree.png" class="img-fluid"></p>
 <p>Purpose: Classify data into discrete categories based on certain features.</p>
 <p>Example: Deciding whether to play golf based on weather conditions (temperature, rainfall, wind).</p>
-<p>Classification trees, similar with flowcharts, systematically classify data into discrete categories based on its features, like deciding to play golf depending on weather conditions. Starting from the root node, a split is established by solving an optimization problem (usually minimizing an impurity measure), before proceeding to recurse on the two resulting child nodes (<span class="citation" data-cites="BertsimasDunn2017">(<a href="#ref-BertsimasDunn2017" role="doc-biblioref">Bertsimas and Dunn 2017</a>)</span>). Each node in the tree makes a decision, categorizing the data into different paths based on specific criteria or thresholds. The decision to split at each node is often based on criteria such as Gini impurity, the goal is to choose splits that decrease Gini impurity, leading to a more accurate classification.</p>
+<p>Classification trees, similar with flowcharts, systematically classify data into discrete categories based on its features, like deciding to play golf depending on weather conditions. Starting from the root node, a split is established by solving an optimization problem (usually minimizing an impurity measure), before proceeding to recurse on the two resulting child nodes <span class="citation" data-cites="BertsimasDunn2017">(<a href="#ref-BertsimasDunn2017" role="doc-biblioref">Bertsimas and Dunn 2017</a>)</span>. Each node in the tree makes a decision, categorizing the data into different paths based on specific criteria or thresholds. The decision to split at each node is often based on criteria such as Gini impurity, the goal is to choose splits that decrease Gini impurity, leading to a more accurate classification.</p>
 </section>
 <section id="regression-trees" class="level3" data-number="7.2.2">
 <h3 data-number="7.2.2" class="anchored" data-anchor-id="regression-trees"><span class="header-section-number">7.2.2</span> Regression Trees</h3>
@@ -256,14 +262,8 @@ div.csl-indent {
 </section>
 <section id="random-forests" class="level3" data-number="7.2.4">
 <h3 data-number="7.2.4" class="anchored" data-anchor-id="random-forests"><span class="header-section-number">7.2.4</span> Random Forests</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="RF.png" class="img-fluid figure-img"></p>
-<figcaption><span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span></figcaption>
-</figure>
-</div>
-<p>Fig from (Belgiu and Drăguţ, 2016)</p>
-<p>A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees (<span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span>). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting (<span class="citation" data-cites="WangEtAl2016">(<a href="#ref-WangEtAl2016" role="doc-biblioref">Wang et al. 2016</a>)</span>)</p>
+<p>Fig from<img src="RF.png" class="img-fluid"></p>
+<p>A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees (<span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span>). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting <span class="citation" data-cites="WangEtAl2016">(<a href="#ref-WangEtAl2016" role="doc-biblioref">Wang et al. 2016</a>)</span></p>
 <p>It enhance decision tree performance by aggregating predictions from multiple trees, reducing overfitting and improving accuracy: Uses random samples with replacement to create diverse trees. At each split, selects a random subset of features, increasing tree diversity. Repeats sampling and feature selection to create many trees, forming a forest. Each tree votes on predictions; the majority vote decides the final prediction. Estimates prediction error using data not sampled for each tree, providing an unbiased error estimate. Trees grow to their full size without pruning, relying on the ensemble to prevent overfitting. Typically, the number of features considered at each split is the square root of the total number of features.</p>
 </section>
 <section id="unsupervised-classification" class="level3" data-number="7.2.5">
@@ -287,13 +287,13 @@ div.csl-indent {
 <section id="application" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Application</h1>
 <p><img src="CART.png" class="img-fluid"></p>
-<p>Fig from (<span class="citation" data-cites="DeathFabricius2000">(<a href="#ref-DeathFabricius2000" role="doc-biblioref">De’ath and Fabricius 2000</a>)</span>)</p>
-<p>Classification and regression trees are ideally suited for the analysis of complex ecological data. In this study (<span class="citation" data-cites="DeathFabricius2000">(<a href="#ref-DeathFabricius2000" role="doc-biblioref">De’ath and Fabricius 2000</a>)</span>) we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​</p>
+<p>Fig from <span class="citation" data-cites="DeathFabricius2000">(<a href="#ref-DeathFabricius2000" role="doc-biblioref">De’ath and Fabricius 2000</a>)</span></p>
+<p>Classification and regression trees are ideally suited for the analysis of complex ecological data. In this study <span class="citation" data-cites="DeathFabricius2000">(<a href="#ref-DeathFabricius2000" role="doc-biblioref">De’ath and Fabricius 2000</a>)</span> we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​</p>
 <p>Regression trees connecting the four spatial variables (shelf position, location, reef type, and depth) to the distributions of the four physical variables (sediment, visibility, waves, and slope).</p>
-<p>In the case study conducted in Bangladesh (<span class="citation" data-cites="ZhaoEtAl2019">(<a href="#ref-ZhaoEtAl2019" role="doc-biblioref">Zhao et al. 2019</a>)</span>), the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model’s effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.</p>
+<p>In the case study conducted in Bangladesh <span class="citation" data-cites="ZhaoEtAl2019">(<a href="#ref-ZhaoEtAl2019" role="doc-biblioref">Zhao et al. 2019</a>)</span>, the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model’s effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.</p>
 <p>Here is the dataset used in this study.</p>
 <p><img src="RFR.png" class="img-fluid" width="654"></p>
-<p>Fig from (<span class="citation" data-cites="ZhaoEtAl2019">(<a href="#ref-ZhaoEtAl2019" role="doc-biblioref">Zhao et al. 2019</a>)</span>)</p>
+<p>Fig from <span class="citation" data-cites="ZhaoEtAl2019">(<a href="#ref-ZhaoEtAl2019" role="doc-biblioref">Zhao et al. 2019</a>)</span></p>
 <ol type="a">
 <li>Wealth Index (WI) map, (b) National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light (NTL) image, (c) Open Street Map (OSM) primary and secondary road map, (d) land cover map</li>
 </ol>
@@ -309,11 +309,6 @@ div.csl-indent {
 Through these insights, I gained a holistic view of machine learning’s role in data analysis, from theoretical foundations to real-world applications.</p>
 <section id="reference" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">9.1</span> <strong>Reference</strong></h2>
-<p>Bertsimas, D. &amp; Dunn, J. (2017) Optimal classification trees.&nbsp;Machine learning. [Online] 106 (7), 1039–1082.</p>
-<p>Belgiu, M. &amp; Drăguţ, L. (2016) Random forest in remote sensing: A review of applications and future directions.&nbsp;ISPRS journal of photogrammetry and remote sensing. [Online] 11424–31.</p>
-<p>Glenn De’ath &amp; Fabricius, K. E. (2000) Classification and Regression Trees: A Powerful Yet Simple Technique for Ecological Data Analysis.&nbsp;Ecology (Durham). [Online] 81 (11), 3178–3192.</p>
-<p>Zhao, X. et al.&nbsp;(2019) Estimation of Poverty Using Random Forest Regression with Multi-Source Data: A Case Study in Bangladesh.&nbsp;Remote sensing (Basel, Switzerland). [Online] 11 (4), 375-.</p>
-<p>Wang, L.a.; Zhou, X.; Zhu, X.; Dong, Z.; Guo, W. Estimation of biomass in wheat using random forest regression algorithm and remote sensing data.&nbsp;The Crop Journal&nbsp;2016,&nbsp;4, 212–219.&nbsp;</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -731,8 +726,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_8.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>week_8</span>">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
