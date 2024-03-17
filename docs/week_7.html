@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.545">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>learning diary - 6&nbsp; week_7</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./week_6.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week_7</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">learning diary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week01</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week3</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week_7</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">7.1</span> Introduction</a></li>
+  <li><a href="#classification-methods" id="toc-classification-methods" class="nav-link" data-scroll-target="#classification-methods"><span class="header-section-number">7.2</span> Classification methods</a>
+  <ul class="collapse">
+  <li><a href="#classification-trees" id="toc-classification-trees" class="nav-link" data-scroll-target="#classification-trees"><span class="header-section-number">7.2.1</span> Classification Trees</a></li>
+  <li><a href="#regression-trees" id="toc-regression-trees" class="nav-link" data-scroll-target="#regression-trees"><span class="header-section-number">7.2.2</span> Regression Trees</a></li>
+  <li><a href="#overfitting" id="toc-overfitting" class="nav-link" data-scroll-target="#overfitting"><span class="header-section-number">7.2.3</span> overfitting:</a></li>
+  <li><a href="#random-forests" id="toc-random-forests" class="nav-link" data-scroll-target="#random-forests"><span class="header-section-number">7.2.4</span> Random Forests</a></li>
+  <li><a href="#unsupervised-classification" id="toc-unsupervised-classification" class="nav-link" data-scroll-target="#unsupervised-classification"><span class="header-section-number">7.2.5</span> Unsupervised classification</a></li>
+  <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification"><span class="header-section-number">7.2.6</span> Supervised classification</a></li>
+  <li><a href="#support-vector-machine-svm" id="toc-support-vector-machine-svm" class="nav-link" data-scroll-target="#support-vector-machine-svm"><span class="header-section-number">7.2.7</span> Support Vector Machine (SVM)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">8</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9</span> Reflection</a>
+  <ul class="collapse">
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">9.1</span> <strong>Reference</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week_7</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="summary" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Summary</h1>
+<section id="introduction" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">7.1</span> Introduction</h2>
+<p>This week’s focus in Remote Sensing was on classifying remotely sensed data, a process of categorizing areas in images. The primary method is machine learning, a subset of computer science developing algorithms that allow computers to learn and make decisions independently. This learning process is similar with human inference, where experiences are generalized to form conclusions, enabling machines to do classification and analysis effectively, without requirement of explicit programming for each specific task.</p>
+</section>
+<section id="classification-methods" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="classification-methods"><span class="header-section-number">7.2</span> Classification methods</h2>
+<section id="classification-trees" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="classification-trees"><span class="header-section-number">7.2.1</span> Classification Trees</h3>
+<p><img src="classification tree.png" class="img-fluid"></p>
+<p>Purpose: Classify data into discrete categories based on certain features.</p>
+<p>Example: Deciding whether to play golf based on weather conditions (temperature, rainfall, wind).</p>
+<p>Classification trees, similar with flowcharts, systematically classify data into discrete categories based on its features, like deciding to play golf depending on weather conditions. Starting from the root node, a split is established by solving an optimization problem (usually minimizing an impurity measure), before proceeding to recurse on the two resulting child nodes (<span class="citation" data-cites="BertsimasDunn2017">(<a href="#ref-BertsimasDunn2017" role="doc-biblioref">Bertsimas and Dunn 2017</a>)</span>). Each node in the tree makes a decision, categorizing the data into different paths based on specific criteria or thresholds. The decision to split at each node is often based on criteria such as Gini impurity, the goal is to choose splits that decrease Gini impurity, leading to a more accurate classification.</p>
+</section>
+<section id="regression-trees" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="regression-trees"><span class="header-section-number">7.2.2</span> Regression Trees</h3>
+<p>Purpose: Predict a continuous dependent variable. Example: Predicting GCSE scores, where linear regression is inadequate due to non-linear relationships and large residuals. Data is divided into smaller subsets using decision trees, allowing for more precise predictions in cases where a simple linear model fails. The decision to split data is based on reducing the sum of squared residuals (SSR), aiming for the lowest SSR at each split. The initial split (root of the tree) is chosen based on the threshold that minimizes SSR, and this process is repeated for subsequent splits. To avoid overfitting, a minimum number of observations can be required before further splitting.</p>
+</section>
+<section id="overfitting" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="overfitting"><span class="header-section-number">7.2.3</span> overfitting:</h3>
+<p><img src="overfitting.png" class="img-fluid"></p>
+<p>Overfitting, with high variance and low bias occurs when a model learns the training data too well. his happens often with very complex models that have too many parameters relative to the number of observations. While such a model may perform exceptionally well on the training data, its performance usually drops significantly on new, unseen data because it has essentially memorized the training data rather than learning the general underlying patterns. Weakest link pruning is needed when dealing with fully grown decision trees that may have overfitted the training data</p>
+<p>Underfitting, with high bias and low variance, occurs when a model is too simple to capture the underlying structure of the data. This can happen if the model does not have enough parameters (or complexity) to learn from the data</p>
+<p>Thus we are aiming for good balance with low bias and low variance, performs well on the training data and maintains good performance on new, unseen data.</p>
+</section>
+<section id="random-forests" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="random-forests"><span class="header-section-number">7.2.4</span> Random Forests</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="RF.png" class="img-fluid figure-img"></p>
+<figcaption><span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span></figcaption>
+</figure>
+</div>
+<p>Fig from (Belgiu and Drăguţ, 2016)</p>
+<p>A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees (<span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span>). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting (<span class="citation" data-cites="WangEtAl2016">(<a href="#ref-WangEtAl2016" role="doc-biblioref">Wang et al. 2016</a>)</span>)</p>
+<p>It enhance decision tree performance by aggregating predictions from multiple trees, reducing overfitting and improving accuracy: Uses random samples with replacement to create diverse trees. At each split, selects a random subset of features, increasing tree diversity. Repeats sampling and feature selection to create many trees, forming a forest. Each tree votes on predictions; the majority vote decides the final prediction. Estimates prediction error using data not sampled for each tree, providing an unbiased error estimate. Trees grow to their full size without pruning, relying on the ensemble to prevent overfitting. Typically, the number of features considered at each split is the square root of the total number of features.</p>
+</section>
+<section id="unsupervised-classification" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="unsupervised-classification"><span class="header-section-number">7.2.5</span> Unsupervised classification</h3>
+<p>Unsupervised classification, often called clustering, includes techniques like k-means and DBSCAN, which categorize data based on features like spectral space and distance metrics</p>
+</section>
+<section id="supervised-classification" class="level3" data-number="7.2.6">
+<h3 data-number="7.2.6" class="anchored" data-anchor-id="supervised-classification"><span class="header-section-number">7.2.6</span> Supervised classification</h3>
+<p>Supervised classification is a method used to categorize data into predefined groups or classes based on training data that is already labeled.</p>
+</section>
+<section id="support-vector-machine-svm" class="level3" data-number="7.2.7">
+<h3 data-number="7.2.7" class="anchored" data-anchor-id="support-vector-machine-svm"><span class="header-section-number">7.2.7</span> Support Vector Machine (SVM)</h3>
+<p>is a powerful tool in machine learning for sorting data into categories. Here’s a simpler breakdown of what it does:</p>
+<p>draw a line (or a plane in higher dimensions when there are more then 2 datasets) that best separates different types of data points.</p>
+<p>SVM looks for the line that keeps the maximum distance from the closest points of any category, ensuring it’s not just separating but also maximizing the space between these categories. These closest points are called support vectors.</p>
+<p>Two main settings, C and Gamma, help adjust how strict the model is. A higher C makes the boundary stricter but might only focus on the most challenging points to separate. Gamma affects how much influence each data point has; a high Gamma means only nearby points matter much.</p>
+<p>Sometimes data isn’t easily separable with a straight line. SVM can twist and turn the data (using something called the kernel trick) to find a way to separate it effectively.</p>
+</section>
+</section>
+</section>
+<section id="application" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Application</h1>
+<p><img src="CART.png" class="img-fluid"></p>
+<p>Fig from (<span class="citation" data-cites="DeathFabricius2000">(<a href="#ref-DeathFabricius2000" role="doc-biblioref">De’ath and Fabricius 2000</a>)</span>)</p>
+<p>Classification and regression trees are ideally suited for the analysis of complex ecological data. In this study (<span class="citation" data-cites="DeathFabricius2000">(<a href="#ref-DeathFabricius2000" role="doc-biblioref">De’ath and Fabricius 2000</a>)</span>) we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​</p>
+<p>Regression trees connecting the four spatial variables (shelf position, location, reef type, and depth) to the distributions of the four physical variables (sediment, visibility, waves, and slope).</p>
+<p>In the case study conducted in Bangladesh (<span class="citation" data-cites="ZhaoEtAl2019">(<a href="#ref-ZhaoEtAl2019" role="doc-biblioref">Zhao et al. 2019</a>)</span>), the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model’s effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.</p>
+<p>Here is the dataset used in this study.</p>
+<p><img src="RFR.png" class="img-fluid" width="654"></p>
+<p>Fig from (<span class="citation" data-cites="ZhaoEtAl2019">(<a href="#ref-ZhaoEtAl2019" role="doc-biblioref">Zhao et al. 2019</a>)</span>)</p>
+<ol type="a">
+<li>Wealth Index (WI) map, (b) National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light (NTL) image, (c) Open Street Map (OSM) primary and secondary road map, (d) land cover map</li>
+</ol>
+<p>The model demonstrated good predictive power and generalization ability. The use of The methodology was efficient in measuring poverty due to RFR’s robust handling of complex and varied data</p>
+<p>The two articles showcase the application of machine learning techniques, specifically Classification and Regression Trees (CART) and Random Forest Regression (RFR), in both ecological and socioeconomic analyses. These studies demonstrate the flexibility and utility of these methods in addressing complex, multidimensional issues across different fields.</p>
+<p>RFR, an ensemble method that combines multiple decision trees, has shown improved accuracy and robustness compared to single decision trees. RFR is crucial in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors, thus it, together with many similar social-related issues, should be measured by multi-source datasets. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis. So for complex issues like poverty measurement, where accuracy, the handling of multicollinear data, and robustness to noise are required, RFR is usually a suitable method.</p>
+</section>
+<section id="reflection" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Reflection</h1>
+<p>This week’s exploration of classifying remotely sensed data using machine learning is similar with human inference. What I found useful in the further study is classification trees and regression trees, with applications ranging from weather-based activities to predicting educational outcomes. The concept of overfitting and underfitting brought me back to the memory of learning regression models.</p>
+<p>Random Forests (RF) gave me an idea of how to avoid the bad effects of multicollinearity similar with the knowledge from multi-linear regression. It can handle large datasets and complex interactions through gathering decision trees, reducing overfitting and enhancing predictive accuracy. This was practically useful in studies like coral species analysis and poverty estimation.</p>
+<p>Unsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning’s diversity.<br>
+Through these insights, I gained a holistic view of machine learning’s role in data analysis, from theoretical foundations to real-world applications.</p>
+<section id="reference" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">9.1</span> <strong>Reference</strong></h2>
+<p>Bertsimas, D. &amp; Dunn, J. (2017) Optimal classification trees.&nbsp;Machine learning. [Online] 106 (7), 1039–1082.</p>
+<p>Belgiu, M. &amp; Drăguţ, L. (2016) Random forest in remote sensing: A review of applications and future directions.&nbsp;ISPRS journal of photogrammetry and remote sensing. [Online] 11424–31.</p>
+<p>Glenn De’ath &amp; Fabricius, K. E. (2000) Classification and Regression Trees: A Powerful Yet Simple Technique for Ecological Data Analysis.&nbsp;Ecology (Durham). [Online] 81 (11), 3178–3192.</p>
+<p>Zhao, X. et al.&nbsp;(2019) Estimation of Poverty Using Random Forest Regression with Multi-Source Data: A Case Study in Bangladesh.&nbsp;Remote sensing (Basel, Switzerland). [Online] 11 (4), 375-.</p>
+<p>Wang, L.a.; Zhou, X.; Zhu, X.; Dong, Z.; Guo, W. Estimation of biomass in wheat using random forest regression algorithm and remote sensing data.&nbsp;The Crop Journal&nbsp;2016,&nbsp;4, 212–219.&nbsp;</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-BelgiuDragut2016" class="csl-entry" role="listitem">
+Belgiu, M., and L. Drăguţ. 2016. <span>“Random Forest in Remote Sensing: A Review of Applications and Future Directions.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em> 114: 24–31.
+</div>
+<div id="ref-BertsimasDunn2017" class="csl-entry" role="listitem">
+Bertsimas, D., and J. Dunn. 2017. <span>“Optimal Classification Trees.”</span> <em>Machine Learning</em> 106 (7): 1039–82.
+</div>
+<div id="ref-DeathFabricius2000" class="csl-entry" role="listitem">
+De’ath, Glenn, and K. E. Fabricius. 2000. <span>“Classification and Regression Trees: A Powerful yet Simple Technique for Ecological Data Analysis.”</span> <em>Ecology</em> 81 (11): 3178–92.
+</div>
+<div id="ref-WangEtAl2016" class="csl-entry" role="listitem">
+Wang, L. a., X. Zhou, X. Zhu, Z. Dong, and W. Guo. 2016. <span>“Estimation of Biomass in Wheat Using Random Forest Regression Algorithm and Remote Sensing Data.”</span> <em>The Crop Journal</em> 4: 212–19.
+</div>
+<div id="ref-ZhaoEtAl2019" class="csl-entry" role="listitem">
+Zhao, X. et al. 2019. <span>“Estimation of Poverty Using Random Forest Regression with Multi-Source Data: A Case Study in Bangladesh.”</span> <em>Remote Sensing</em> 11 (4): 375.
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_6.html" class="pagination-link  aria-label=" &lt;span="" 6&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
