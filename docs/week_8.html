@@ -51,7 +51,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./week_9.html" rel="next">
 <link href="./week_7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -148,19 +148,19 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">week_3</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week_4</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week_6</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -173,6 +173,12 @@ div.csl-indent {
   <div class="sidebar-item-container"> 
   <a href="./week_8.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week_9</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -200,7 +206,10 @@ div.csl-indent {
   <li><a href="#svm-support-vector-machine-classifier" id="toc-svm-support-vector-machine-classifier" class="nav-link" data-scroll-target="#svm-support-vector-machine-classifier"><span class="header-section-number">8.5</span> SVM (Support Vector Machine classifier)</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">9</span> Application:</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">10</span> Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">10</span> Reflection</a>
+  <ul class="collapse">
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">10.1</span> <strong>Reference</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -238,9 +247,9 @@ div.csl-indent {
 <h2 data-number="8.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">8.1</span> Object-Based Image Analysis (OBIA)</h2>
 <p>OBIA shifts focus from individual pixels to shapes or superpixels, based on their homogeneity (similarity) or heterogeneity (difference). SLIC (Simple Linear Iterative Clustering) is a common method for generating superpixels, analyzing spatial and color distances to define groups. Iterative process, typically 4-10 rounds, refines superpixel centers and boundaries, similar to k-means. Uses LAB color space for nuanced color analysis, classifying objects based on average values for interpretation.</p>
 <p>The basic logic is: Divide the image into items that correspond to land-based features, and then categorize them based on their dimensions, spectral characteristics, form, and size <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span>.</p>
-<p><img src="OBIA1.png" class="img-fluid"></p>
+<p><img src="OBIA1.png" class="img-fluid"> Figure from <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span></p>
 <p>Object-Based Image Analysis (OBIA) segmentation is a process that groups similar pixels into objects <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span>.</p>
-<p><img src="OBIA2.png" class="img-fluid"></p>
+<p><img src="OBIA2.png" class="img-fluid"> Figure from <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span></p>
 <p>OBIA classification uses shape, size, and spectral properties of objects to classify each object <span class="citation" data-cites="GISGeographyOBIA2024">(<a href="#ref-GISGeographyOBIA2024" role="doc-biblioref">Geography 2024</a>)</span>.</p>
 </section>
 <section id="sub-pixel-analysis" class="level2" data-number="8.2">
@@ -270,7 +279,7 @@ div.csl-indent {
 </section>
 <section id="svm-support-vector-machine-classifier" class="level2" data-number="8.5">
 <h2 data-number="8.5" class="anchored" data-anchor-id="svm-support-vector-machine-classifier"><span class="header-section-number">8.5</span> SVM (Support Vector Machine classifier)</h2>
-<p>SVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification <span class="citation" data-cites="ScikitLearnSVM">(<a href="#ref-ScikitLearnSVM" role="doc-biblioref"><span>“Support Vector Machines in Scikit-Learn”</span> 2023</a>)</span>.&nbsp;</p>
+<p>SVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification <span class="citation" data-cites="ScikitLearnSVM2023">(<a href="#ref-ScikitLearnSVM2023" role="doc-biblioref"><span>“Support Vector Machines in Scikit-Learn”</span> 2023</a>)</span>.&nbsp;</p>
 <p>C (Penalty parameter): Controls the strictness of the SVM; lower C allows more misclassifications, higher C aims for precise classification.</p>
 <p>Gamma (σ): Affects the influence of data points; lower Gamma leads to broader grouping, higher Gamma results in tighter, smaller groups.</p>
 <p>To optimize C and Gamma, they employ spatial fold division, using k-means to separate data into distinct spatial folds, ensuring unbiased training and testing.</p>
@@ -289,6 +298,7 @@ div.csl-indent {
 <p>After a series of image analysis, we are able to define the category of the land as well as the degree of damage.</p>
 <p><img src="OBIA.png" class="img-fluid" width="316"><img src="OBIA_b.png" class="img-fluid" width="316"></p>
 <p>Figures from <span class="citation" data-cites="JanalipourMohammadzadeh2016">(<a href="#ref-JanalipourMohammadzadeh2016" role="doc-biblioref">Janalipour and Mohammadzadeh 2016</a>)</span></p>
+<p>Sub-pixel classification with low-resolution NDVI images was used for crop area estimation in Belgium and OBIA for post-earthquake building damage detection. These methods enabled precise environmental and damage assessments, showing the value of different remote sensing techniques for land and structural analysis.</p>
 </section>
 <section id="reflection" class="level1" data-number="10">
 <h1 data-number="10"><span class="header-section-number">10</span> Reflection</h1>
@@ -296,6 +306,8 @@ div.csl-indent {
 <p>It was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models’ reliability.</p>
 <p>The application in assessing building damage after earthquake demonstrated the key use of OBIA, showing how these technologies can significantly contribute to disaster response and management.</p>
 <p>Overall, this class deepened my knowledge of the image analysis techniques and their practical implications in environmental monitoring and disaster management.</p>
+<section id="reference" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">10.1</span> <strong>Reference</strong></h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -305,13 +317,14 @@ Geography, GIS. 2024. <span>“OBIA - Object-Based Image Analysis (GEOBIA).”</
 <div id="ref-JanalipourMohammadzadeh2016" class="csl-entry" role="listitem">
 Janalipour, M., and A. Mohammadzadeh. 2016. <span>“Building Damage Detection Using Object-Based Image Analysis and ANFIS from High-Resolution Image (Case Study: BAM Earthquake, Iran).”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 9 (5): 1937–45.
 </div>
-<div id="ref-ScikitLearnSVM" class="csl-entry" role="listitem">
+<div id="ref-ScikitLearnSVM2023" class="csl-entry" role="listitem">
 <span>“Support Vector Machines in Scikit-Learn.”</span> 2023. <a href="https://scikit-learn.org/stable/modules/svm.html" class="uri">https://scikit-learn.org/stable/modules/svm.html</a>.
 </div>
 <div id="ref-VerbeirenEtAl2008" class="csl-entry" role="listitem">
 Verbeiren, S. et al. 2008. <span>“Sub-Pixel Classification of SPOT-VEGETATION Time Series for the Assessment of Regional Crop Areas in Belgium.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 10 (4): 486–97.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -709,8 +722,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_9.html" class="pagination-link" aria-label="<span class='chapter-number'>8</span>&nbsp; <span class='chapter-title'>week_9</span>">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week_9</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

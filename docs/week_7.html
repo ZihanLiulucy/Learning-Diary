@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Zihan Liu">
 
 <title>learning diary - 6&nbsp; week_7</title>
 <style>
@@ -147,19 +148,19 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">week_3</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week_4</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week_6</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -172,6 +173,12 @@ div.csl-indent {
   <div class="sidebar-item-container"> 
   <a href="./week_8.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">week_8</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">week_9</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -224,6 +231,12 @@ div.csl-indent {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zihan Liu </p>
+          </div>
+  </div>
     
   
     
@@ -262,7 +275,7 @@ div.csl-indent {
 </section>
 <section id="random-forests" class="level3" data-number="7.2.4">
 <h3 data-number="7.2.4" class="anchored" data-anchor-id="random-forests"><span class="header-section-number">7.2.4</span> Random Forests</h3>
-<p>Fig from<img src="RF.png" class="img-fluid"></p>
+<p><img src="RF.png" class="img-fluid"> Figure from <span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span></p>
 <p>A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees (<span class="citation" data-cites="BelgiuDragut2016">(<a href="#ref-BelgiuDragut2016" role="doc-biblioref">Belgiu and Drăguţ 2016</a>)</span>). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting <span class="citation" data-cites="WangEtAl2016">(<a href="#ref-WangEtAl2016" role="doc-biblioref">Wang et al. 2016</a>)</span></p>
 <p>It enhance decision tree performance by aggregating predictions from multiple trees, reducing overfitting and improving accuracy: Uses random samples with replacement to create diverse trees. At each split, selects a random subset of features, increasing tree diversity. Repeats sampling and feature selection to create many trees, forming a forest. Each tree votes on predictions; the majority vote decides the final prediction. Estimates prediction error using data not sampled for each tree, providing an unbiased error estimate. Trees grow to their full size without pruning, relying on the ensemble to prevent overfitting. Typically, the number of features considered at each split is the square root of the total number of features.</p>
 </section>
@@ -298,15 +311,14 @@ div.csl-indent {
 <li>Wealth Index (WI) map, (b) National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light (NTL) image, (c) Open Street Map (OSM) primary and secondary road map, (d) land cover map</li>
 </ol>
 <p>The model demonstrated good predictive power and generalization ability. The use of The methodology was efficient in measuring poverty due to RFR’s robust handling of complex and varied data</p>
-<p>The two articles showcase the application of machine learning techniques, specifically Classification and Regression Trees (CART) and Random Forest Regression (RFR), in both ecological and socioeconomic analyses. These studies demonstrate the flexibility and utility of these methods in addressing complex, multidimensional issues across different fields.</p>
-<p>RFR, an ensemble method that combines multiple decision trees, has shown improved accuracy and robustness compared to single decision trees. RFR is crucial in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors, thus it, together with many similar social-related issues, should be measured by multi-source datasets. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis. So for complex issues like poverty measurement, where accuracy, the handling of multicollinear data, and robustness to noise are required, RFR is usually a suitable method.</p>
+<p>The two articles show the application of machine learning techniques. RFR has shown improved accuracy and robustness compared to single decision trees. RFR is effective in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis.</p>
+<p>SAR studies, especially with RADARSAT-2, have advanced volcanic surface analysis, showing that cross-polarized data performs better than co-polarized in differentiating lava textures and vegetation interactions. InSAR techniques have been crucial for monitoring and characterizing landslides, as evidenced in the Canadian Rockies, where specific displacement patterns indicated pre-fall rock movements, demonstrating the techniques’ efficacy in detailed geological hazard assessment.</p>
 </section>
 <section id="reflection" class="level1" data-number="9">
 <h1 data-number="9"><span class="header-section-number">9</span> Reflection</h1>
 <p>This week’s exploration of classifying remotely sensed data using machine learning is similar with human inference. What I found useful in the further study is classification trees and regression trees, with applications ranging from weather-based activities to predicting educational outcomes. The concept of overfitting and underfitting brought me back to the memory of learning regression models.</p>
 <p>Random Forests (RF) gave me an idea of how to avoid the bad effects of multicollinearity similar with the knowledge from multi-linear regression. It can handle large datasets and complex interactions through gathering decision trees, reducing overfitting and enhancing predictive accuracy. This was practically useful in studies like coral species analysis and poverty estimation.</p>
-<p>Unsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning’s diversity.<br>
-Through these insights, I gained a holistic view of machine learning’s role in data analysis, from theoretical foundations to real-world applications.</p>
+<p>Unsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning’s diversity.Through these insights, I gained a holistic view of machine learning’s role in data analysis, from theoretical foundations to real-world applications.</p>
 <section id="reference" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">9.1</span> <strong>Reference</strong></h2>
 
@@ -721,8 +733,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_6.html" class="pagination-link  aria-label=" &lt;span="" 6&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6</span></span>
+      <a href="./week_6.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week_6</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

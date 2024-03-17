@@ -1,4 +1,7 @@
-# Week 6
+---
+title: "week_6"
+author: "Zihan Liu"
+---
 #.Summary
 ## Introduction of Google Earth Engine
 

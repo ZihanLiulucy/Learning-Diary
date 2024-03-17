@@ -11,11 +11,11 @@ author: "Zihan Liu"
 
 The basic logic is: Divide the image into items that correspond to land-based features, and then categorize them based on their dimensions, spectral characteristics, form, and size [@GISGeographyOBIA2024].
 
-![](OBIA1.png)
+![](OBIA1.png) Figure from [@GISGeographyOBIA2024]
 
 Object-Based Image Analysis (OBIA) segmentation is a process that groups similar pixels into objects [@GISGeographyOBIA2024].
 
-![](OBIA2.png)
+![](OBIA2.png) Figure from [@GISGeographyOBIA2024]
 
 OBIA classification uses shape, size, and spectral properties of objects to classify each object [@GISGeographyOBIA2024].
 
@@ -59,7 +59,7 @@ In this figure, we prefer the lower row as the upper one's training data and tes
 
 ## SVM (Support Vector Machine classifier)
 
-SVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification [@ScikitLearnSVM]. 
+SVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification [@ScikitLearnSVM2023]. 
 
 C (Penalty parameter): Controls the strictness of the SVM; lower C allows more misclassifications, higher C aims for precise classification.
 
@@ -91,12 +91,17 @@ After a series of image analysis, we are able to define the category of the land
 
 Figures from [@JanalipourMohammadzadeh2016]
 
+Sub-pixel classification with low-resolution NDVI images was used for crop area estimation in Belgium and OBIA for post-earthquake building damage detection.   These methods enabled precise environmental and damage assessments, showing the value of different remote sensing techniques for land and structural analysis.
+
 # Reflection
 
 Reflecting on my learning journey through the class, I've learned many image analysis techniques, notably Object-Based Image Analysis (OBIA) and sub-pixel analysis. The OBIA method, groups pixels into objects based on their spectral, spatial, and textural characteristics, I found it particularly useful in areas like land use classification. Sub-pixel analysis helped me understand image analysis further by breaking down the spectral signatures within a pixel, thereby providing a clearer picture of the ground realities.
 
-It was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models' reliability.
+It was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models’ reliability.
 
 The application in assessing building damage after earthquake demonstrated the key use of OBIA, showing how these technologies can significantly contribute to disaster response and management.
 
 Overall, this class deepened my knowledge of the image analysis techniques and their practical implications in environmental monitoring and disaster management.
+
+## **Reference**
+

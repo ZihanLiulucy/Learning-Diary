@@ -1,5 +1,6 @@
 ---
 title: "week_7"
+author: "Zihan Liu"
 ---
 
 # Summary
@@ -36,7 +37,7 @@ Thus we are aiming for good balance with low bias and low variance, performs wel
 
 ### Random Forests
 
-Fig from![](RF.png)
+![](RF.png) Figure from [@BelgiuDragut2016]
 
 A random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees ([@BelgiuDragut2016]). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting [@WangEtAl2016]
 
@@ -84,9 +85,9 @@ Fig from [@ZhaoEtAl2019]
 
 The model demonstrated good predictive power and generalization ability. The use of The methodology was efficient in measuring poverty due to RFR's robust handling of complex and varied data
 
-The two articles showcase the application of machine learning techniques, specifically Classification and Regression Trees (CART) and Random Forest Regression (RFR), in both ecological and socioeconomic analyses. These studies demonstrate the flexibility and utility of these methods in addressing complex, multidimensional issues across different fields.
+The two articles show the application of machine learning techniques. RFR has shown improved accuracy and robustness compared to single decision trees. RFR is effective in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis.
 
-RFR, an ensemble method that combines multiple decision trees, has shown improved accuracy and robustness compared to single decision trees. RFR is crucial in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors, thus it, together with many similar social-related issues, should be measured by multi-source datasets. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis. So for complex issues like poverty measurement, where accuracy, the handling of multicollinear data, and robustness to noise are required, RFR is usually a suitable method.
+SAR studies, especially with RADARSAT-2, have advanced volcanic surface analysis, showing that cross-polarized data performs better than co-polarized in differentiating lava textures and vegetation interactions. InSAR techniques have been crucial for monitoring and characterizing landslides, as evidenced in the Canadian Rockies, where specific displacement patterns indicated pre-fall rock movements, demonstrating the techniques' efficacy in detailed geological hazard assessment.
 
 # Reflection
 
@@ -94,7 +95,6 @@ This week's exploration of classifying remotely sensed data using machine learni
 
 Random Forests (RF) gave me an idea of how to avoid the bad effects of multicollinearity similar with the knowledge from multi-linear regression. It can handle large datasets and complex interactions through gathering decision trees, reducing overfitting and enhancing predictive accuracy. This was practically useful in studies like coral species analysis and poverty estimation.
 
-Unsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning's diversity.\
-Through these insights, I gained a holistic view of machine learning's role in data analysis, from theoretical foundations to real-world applications.
+Unsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning's diversity.Through these insights, I gained a holistic view of machine learning's role in data analysis, from theoretical foundations to real-world applications.
 
 ## **Reference**
