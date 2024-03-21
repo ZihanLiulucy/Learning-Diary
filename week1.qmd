@@ -14,7 +14,8 @@ There are passive sensor and active sensors, which the difference is the passive
 
 ### Formula
 
-Λ(wavelength) = c (velocity of light) / v (frequency)
+$$ wavelength(
+\lambda ) = \frac{velocity\qquad of\qquad light(c)}{frequency(v)}$$
 
 ### Scatter in action
 

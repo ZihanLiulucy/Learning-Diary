@@ -1,0 +1,11 @@
+# pre
+
+- title
+
+```{r echo=FALSE, out.width='100%'}
+xaringanExtra::embed_xaringan(
+  url='pre/week_2.html',
+  ratio= '16:9'
+)
+```
+

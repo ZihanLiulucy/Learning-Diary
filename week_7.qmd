@@ -63,7 +63,21 @@ Two main settings, C and Gamma, help adjust how strict the model is. A higher C 
 
 Sometimes data isn't easily separable with a straight line. SVM can twist and turn the data (using something called the kernel trick) to find a way to separate it effectively.
 
+### Classification workshop
+
+The primary emphasis here is on classification, involving the process of training a model with some samples and then using this model to categorize the rest of the image.
+
+![](week_7_workshop.png)
+
+light pink: urban low; violet: water; dark pink: urban high; light yellow: grass; gray: bare earth, dark green: forest
+
+The city I pick here is York, and the classification follow urban high and low, water, grass, forest, and bare earth. I picked some samples of them on the map, however I find it hard to determine urban high and low, as well as grass and forest, as they look very similar on the satellite maps. Thus I need to further check the street image on google map to ensure the accuracy. And another issue is that the selected training areas cannot exceed the limit, so it is important to define the most accurate samples.
+
+This map shows an reasonable classification of urban features, the distinguish between urban, greenery, and water is clear, but it is not sure whether the urban high and low, as well as grass and forest has been well classified.
+
 ## Application
+
+### Application 1
 
 ![](CART.png)
 
@@ -72,6 +86,8 @@ Fig from [@DeathFabricius2000]
 Classification and regression trees are ideally suited for the analysis of complex ecological data. In this study [@DeathFabricius2000] we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​
 
 Regression trees connecting the four spatial variables (shelf position, location, reef type, and depth) to the distributions of the four physical variables (sediment, visibility, waves, and slope).
+
+### Application 2
 
 In the case study conducted in Bangladesh [@ZhaoEtAl2019], the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model's effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.
 
@@ -84,6 +100,8 @@ Fig from [@ZhaoEtAl2019]
 (a) Wealth Index (WI) map, (b) National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light (NTL) image, (c) Open Street Map (OSM) primary and secondary road map, (d) land cover map
 
 The model demonstrated good predictive power and generalization ability. The use of The methodology was efficient in measuring poverty due to RFR's robust handling of complex and varied data
+
+### Application reflection
 
 The two articles show the application of machine learning techniques. RFR has shown improved accuracy and robustness compared to single decision trees. RFR is effective in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis.
 

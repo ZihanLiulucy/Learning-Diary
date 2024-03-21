@@ -10,6 +10,7 @@ book:
     - intro.qmd
     - self_introduction.qmd
     - week1.qmd
+    - week_2.qmd
     - week_3.qmd
     - week_4.qmd
     - week_6.qmd
@@ -23,8 +24,6 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
 
 editor: visual
 

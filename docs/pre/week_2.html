@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Jakarta</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zihan Liu" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":false}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b065e6511dc64aad9dc2f45a54ec9155","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Jakarta
+]
+.author[
+### Zihan Liu
+]
+.institute[
+### UCL
+]
+.date[
+### 18/02/2024 (updated: 2024-03-21)
+]
+
+---
+
+
+
+
+
+
+
+# Basic knowledge of Radar
+
+.pull-left[
+Radar (Radio Detection and Ranging) is a detection system that uses radio waves to determine the range, angle, or velocity of objects. 
+
+Radar imaging is an active remote sensing sensor that uses electromagnetic energy backscattered from ground targets to extract physical and dielectric behavior, can be used for imaging at all times of day and in all types of weather .
+
+( [Prakash and Kumar, 2022](https://www-sciencedirect-com.libproxy.ucl.ac.uk/book/9780128234570/radar-remote-sensing) )
+]
+
+.pull-right[
+  &lt;img src="./radar_background.png" width="80%" style="display: block; margin: auto 0 auto auto;" /&gt;
+  &lt;/br&gt;
+  .pull-right[( [wikipedia.org](https://en.wikipedia.org/wiki/Radar) )]
+]
+
+---
+# History of Radar 
+( [hsat.space](https://hsat.space/satellites-radar-satellite-basics/#Radar_History) )
+
+Heinrich Hertz laid the foundation for radar in 1886 by proving electromagnetic waves' existence and their reflection off metallic objects, utilizing special reflectors in his experiments. In 1904, Christian Hülsmeyer, a German high-frequency technician, advanced these findings by conducting the first radar detection experiments. Using Hertz's reflector principles, he observed that electromagnetic waves emitted and then reflected from metal surfaces could detect distant objects. Hülsmeyer invented the telemobiloscope, a device that can be used in measuring the travel time of these reflected waves, marking a significant milestone in radar technology. He patented this process on April 30, 1904, securing his place as the inventor of radar.
+---
+# Radar properties
+
+( [hsat.space](https://hsat.space/satellites-radar-satellite-basics/#Radar_History) )
+.panelset[
+.panel[.panel-name[**Time Delay**]
+  - Measures how long it takes for a reflected wave to return, indicating object distance.
+]
+.panel[.panel-name[**Wave Frequency Shift**]
+  - Also known as the Doppler effect, where waves shift when bouncing off moving objects, revealing movement details.
+]
+.panel[.panel-name[**Polarisation Changes**]
+  - Radio waves change polarization upon reflection (e.g., from horizontal to vertical), providing insights into object characteristics.
+]
+.panel[.panel-name[**Technological Evolution**]
+  - Advances in technology, sensors, and computing have improved radar's effectiveness and reduced costs.
+]
+.panel[.panel-name[**Daily Use**]
+  - Common in cruise control, automatic doors, highway monitoring, and weather forecasting.
+]
+.panel[.panel-name[**Satellite Radar**]
+  - Radar was installed in some satellites, expanding its application range.
+]
+]
+---
+
+# Radar applications
+
+Radar has seen significant civil applications for the safe travel of aircraft, ships, and spacecraft 
+([Skolnik, 1962](https://helitavia.com/skolnik/Skolnik_chapter_1.pdf))
+
+
+.panelset[
+.panel[.panel-name[**Maritime Navigation**]
+  - Ships use radar to navigate through dense fog, track other vessels, and avoid collisions, especially in busy sea lanes.
+]
+.panel[.panel-name[**Weather Forecasting**]
+  - Precipitation patterns' motion and development can be predicted using weather radar ([AUSTIN and BELLON, 1974](https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.49710042612)). Meteorologists use weather radars to detect precipitation, calculate its motion, estimate its type (rain, snow, hail, etc.), and forecast weather conditions.
+]
+.panel[.panel-name[**Military Applications**]
+  - Originally, radar was created to meet military requirements for weapon control and observation ([Skolnik, 1962](https://helitavia.com/skolnik/Skolnik_chapter_1.pdf)). Now Radar in the military is used for surveillance, navigation, targeting, missile defense, terrain mapping, and weather monitoring to ensure operational effectiveness and personnel safety.
+]
+.panel[.panel-name[**Space Exploration**]
+  - Spacecraft use radar to map the surface of planets and moons, determine the composition of celestial bodies, and navigate through space. For instance, Chang'E-4 Lunar Penetrating Radar reveals the thin underlying structure of the Moon's far side ([Li, 2020](https://www.science.org/doi/full/10.1126/sciadv.aay6898))
+]
+]
+---
+
+# Application 1.1
+
+The radar used in space exploration, as discussed in the Chang'E-4 Lunar Penetrating Radar study ([Li, 2020](https://www.science.org/doi/full/10.1126/sciadv.aay6898)), is designed to penetrate the lunar subsurface to reveal its structure.  It operates at dual frequencies (60 MHz and 500 MHz) to image the subsurface materials.  The radar's high-frequency data provided a detailed view of the lunar farside's subsurface, identifying different geological layers and materials, including granular materials, boulders, and fine-grained deposits, aiding in understanding the Moon's geological history and structure.
+---
+
+# Application 1.2
+
+.pull-left[
+In panel A, we see a radar image (radargram) that captures what's below the lunar surface, shown as a cross-section.  It records the time it takes for radar signals to bounce back, which helps infer the depth of subsurface features. Panel B shows a tomographic reconstruction, which is like an X-ray image of the Moon's subsurface. Colors show different levels of reflectivity: red areas reflect more radar signal (suggesting different materials), while blue areas reflect less.
+.
+
+( [Li, 2020](https://www.science.org/doi/full/10.1126/sciadv.aay6898) )
+]
+
+.pull-right[
+  &lt;img src="./Week2_application1.png" width="120%" style="display: block; margin: auto 0 auto auto;" /&gt;
+  &lt;/br&gt;
+  .pull-right[([Li, 2020](https://www.science.org/doi/full/10.1126/sciadv.aay6898))]
+]
+
+---
+
+# Application 2
+
+The document outlines the use of radar to measure sea ice drift in the ([Lund, et al.2018](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JC013769)), specifically from a shipboard marine X-band radar. This technology processes radar data to capture sub-kilometer scale velocity fields of sea ice. It shows that contrary to previous assumptions, there's only a weak correlation between sea ice drift and wind speed near the ice edge, other factors, like ocean currents, might play a more significant role in sea ice drift in these regions. The radar's high-resolution data are validated against other measurements, and its detailed sea ice velocity fields help to understand the dynamics of sea ice, particularly in areas where it's free-floating and subject to diverse environmental forces.
+
+---
+
+# Application reflection
+
+The first literature outlines how radar is used in moon exploration to detect the subsurface structure of the moon's farside, while the second one showed the application of marine X-band radar for tracking Arctic sea ice drift from a ship. Both highlight the crucial role of radar in remote sensing and the extraction of environmental data. The lunar radar provides insights into geological history, while the marine radar offers real-time, high-resolution tracking of sea ice, emphasizing the technology's adaptability in different contexts and background.
+
+---
+
+# Learning reflection
+
+My study reflects the exploration of radar technology, from its fundamental principles to its applications. I've learned the history of radar, understanding its evolution from Hertz's foundational experiments to Hülsmeyer's pioneering inventions. I’ve also noticed the critical properties of radar, like time delay, wave frequency shift, as well as polarisation changes.
+
+I’ve explored radar's crucial role in modern navigation, meteorology, military surveillance, and space exploration. For instance, learning about the Chang'E-4 Lunar Penetrating Radar illuminates how radar penetrates celestial surfaces, which is key to geological formations and processes. Similarly, shipboard marine radar's capacity to measure sea ice drift, highlighted the importance of understanding environmental dynamics and the potential influence of ocean currents.
+
+This exploration has inspired me a recognition of multifunction of radar and its powerful impact. And I am now more and more interested in remote sensing and the knowledge of sensors.
+
+---
+
+# References
+
+https://en.wikipedia.org/wiki/Radar
+
+https://hsat.space/satellites-radar-satellite-basics/#Radar_History
+
+
+Prakash, B. &amp; Kumar, S. (2022) “Chapter 14 - Emerging techniques of polarimetric interferometric synthetic aperture radar for scattering-based characterization,” in Radar Remote Sensing. [Online]. Elsevier Inc. pp. 259–285.
+
+
+AUSTIN, G. &amp; BELLON, A. (1974) The use of digital weather radar records for short-term precipitation forecasting. Quarterly journal of the Royal Meteorological Society. [Online] 100 (426), 658–664.
+
+Skolnik, M. I. (Merrill I. (1962) Introduction to radar systems / M. I. Skolnik. McGraw-Hill.
+
+Li, C. et al. (2020) The Moon’s farside shallow subsurface structure unveiled by Chang’E-4 Lunar Penetrating Radar. Science advances. [Online] 6 (9), eaay6898–eaay6898.
+
+Lund, B. et al. (2018) Arctic Sea Ice Drift Measured by Shipboard Marine Radar. Journal of geophysical research. Oceans. [Online] 123 (6), 4298–4321.
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

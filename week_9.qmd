@@ -35,6 +35,12 @@ t-tests: is used to determine if there are significant differences between two s
 
 Standard Deviation: measures the amount of variation or dispersion in a dataset. Analyzing the standard deviation over time across a series of images can help identify areas of high variability, indicating potential changes or unusual activities.
 
+### SAR workshop
+
+![](SAR_workshop.png)
+
+It shows the level of building chaning in york, the more yellow, the more change the building has experienced. The purple parts shows very little or no change.
+
 ### Image Fusion
 
 Image fusion in the context of SAR and optical data integration is a process where information from both types of imagery is combined to produce a single output that contains more comprehensive information than either of the individual images.
@@ -80,7 +86,6 @@ In another study [@SinghroyMolch2004], InSAR (Interferometric Synthetic Aperture
 ![](in-SAR.png)
 
 Fig. 3 Differential interferogram (a) and vertical elevation change (b) for ERS-1/ERS-2 data pair Aug-95/Aug-97. Values are only displayed where scene coherence exceeds 0.5. At the north end of the detachment zone, there is a remaining fringe (circled) with a matching maximum elevation change of −1.3 cm. Figure from[@SinghroyMolch2004]
-
 
 ## Reflection:
 

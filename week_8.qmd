@@ -7,7 +7,7 @@ author: "Zihan Liu"
 
 ### Object-Based Image Analysis (OBIA)
 
-OBIA shifts focus from individual pixels to shapes or superpixels, based on their homogeneity (similarity) or heterogeneity (difference). SLIC (Simple Linear Iterative Clustering) is a common method for generating superpixels, analyzing spatial and color distances to define groups. Iterative process, typically 4-10 rounds, refines superpixel centers and boundaries, similar to k-means. Uses LAB color space for nuanced color analysis, classifying objects based on average values for interpretation.
+OBIA shifts focus from individual pixels to shapes or superpixels, based on their homogeneity (similarity) or heterogeneity (difference). SLIC (Simple Linear Iterative Clustering) is a common method for generating superpixels, analyzing spatial and color distances to define groups. Iterative process, typically 4-10 rounds, refines superpixel centers and boundaries, similar to k-means. Uses LAB color space for nuanced color analysis, classifying objects based on average values for interpretation.
 
 The basic logic is: Divide the image into items that correspond to land-based features, and then categorize them based on their dimensions, spectral characteristics, form, and size [@GISGeographyOBIA2024].
 
@@ -19,15 +19,25 @@ Object-Based Image Analysis (OBIA) segmentation is a process that groups similar
 
 OBIA classification uses shape, size, and spectral properties of objects to classify each object [@GISGeographyOBIA2024].
 
+### OBIA workshop
+
+![](week_8_workshop_OBIA.png)
+
+This is the OBIA map, with the training data of urban, grass, bare earth and forest, the training group is shown on the map, but it is obvious that the output is not following the samples being given. I have tried to change the value of connectivity of 4 and 8 and followed 8 as at the start. I also changed the value of neighbourhood into 40 from 50, as a larger neighborhood size means that each segment will be influenced by a larger area around it, potentially leading to larger and smoother segments, but we want it to be smaller and contain more detailed as what sub-pixel analysis indicate
+
 ### Sub pixel analysis
 
 Allows us to deconstruct the observed spectral data of a pixel into its constituent materials, giving us a clearer understanding of what is present on the ground in that area.
 
-End Members: In the context of remote sensing, "end members" are pure spectral signatures representing specific materials or objects on the ground, such as water, vegetation, and soil.
+The process involves comparing the spectral reflectance values of each pixel in a satellite image to the specific known spectral signatures of specific landcover types, called end members (like water, vegetation, soil). The algorithm estimates the proportion of each earth surface type as well as the main surface type within a pixel based on to what extent its reflectance matches these end members. This method helps to accurately identify and quantify the components of the land surface in each pixel, enhancing the understanding of the area's ground conditions.
 
-Pixel Modeling: The goal here is to determine what mixture of these end members (water, vegetation, soil) makes up a single pixel in an image
+### Sub pixel workshop
 
-Calculkation method: The left side of the equation represents the spectral signature of a pixel in bands 3 and 4, plus the condition that the sum of the fractions of end members equals 1. The matrix in the middle represents the spectral signatures of the end members (water, vegetation, soil) for bands 3 and 4, with an additional row of ones to enforce the sum-to-one constraint. The right side represents the fractions of each end member within the pixel that we are trying to find. Then calculate fraction by forming a new matrix with the left hand side being the fraction matrix, and the calculated value is the proportion of the different end members.
+![](week_8_workshop_subpixel.png)
+
+pink: urban; light yellow: grass; gray: bare earth; green: forest
+
+This contains more details than OBIA image, the performance is well. Compared with the result from last week, the texture of urban is basically the same, but it shows more bare earth.
 
 ### Accuracy assessment
 
@@ -91,17 +101,16 @@ After a series of image analysis, we are able to define the category of the land
 
 Figures from [@JanalipourMohammadzadeh2016]
 
-Sub-pixel classification with low-resolution NDVI images was used for crop area estimation in Belgium and OBIA for post-earthquake building damage detection.   These methods enabled precise environmental and damage assessments, showing the value of different remote sensing techniques for land and structural analysis.
+Sub-pixel classification with low-resolution NDVI images was used for crop area estimation in Belgium and OBIA for post-earthquake building damage detection. These methods enabled precise environmental and damage assessments, showing the value of different remote sensing techniques for land and structural analysis.
 
 ## Reflection
 
 Reflecting on my learning journey through the class, I've learned many image analysis techniques, notably Object-Based Image Analysis (OBIA) and sub-pixel analysis. The OBIA method, groups pixels into objects based on their spectral, spatial, and textural characteristics, I found it particularly useful in areas like land use classification. Sub-pixel analysis helped me understand image analysis further by breaking down the spectral signatures within a pixel, thereby providing a clearer picture of the ground realities.
 
-It was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models’ reliability.
+It was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models' reliability.
 
 The application in assessing building damage after earthquake demonstrated the key use of OBIA, showing how these technologies can significantly contribute to disaster response and management.
 
 Overall, this class deepened my knowledge of the image analysis techniques and their practical implications in environmental monitoring and disaster management.
 
 ## **Reference**
-

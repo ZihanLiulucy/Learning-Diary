@@ -1,0 +1,502 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "learning diary",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "self_introduction.html",
+    "href": "self_introduction.html",
+    "title": "2  self_introduction",
+    "section": "",
+    "text": "3 Introduction of myself",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>self_introduction</span>"
+    ]
+  },
+  {
+    "objectID": "self_introduction.html#my-academic-background",
+    "href": "self_introduction.html#my-academic-background",
+    "title": "2  self_introduction",
+    "section": "3.1 My academic background",
+    "text": "3.1 My academic background\nThe Bartlett School of Planning, University College London (UCL) Sep 2020-Jun 2023 Programme of Study: BSc Urban Planning, Design and Management\nCASA (UCL) Sep 2023-Now Programme of Study: Urban Spatial Science",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>self_introduction</span>"
+    ]
+  },
+  {
+    "objectID": "self_introduction.html#my-previous-research-projects",
+    "href": "self_introduction.html#my-previous-research-projects",
+    "title": "2  self_introduction",
+    "section": "3.2 My previous research projects",
+    "text": "3.2 My previous research projects\n\n3.2.1 Sep 2022-present\nWhether Green Space Intervention Triggers Housing Premium and Gentrification: evidence from Olympic Park, London\nThis project aims to fill current knowledge gap by assessing the multiple gentrification indicators and providing the causal inference of green space and gentrification. Conduct data processing and analysis with STATA and Difference in Differences (DID) Models based on the census data in 2011 and 2021\n\n\n3.2.2 Nov 2021-Dec 2021\nExamining the Association Between Housing Price and Birth Rate: evidence from London\nInvestigated the association between housing price and fertility rate in London based on the 2011 census dataset through data crawling, calculation and visualisation, linear regression model and QGIS analysis, offered feasible advice on promoting fertility rate to the government according to the research result.\n\n\n3.2.3 Apr 2022\nAnalysis of Acclimatization and Mitigation Concerning Urban Climate—A Case Study of London\nThis project focused on mitigation and adaptation of greenhouse gases emission from transport and food security, examined how these problems are being tackled from city competence, instrument, and socio-technical solution aspects respectively, identified the effectiveness and limitations of these approaches, and introduced successful cases of other countries to propose an improvement plan for the climate governance of London.\n\n\n3.2.4 Nov 2021-Dec 2021\nInfluence of Growing Gentrification on Historic Small Commodity Street—A Case Study of Chapel Market in Islington\nSearched online materials and carried out field investigations and interviews with street pedlars, studied the negative impacts caused by gentrification (the surge in housing price and emergence of chain supermarkets and shopping malls) and the continuity of residents’ habit of shopping online which was formed during COVID-19 pandemic, offered feasible advice to revive Chapel Market with redevelopment plans\n\n\n3.2.5 Jan 2022-Mar 2022\nBetter and Healthier Manchester—Analysis and Strategic Planning of Manchester\nDissected existing urban problems of Manchester, provided well-planned strategies from 5 aspects including housing, greenery, economic, transportation and public health, hoping to achieve four objectives, including improvements in access to services, promotion of healthier lifestyles, reductions in economic inequality and betterment of housing provision to help Manchester to be a more sustainable, livable, and equitable city by 2040",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>self_introduction</span>"
+    ]
+  },
+  {
+    "objectID": "self_introduction.html#my-interested-fields",
+    "href": "self_introduction.html#my-interested-fields",
+    "title": "2  self_introduction",
+    "section": "3.3 My interested fields",
+    "text": "3.3 My interested fields\nenvironment science, climate change and sustainability",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>self_introduction</span>"
+    ]
+  },
+  {
+    "objectID": "self_introduction.html#what-i-hope-to-get-from-the-module",
+    "href": "self_introduction.html#what-i-hope-to-get-from-the-module",
+    "title": "2  self_introduction",
+    "section": "3.4 What I hope to get from the module",
+    "text": "3.4 What I hope to get from the module\nMonitoring environmental changes, e.g.land use, deforestation, desertification and so on which are important indicators of environmental health and climate change.\nAssessing natural resources and identify patterns of resource use and detect unsustainable practices.\nClimate modeling and analysis as well as predict future climate change.\nDisaster management and response, in the event of natural disasters such as floods, assess the damage and plan effective responses.\nUrban planning and sustainability, for instance monitor urban expanding, and assessing the environmental impact of urbanization.\nAgriculture and soil monitoring, monitor health of crop and soil, ensuring food security and sustainable agriculture.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>self_introduction</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "3  Week_1",
+    "section": "",
+    "text": "3.1 Summary：\nRemotely sensed images and the corresponding analytical techniques offer a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#summary",
+    "href": "week1.html#summary",
+    "title": "3  Week_1",
+    "section": "",
+    "text": "3.1.1 Passive sensor and active sensors\nThere are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray\n Figure from (ResearchGate 2016)\n\n\n3.1.2 Formula\n\\[ wavelength(\n\\lambda ) = \\frac{velocity\\qquad of\\qquad light(c)}{frequency(v)}\\]\n\n\n3.1.3 Scatter in action\nWhy the sky is blue: blue lights have smaller wavelengths which can scatter easier.\nWhy the sky is orange and red at sunset: when the sun’s angle changes, the blue light scatter doesn’t reach our eyes as the distance is increased, so longer wavelengths like reds and oranges can be seen as they are the longest wavelengths. We can see the color since there is atmosphere so molecules scatter the light. The other colors are scattered so we can only see orange or red color.\n\n\n3.1.4 Interacting with earth’s surface\nBRDF quantifies how a surface reflects light, varying with illumination and viewing angles, wavelength, and surface properties, factors like shadowing, scattering, reflection, absorption, and surface texture (including facet orientation and density) influence the BRDF (Massachusetts Boston 2023).\n Figure from (Massachusetts Boston 2023)\nSAR data, or Synthetic Aperture Radar, involves active data obtain in which the sensor emits its own energy and then measures the amount of this energy that is reflected back after it interacts with the Earth’s surface (NASA Earthdata 2023). The detail of it will be in week 9.\n Figure from (NASA Earthdata 2023)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#four-resolutions",
+    "href": "week1.html#four-resolutions",
+    "title": "3  Week_1",
+    "section": "3.2 Four resolutions",
+    "text": "3.2 Four resolutions\n\n3.2.1 Spatial\nSize of raster cells varies from 10cm to several kilometers.\n\n\n3.2.2 Spectral\nSpectral resolution describes the capacity of a sensor to define fine wavelength intervals (Canada 2015), not just the visible light (red, green, blue). An object’s color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands Measuring spectral reflectance  isn’t limited to remote sensors; it can also be conducted using ‘spectroradiometers’ in labs or fields, requiring calibration with a pure white reference panel.\n\n\n3.2.3 Temporal\nSensor’s sensitivity to energy is different, with higher resolution offering more details (8 bit = 256 values, 4 bit = 16 values).\n\n\n3.2.4 Radiometric\nRadiometric resolution refers to the level of detail in a pixel’s recorded energy, quantified in bits, ach bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 (Earthdata 2024).\n Figure from (Earthdata 2024)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#biases",
+    "href": "week1.html#biases",
+    "title": "3  Week_1",
+    "section": "3.3 Biases",
+    "text": "3.3 Biases\nIn the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the Earth’s surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#application",
+    "href": "week1.html#application",
+    "title": "3  Week_1",
+    "section": "3.4 Application",
+    "text": "3.4 Application\nI am particularly interested in the resolutions of remote sensing data, since I learnt urban design before, and I used to think of resolution is something that can directly change in Photoshop, and it is the first time of knowing how the remote sensing technique are being used to capture images and how radiometric resolution can decide the level of detail visible in the images.\n\n3.4.1 Application 1\nThe study investigates forest species classification using high spectral resolution remote sensing data (Martin et al. 1998), specifically from the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS). It differentiates 11 forest types based on spectral signatures correlated with chemical properties like nitrogen and lignin in foliage. Using selected spectral bands and a maximum likelihood algorithm, the study achieved a classification accuracy of 75% at Harvard Forest, and it was been varified by field measurements of foliar biomass and stand structure. This approach demonstrates the effectiveness of high spectral resolution in detailed forest composition analysis, it also showed a significant potential of forest management as well as the environment science.\n species map Figure from (Martin et al. 1998)\n\n\n3.4.2 Application 2\nThe study investigated the impact of radiometric resolution on the classification accuracy of remote sensing data over three different sites in Northern Greece (Rama Rao et al. 2007). Through various classification experiments using fine and low radiometric resolution images, the research found that higher radiometric resolution does not always result in significantly improved classification accuracy. Using high radiometric resolution (12-bit) LISS-III data results in a small amount of improvement of 3% in overall accuracy for land use/land cover categorization compared to using moderate radiometric resolution (7-bit) LISS-III data. The study also explored the influence of radiometric resolution on computational time and the informational content of images, concluding that in certain situations, lower radiometric resolution can be sufficient for accurate classification tasks. This finding suggests that remote sensing applications might not always need the highest radiometric resolution, especially when considering storage and processing constraints.\n Figure from (Rama Rao et al. 2007)\n\nis from 7-bit LISS-III, and (b) is from 12-bit LISS-III, can’t see the difference in the picture with the naked eye.\n\n\n\n3.4.3 Application critique\nSpectral resolution refers to a sensor’s ability to distinguish between different electromagnetic wavelengths, while radiometric resolution describes the precision with which the sensor measures the strength of these electromagnetic signals (International Earth Science Information Network (CIESIN), n.d.). And it is also very interesting to see it is not the fact that the highrt rafiometric resolution result in higher accuracy significantlym it is important to balance data details with processing capabilities.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#reflection",
+    "href": "week1.html#reflection",
+    "title": "3  Week_1",
+    "section": "3.5 Reflection:",
+    "text": "3.5 Reflection:\nReflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the Earth from space, but have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to learn the knowledge. Sensors could either rely on the Earth’s natural energy or create their own to study the environment.\nIt’s interesting how these sensors, through different mechanisms, contribute to a comprehensive view of our planet’s surface and atmosphere. The scientific foundation, particularly the principles of light wavelength, speed, and frequency has remind me the basic knowledge from a-level physics. The explanation of why the sky is blue, based on the scattering of light, provided a down-to-earth example of how remote sensing blends physics with environmental science, making the abstract more understandable. Facing the challenges of atmospheric interference in remote sensing, especially in regions like the UK where there are always cloud cover, emphasized the complexities and limitations. It made me realize the importance of keeping low bias when practice.\nWhat I’m most interested in this learning journey is the resolution of the remote sensing data, it established a linked between this module and the urban design modules I learnt before, and it is much deeper as they can be used to do for example, forest species classification, and many other environment fields which I am interested in.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#references",
+    "href": "week1.html#references",
+    "title": "3  Week_1",
+    "section": "3.6 References",
+    "text": "3.6 References\n\n\n\n\nCanada, Natural Resources. 2015. “Satellites and Sensors: Spectral Resolution.” https://natural-resources.canada.ca/maps-tools-and-publications/satellite-imagery-and-air-photos/tutorial-fundamentals-remote-sensing/satellites-and-sensors/spectral-resolution/9393.\n\n\nEarthdata, NASA. 2024. “Remote Sensing Backgrounders: Radiometric Resolution.” https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=Radiometric%20resolution%20is%20the%20amount,%2D255)%20to%20store%20information.\n\n\nInternational Earth Science Information Network (CIESIN), Center for. n.d. “Box 4-b–System Tradeoffs.” http://www.ciesin.org/docs/005-356/box4B.html#:~:text=Spectral%20resolution%20refers%20to%20the,these%20signals%20can%20be%20recorded.\n\n\nMartin, M. E. et al. 1998. “Determining Forest Species Composition Using High Spectral Resolution Remote Sensing Data.” Remote Sensing of Environment 65 (3): 249–54. https://www-sciencedirect-com.libproxy.ucl.ac.uk/science/article/pii/S0034425798000352.\n\n\nMassachusetts Boston, University of. 2023. “Terra and Aqua MODIS - Bidirectional Reflectance Distribution Function (BRDF).” https://www.umb.edu/spectralmass/terra-aqua-modis/modis/#:~:text=The%20BRDF%20is%20the%20%22Bidirectional,illumination%20geometry%20and%20viewing%20geometry.\n\n\nNASA Earthdata. 2023. “What Is SAR?” https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar.\n\n\nRama Rao, N. et al. 2007. “Evaluation of Radiometric Resolution on Land Use/Land Cover Mapping in an Agricultural Area.” International Journal of Remote Sensing 28 (2): 443–50.\n\n\nResearchGate. 2016. “Differences Between Passive and Active Sensors.” https://www.researchgate.net/figure/Differences-between-passive-and-active-sensors_fig1_339726853.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week_1</span>"
+    ]
+  },
+  {
+    "objectID": "week_2.html",
+    "href": "week_2.html",
+    "title": "4  pre",
+    "section": "",
+    "text": "title",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>pre</span>"
+    ]
+  },
+  {
+    "objectID": "week_3.html",
+    "href": "week_3.html",
+    "title": "5  week_3",
+    "section": "",
+    "text": "5.0.1 Introduction\nIn this section we learned how to deal with the mistakes and unclearities in the remote sensed images. Sometimes there are lots of biases and flaws like in UK the atmosphere is always a problem in reading all the photos.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week_3</span>"
+    ]
+  },
+  {
+    "objectID": "week_3.html#joining-data",
+    "href": "week_3.html#joining-data",
+    "title": "5  week_3",
+    "section": "5.1 Joining data",
+    "text": "5.1 Joining data\nRemote sensing data is often captured as individual, discrete images, each covering a specific geographical area like pieces of a larger puzzle, to get a comprehensive understanding of larger regions or to analyze spatial relationships and patterns across these areas, we need to merge them together.\nMosaicking in remote sensing is similar to merging in GIS, where multiple datasets are joined to create a seamless image, by blends the edges of images, minimizing the visibility of seamlines between joined images. A base image and a second image are overlapped (20-30%) to ensure continuity. Histogram matching algorithms are used within the overlap area to align brightness values, aiding in seamless integration before feathering.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week_3</span>"
+    ]
+  },
+  {
+    "objectID": "week_3.html#enhancements-of-remote-sensing-imagery-ndvi",
+    "href": "week_3.html#enhancements-of-remote-sensing-imagery-ndvi",
+    "title": "5  week_3",
+    "section": "5.2 Enhancements of remote sensing imagery (NDVI)",
+    "text": "5.2 Enhancements of remote sensing imagery (NDVI)\nThe Normalized Difference Vegetation Index (NDVI) leverages the near-infrared and red spectral bands to identify healthy vegetation, as such vegetation strongly reflects near-infrared light and absorbs most of the red light. Regions that exhibit a high NDVI value are indicative of robust vegetation health. The NDVI metric is derived using the following calculation:\n\\[ NDVI = \\frac{NIR - Red}{NIR + Red}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week_3</span>"
+    ]
+  },
+  {
+    "objectID": "week_3.html#application",
+    "href": "week_3.html#application",
+    "title": "5  week_3",
+    "section": "5.3 Application",
+    "text": "5.3 Application\n\n5.3.1 Application 1\n(Sentinel-2 2023)\nI am interested in atmospheric correction as it is useful especially in cloudy areas like the UK. The Land Surface Reflectance Code (LaSRC), created by Eric Vermote at NASA/GSFC and adapted by the USGS, is used for atmospheric correction on data from Landsat 8 and Sentinel-2 sensors. LaSRC used the 6SV radiative transfer model and a MODIS-derived ratio to determine surface reflectance. Its accuracy is verified through the CEOS Atmospheric Correction Inter-Comparison Exercises. Additionally, the Fmask algorithm identifies clouds, shadows, snow/ice, and water in the top-of-atmosphere (TOA) data. HLS enhances this by expanding cloud/shadow areas and incorporating LaSRC aerosol data into the Fmask results, aiding in precise environmental monitoring and analysis.\n Figure from (Sentinel-2 2023)\nThe figure shows a comparison of two satellite images from Sentinel-2B. On the left, there is a true color composite image using bands 4-3-2 with top-of-atmosphere (TOA) reflectance, which has not been corrected for atmospheric effects and therefore may include atmosphere distortions. On the right, there is an image processed with the Land Surface Reflectance Code (LaSRC) to correct for these atmospheric distortions, resulting in surface reflectance that more accurately represents the actual colors and features of the earth’s surface.\n\n\n5.3.2 Application 2\n(Rocchini and Di Rita 2005)\n Figure from (Rocchini and Di Rita 2005)\nThe image you provided shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.\nFirst-order polynomial rectification is a linear correction that adjusts for image displacements in the x and y directions. It’s a simple model that assumes the earth is flat and only corrects for basic image shift and rotation. This method is generally less accurate on rugged terrain, as it doesn’t account for changes in elevation.\nSecond-order polynomial rectification includes terms for quadratic distortions, allowing it to handle slight curvature and more complex distortions than the first-order method. However, it still may not be sufficient for highly irregular terrain, as it does not use a full terrain model.\nOrthorectification is a more advanced technique that uses elevation data from a Digital Terrain Model (DTM) or Digital Elevation Model (DEM) to correct images for the effects of sensor perspective and terrain relief. It’s particularly important in areas with significant topographic variation, such as Etna’s volcanic terrain, as seen in the third image. This process provides the most accurate location of features on the ground because it compensates for the actual surface geometry.\nThe results demonstrated that polynomial functions are sufficient for flat areas but become less accurate with more complex terrains. In contrast, orthorectification consistently produced accurate results across different terrain types.\n\n\n5.3.3 Application reflection\nAtmospheric correction, particularly through LaSRC, requires accurate atmospheric inputs. I’ve also understood that geometric correction isn’t one-size-fits-all, while polynomial methods may be a proper method for uniform terrains, orthorectification is very useful for complex and rugged landscapes. This knowledge highlights the need for distinguish correction techniques, use them in the appropriate landscape’s characteristics and the atmospheric conditions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week_3</span>"
+    ]
+  },
+  {
+    "objectID": "week_3.html#reference",
+    "href": "week_3.html#reference",
+    "title": "5  week_3",
+    "section": "6.1 Reference",
+    "text": "6.1 Reference\n\n\n\n\nDave, C. P., R. Joshi, and S. S. Srivastava. 2015. “A Survey on Geometric Correction of Satellite Imagery.” International Journal of Computer Applications 116 (12).\n\n\nRocchini, D., and A. Di Rita. 2005. “Relief Effects on Aerial Photos Geometric Correction.” Applied Geography 25 (2): 159–68.\n\n\nSchmitt, M., and Xiao Xiang Zhu. 2016. “Data Fusion and Remote Sensing: An Ever-Growing Relationship.” IEEE Geoscience and Remote Sensing Magazine 4 (4): 6–23.\n\n\nSentinel-2, NASA Harmonized Landsat. 2023. “Algorithms: Atmospheric Correction.” https://hls.gsfc.nasa.gov/algorithms/atmospheric-correction/.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>week_3</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html",
+    "href": "week_4.html",
+    "title": "6  week_4",
+    "section": "",
+    "text": "7 Jakarta city challenge",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#flood",
+    "href": "week_4.html#flood",
+    "title": "6  week_4",
+    "section": "7.1 Flood",
+    "text": "7.1 Flood\nFlood-prone Jakarta is the world’s fastest sinking city — as fast as 10 centimetres per year. In parts of North Jakarta, which is particularly susceptible to flooding, the ground has sunk 2.5 metres in 10 years. Excessive extraction of groundwater for drinking and commercial use is largely responsible for this: When water is pumped out of an underground aquifer, the land above it sinks Source from: https://www.channelnewsasia.com/cnainsider/why-jakarta-is-world-fastest-sinking-city-floods-climate-change-781491",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#city-sinking",
+    "href": "week_4.html#city-sinking",
+    "title": "6  week_4",
+    "section": "7.2 City sinking",
+    "text": "7.2 City sinking\nWith global temperatures rising and ice sheets melting, plenty of coastal cities face a growing risk of flooding due to sea level rise. Few places, however, face challenges like those in front of the Jakarta metropolitan area. In recent decades, Jakarta flooding problems have grown even worse, driven partly by widespread pumping of groundwater that has caused the land to sink, or subside, at rapid rates. By some estimates, as much as 40 percent of the city now sits below sea level. There are signs showing that rainstorms are getting more intense as the atmosphere heats up, damaging floods have become commonplace.\nThe picture below shows The Landsat images above show the evolution of the city over the past three decades. The widespread replacement of forests and other vegetation with impervious surfaces in inland areas along the Ciliwung and Cisadane rivers has reduced how much water the landscape can absorb, contributing to runoff and flash floods.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#water-management-to-reduce-groundwater-extraction",
+    "href": "week_4.html#water-management-to-reduce-groundwater-extraction",
+    "title": "6  week_4",
+    "section": "9.1 Water management to reduce groundwater extraction",
+    "text": "9.1 Water management to reduce groundwater extraction\nImplementing effective water management to reduce groundwater extraction can align with sustainable urban development goals. As the widespread pumping of groundwater is the human factor of sinking and flooding, it is necessary to pretend residents from doing it and worsen the situation.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#add-more-green-plants-to-improve-the-environment",
+    "href": "week_4.html#add-more-green-plants-to-improve-the-environment",
+    "title": "6  week_4",
+    "section": "9.2 Add more green plants to improve the environment",
+    "text": "9.2 Add more green plants to improve the environment\nInvesting in green infrastructure, can mitigate sinking and enhance urban resilience, aligning with global climate action and sustainable city planning. It is obvious from the picture before that the greenery has been replaced by city land.\nHere are benefits from greenery. rain hits the ground at higher speeds where there is a lack of tree cover. A canopy of leaves, branches and trunks slows down the rain before it hits the ground simply by getting in the way. In addition, root systems help water penetrate deeper into the soil at a faster rate under and around trees.\nhttps://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/flooding/",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#reduce-emission",
+    "href": "week_4.html#reduce-emission",
+    "title": "6  week_4",
+    "section": "9.3 Reduce emission",
+    "text": "9.3 Reduce emission\nJakarta was again ranked the most polluted city in the world by Swiss technology company IQAir in 2023. Transport is a very important source of Jakarta’s Pollution while  Industry and Power Plants Are Also Contributors。 In September 2022, the Jakarta Environmental Agency introduced a Strategy for Air Pollution Control (SPPU), which included more than 70 action plans to improve air quality. Focusing on 1) governing air pollution controls, 2) reducing emissions from mobile sources, and 3) reducing emissions from stationary sources. Source from: https://urban-links.org/insight/7-things-to-know-about-jakartas-air-pollution-crisis/\nWarmer temperatures caused by pollution could lead to the ground swelling and expanding upwards by up to 12mm (0.5 inches) and the ground could sink downwards, beneath the weight of a building, by as much as 8mm (0.3 inches).\nSource from: https://news.sky.com/story/chicago-underground-climate-change-is-deforming-land-under-buildings-and-things-are-sinking-says-study-12923119",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#no2-and-co2-monitoring",
+    "href": "week_4.html#no2-and-co2-monitoring",
+    "title": "6  week_4",
+    "section": "10.1 NO2 and CO2 monitoring",
+    "text": "10.1 NO2 and CO2 monitoring\nUse data from NO2 from https://energyandcleanair.org/ , there are before and after maps that we can decide the time period and the highly polluted areas are shown in red. CO2 can be found from our world in data and the analysis should be in python.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_4.html#vegetation-mapping-and-monitoring",
+    "href": "week_4.html#vegetation-mapping-and-monitoring",
+    "title": "6  week_4",
+    "section": "10.2 Vegetation Mapping and Monitoring",
+    "text": "10.2 Vegetation Mapping and Monitoring\nTo manage the pollution, greenery is an indirect method. Satellite and aerial imagery provide detailed information on vegetation cover, allowing for the assessment of the extent and health of greenery across large areas. This helps in tracking changes over time, such as the growth or decline of forests, parks, and urban green spaces.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>week_4</span>"
+    ]
+  },
+  {
+    "objectID": "week_6.html",
+    "href": "week_6.html",
+    "title": "7  week_6",
+    "section": "",
+    "text": "7.0.1 Introduction of Google Earth Engine\nGoogle Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities (Google 2023). Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth’s surface (Google 2023).\nGoogle Earth Engine’s data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, you can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages (Earthblox 2023).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week_6</span>"
+    ]
+  },
+  {
+    "objectID": "week_6.html#basic-knowledge-of-gee",
+    "href": "week_6.html#basic-knowledge-of-gee",
+    "title": "7  week_6",
+    "section": "7.1 Basic knowledge of GEE",
+    "text": "7.1 Basic knowledge of GEE\nRaster Data: In GEE, raster data are represented as images, where each image consists of one or more bands. Each band contains values for a specific attribute (e.g., reflectance in a particular wavelength) across the covered area.\nVector Data: Vector data in GEE is represented as Features or FeatureCollections. This data type is used to represent discrete objects or areas, such as rivers, roads, boundaries, or specific points of interest.\nThe JavaScript API, accessible through the Code Editor, is widely used for interactive data exploration and analysis.\nLoops and Mapping: we can’t (or shouldn’t) use a loop for something on the server as the loop doesn’t know what is in the ee object. But GEE provides functionality for iterating over collections (e.g., ImageCollection) using mapping functions, which apply a specified operation to each element in the collection.\nScale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week_6</span>"
+    ]
+  },
+  {
+    "objectID": "week_6.html#how-we-use-gee",
+    "href": "week_6.html#how-we-use-gee",
+    "title": "7  week_6",
+    "section": "7.2 How we use GEE",
+    "text": "7.2 How we use GEE\nIn Google Earth Engine, typical processes include geometry operations like spatial analyses, joining datasets, and calculating zonal statistics like average temperature by area. We can filter images or values and use machine learning techniques for supervised and unsupervised classification, including deep learning with TensorFlow.\n\n7.2.1 NDVI\nAs mentioned in week_3, NDVI is the instrument to measure the health of vegetable.\n\nValue of around 0 indicates areas of bare soil or rock, urban areas, or stressed vegetation. A value of around 0.19 shown on the map in Santa Clara is in this category, suggesting that there is some vegetation present, but it is not very dense. This could be indicative of grassland, scrub, or an area where the vegetation is not very healthy.\n\n\n7.2.2 PCA\nPCA is a popular method used to simplify data by finding important patterns and reducing unnecessary details and noise, helps in making the data easier to work with and understand, and is used in various tasks like shrinking data size, improving data visualization, and highlighting key features (Kurita 2019).\n\nIn my case i can see that the first component explains 78.89% of the variance within the collection, suggests that most of the information in the dataset can be represented by this single principal component. The second component explains 11.84% of the variance, additional to the variance captured by the first component and gives more details that the first component might not capture.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week_6</span>"
+    ]
+  },
+  {
+    "objectID": "week_6.html#application",
+    "href": "week_6.html#application",
+    "title": "7  week_6",
+    "section": "7.3 Application",
+    "text": "7.3 Application\n\n7.3.1 Application 1\nGoogle Earth Engine (GEE) was employed to analyze land cover changes in Singapore (Sidhu et al. 2018), focusing on the Tuas industrial zone and the Central Catchment Reserve (CCR). The study aimed to evaluate GEE’s capabilities in processing raster and vector data, conducting spatial and temporal analyses, and handling big Earth Observation (EO) data.\nThe results indicated that GEE was effective in managing and processing large-scale satellite imagery data, providing access to diverse datasets, and facilitating spatial and temporal analyses. For Tuas, the analysis revealed rapid industrialization and land transformation, particularly through land reclamation processes. Meanwhile, in the CCR, a protected area, forest cover remained stable, largely unaffected by human activities and influenced more by natural monsoon cycles.\nOverall, GEE’s robust platform supported detailed analysis of land cover changes in Singapore, demonstrating its utility for urban and environmental studies.\nCompare with the use of GEE in developed modern cities, my next article will focus on the less developed agriculture areas.\n\n\n7.3.2 Application 2\nThe research article (Xiong et al. 2017) discusses the use of Google Earth Engine (GEE) for creating automated cropland maps across Africa. Used Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, the study produced reference cropland layers for 2014 with high accuracy (around 90% for crop extent) across different agriculture zones.\nThe study’s results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rainfed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa. It demonstrated GEE’s strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.\n\n\n7.3.3 Application reflection\nGoogle Earth Engine (GEE) has been effectively used in diverse areas, from urban land cover change analysis in Singapore to large-scale agricultural mapping in Africa. In Singapore, GEE facilitated detailed studies of industrialization and natural reserves, while in Africa, it supported cropland monitoring. These applications highlighted GEE’s capacity to manage satellite imagery datasets as well as spatial and temporal analyses across different scales and contexts. As a powerful tool for environmental monitoring, agricultural development, and many other areas, GEE may play more and more important role in urban planning.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week_6</span>"
+    ]
+  },
+  {
+    "objectID": "week_6.html#reflection",
+    "href": "week_6.html#reflection",
+    "title": "7  week_6",
+    "section": "7.4 Reflection",
+    "text": "7.4 Reflection\nReflecting on my study of Google Earth Engine, I have understood its ability in environmental data analysis. GEE can process and analyze massive datasets, its ability of analyzing satellite imagery and geospatial datasets gave me the idea of how important and efficient a cloud-based platform can be used to understand and manage Earth’s complexities.\nWhat interested me the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only more developed cities but also less developed places.\nGEE integrates various data types, from raster to vector, and support large amount of picture analysis techniques like NDVI and PCA, linear regression, and machine learning. These complex processes can be managed from a simple web browser or even a mobile device, using programming languages like JavaScript or Python.\nBefore, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes on the map, which is a new and interesting try.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week_6</span>"
+    ]
+  },
+  {
+    "objectID": "week_6.html#reference",
+    "href": "week_6.html#reference",
+    "title": "7  week_6",
+    "section": "7.5 Reference",
+    "text": "7.5 Reference\n\n\n\n\nEarthblox. 2023. “Advantages and Disadvantages of Google Earth Engine.” https://www.earthblox.io/blog/advantages-and-disadvantages-of-google-earth-engine.\n\n\nGoogle. 2023. “Google Earth Engine.” https://www.google.com/earth/education/tools/google-earth-engine/.\n\n\nKurita, T. 2019. “Principal Component Analysis (PCA).” In Computer Vision: A Reference Guide, 1–4.\n\n\nSidhu, N. et al. 2018. “Using Google Earth Engine to Detect Land Cover Change: Singapore as a Use Case.” European Journal of Remote Sensing 51 (1): 486–500.\n\n\nXiong, J. et al. 2017. “Automated Cropland Mapping of Continental Africa Using Google Earth Engine Cloud Computing.” ISPRS Journal of Photogrammetry and Remote Sensing 126: 225–44.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>week_6</span>"
+    ]
+  },
+  {
+    "objectID": "week_7.html",
+    "href": "week_7.html",
+    "title": "8  week_7",
+    "section": "",
+    "text": "8.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week_7</span>"
+    ]
+  },
+  {
+    "objectID": "week_7.html#summary",
+    "href": "week_7.html#summary",
+    "title": "8  week_7",
+    "section": "",
+    "text": "8.1.1 Introduction\nThis week’s focus in Remote Sensing was on classifying remotely sensed data, a process of categorizing areas in images. The primary method is machine learning, a subset of computer science developing algorithms that allow computers to learn and make decisions independently. This learning process is similar with human inference, where experiences are generalized to form conclusions, enabling machines to do classification and analysis effectively, without requirement of explicit programming for each specific task.\n\n\n8.1.2 Classification methods\n\n8.1.2.1 Classification Trees\n\nPurpose: Classify data into discrete categories based on certain features.\nExample: Deciding whether to play golf based on weather conditions (temperature, rainfall, wind).\nClassification trees, similar with flowcharts, systematically classify data into discrete categories based on its features, like deciding to play golf depending on weather conditions. Starting from the root node, a split is established by solving an optimization problem (usually minimizing an impurity measure), before proceeding to recurse on the two resulting child nodes (Bertsimas and Dunn 2017). Each node in the tree makes a decision, categorizing the data into different paths based on specific criteria or thresholds. The decision to split at each node is often based on criteria such as Gini impurity, the goal is to choose splits that decrease Gini impurity, leading to a more accurate classification.\n\n\n8.1.2.2 Regression Trees\nPurpose: Predict a continuous dependent variable. Example: Predicting GCSE scores, where linear regression is inadequate due to non-linear relationships and large residuals. Data is divided into smaller subsets using decision trees, allowing for more precise predictions in cases where a simple linear model fails. The decision to split data is based on reducing the sum of squared residuals (SSR), aiming for the lowest SSR at each split. The initial split (root of the tree) is chosen based on the threshold that minimizes SSR, and this process is repeated for subsequent splits. To avoid overfitting, a minimum number of observations can be required before further splitting.\n\n\n8.1.2.3 overfitting:\n\nOverfitting, with high variance and low bias occurs when a model learns the training data too well. his happens often with very complex models that have too many parameters relative to the number of observations. While such a model may perform exceptionally well on the training data, its performance usually drops significantly on new, unseen data because it has essentially memorized the training data rather than learning the general underlying patterns. Weakest link pruning is needed when dealing with fully grown decision trees that may have overfitted the training data\nUnderfitting, with high bias and low variance, occurs when a model is too simple to capture the underlying structure of the data. This can happen if the model does not have enough parameters (or complexity) to learn from the data\nThus we are aiming for good balance with low bias and low variance, performs well on the training data and maintains good performance on new, unseen data.\n\n\n8.1.2.4 Random Forests\n Figure from (Belgiu and Drăguţ 2016)\nA random forest (RF) classifier is an ensemble classifier that uses a randomly chosen subset of training samples and variables to generate several decision trees ((Belgiu and Drăguţ 2016)). In contrast to alternative approaches, the RFR model can handle large data dimensionality and multicollinearity and is less sensitive to noise and overfitting (Wang et al. 2016)\nIt enhance decision tree performance by aggregating predictions from multiple trees, reducing overfitting and improving accuracy: Uses random samples with replacement to create diverse trees. At each split, selects a random subset of features, increasing tree diversity. Repeats sampling and feature selection to create many trees, forming a forest. Each tree votes on predictions; the majority vote decides the final prediction. Estimates prediction error using data not sampled for each tree, providing an unbiased error estimate. Trees grow to their full size without pruning, relying on the ensemble to prevent overfitting. Typically, the number of features considered at each split is the square root of the total number of features.\n\n\n8.1.2.5 Unsupervised classification\nUnsupervised classification, often called clustering, includes techniques like k-means and DBSCAN, which categorize data based on features like spectral space and distance metrics\n\n\n8.1.2.6 Supervised classification\nSupervised classification is a method used to categorize data into predefined groups or classes based on training data that is already labeled.\n\n\n8.1.2.7 Support Vector Machine (SVM)\nis a powerful tool in machine learning for sorting data into categories. Here’s a simpler breakdown of what it does:\ndraw a line (or a plane in higher dimensions when there are more then 2 datasets) that best separates different types of data points.\nSVM looks for the line that keeps the maximum distance from the closest points of any category, ensuring it’s not just separating but also maximizing the space between these categories. These closest points are called support vectors.\nTwo main settings, C and Gamma, help adjust how strict the model is. A higher C makes the boundary stricter but might only focus on the most challenging points to separate. Gamma affects how much influence each data point has; a high Gamma means only nearby points matter much.\nSometimes data isn’t easily separable with a straight line. SVM can twist and turn the data (using something called the kernel trick) to find a way to separate it effectively.\n\n\n\n8.1.3 Classification workshop\nThe primary emphasis here is on classification, involving the process of training a model with some samples and then using this model to categorize the rest of the image.\n\nlight pink: urban low; violet: water; dark pink: urban high; light yellow: grass; gray: bare earth, dark green: forest\nThe city I pick here is York, and the classification follow urban high and low, water, grass, forest, and bare earth. I picked some samples of them on the map, however I find it hard to determine urban high and low, as well as grass and forest, as they look very similar on the satellite maps. Thus I need to further check the street image on google map to ensure the accuracy. And another issue is that the selected training areas cannot exceed the limit, so it is important to define the most accurate samples.\nThis map shows an reasonable classification of urban features, the distinguish between urban, greenery, and water is clear, but it is not sure whether the urban high and low, as well as grass and forest has been well classified.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week_7</span>"
+    ]
+  },
+  {
+    "objectID": "week_7.html#application",
+    "href": "week_7.html#application",
+    "title": "8  week_7",
+    "section": "8.2 Application",
+    "text": "8.2 Application\n\n8.2.1 Application 1\n\nFig from (De’ath and Fabricius 2000)\nClassification and regression trees are ideally suited for the analysis of complex ecological data. In this study (De’ath and Fabricius 2000) we evaluate survey data, including physical and spatial environmental variables and abundances of soft coral species (Cnidaria: Octocorallia) from the Australian central Great Barrier Reef using regression trees and categorization. Dense aggregations, usually consisting of three taxa, were found to be limited to specific habitat categories, each of which was determined by a combination of three to four environmental variables, according to regression tree analyses. The study found that both physical and spatial variables were effective predictors of soft coral abundances, and spatial variables could act as surrogates for physical variables in extensive reef complexes where physical data might be unavailable. The case study also illustrated the advantage of CART over linear models in uncovering patterns in the data​\nRegression trees connecting the four spatial variables (shelf position, location, reef type, and depth) to the distributions of the four physical variables (sediment, visibility, waves, and slope).\n\n\n8.2.2 Application 2\nIn the case study conducted in Bangladesh (Zhao et al. 2019), the Random Forest Regression (RFR) model was used to estimate poverty using data from multiple sources, including nighttime light data, Google satellite imagery, land cover map, road map, and division headquarter location data. The household wealth index (WI) from the Demographic and Health Surveys (DHS) was the measure of poverty. The RFR model’s effectiveness stems from its ability to handle various data types, manage high dimensionality, and cope with multicollinearity, leading to a more accurate and reliable poverty estimation compared to traditional methods.\nHere is the dataset used in this study.\n\nFig from (Zhao et al. 2019)\n\nWealth Index (WI) map, (b) National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light (NTL) image, (c) Open Street Map (OSM) primary and secondary road map, (d) land cover map\n\nThe model demonstrated good predictive power and generalization ability. The use of The methodology was efficient in measuring poverty due to RFR’s robust handling of complex and varied data\n\n\n8.2.3 Application reflection\nThe two articles show the application of machine learning techniques. RFR has shown improved accuracy and robustness compared to single decision trees. RFR is effective in poverty measurement, as poverty is multifaceted, influenced by various socioeconomic and environmental factors. Also RFR can handle multicollinearity better then CART, as in social sciences, many variables can be interrelated, which complicates the analysis.\nSAR studies, especially with RADARSAT-2, have advanced volcanic surface analysis, showing that cross-polarized data performs better than co-polarized in differentiating lava textures and vegetation interactions. InSAR techniques have been crucial for monitoring and characterizing landslides, as evidenced in the Canadian Rockies, where specific displacement patterns indicated pre-fall rock movements, demonstrating the techniques’ efficacy in detailed geological hazard assessment.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week_7</span>"
+    ]
+  },
+  {
+    "objectID": "week_7.html#reflection",
+    "href": "week_7.html#reflection",
+    "title": "8  week_7",
+    "section": "8.3 Reflection",
+    "text": "8.3 Reflection\nThis week’s exploration of classifying remotely sensed data using machine learning is similar with human inference. What I found useful in the further study is classification trees and regression trees, with applications ranging from weather-based activities to predicting educational outcomes. The concept of overfitting and underfitting brought me back to the memory of learning regression models.\nRandom Forests (RF) gave me an idea of how to avoid the bad effects of multicollinearity similar with the knowledge from multi-linear regression. It can handle large datasets and complex interactions through gathering decision trees, reducing overfitting and enhancing predictive accuracy. This was practically useful in studies like coral species analysis and poverty estimation.\nUnsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning’s diversity.Through these insights, I gained a holistic view of machine learning’s role in data analysis, from theoretical foundations to real-world applications.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week_7</span>"
+    ]
+  },
+  {
+    "objectID": "week_7.html#reference",
+    "href": "week_7.html#reference",
+    "title": "8  week_7",
+    "section": "8.4 Reference",
+    "text": "8.4 Reference\n\n\n\n\nBelgiu, M., and L. Drăguţ. 2016. “Random Forest in Remote Sensing: A Review of Applications and Future Directions.” ISPRS Journal of Photogrammetry and Remote Sensing 114: 24–31.\n\n\nBertsimas, D., and J. Dunn. 2017. “Optimal Classification Trees.” Machine Learning 106 (7): 1039–82.\n\n\nDe’ath, Glenn, and K. E. Fabricius. 2000. “Classification and Regression Trees: A Powerful yet Simple Technique for Ecological Data Analysis.” Ecology 81 (11): 3178–92.\n\n\nWang, L. a., X. Zhou, X. Zhu, Z. Dong, and W. Guo. 2016. “Estimation of Biomass in Wheat Using Random Forest Regression Algorithm and Remote Sensing Data.” The Crop Journal 4: 212–19.\n\n\nZhao, X. et al. 2019. “Estimation of Poverty Using Random Forest Regression with Multi-Source Data: A Case Study in Bangladesh.” Remote Sensing 11 (4): 375.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>week_7</span>"
+    ]
+  },
+  {
+    "objectID": "week_8.html",
+    "href": "week_8.html",
+    "title": "9  week_8",
+    "section": "",
+    "text": "9.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week_8</span>"
+    ]
+  },
+  {
+    "objectID": "week_8.html#summary",
+    "href": "week_8.html#summary",
+    "title": "9  week_8",
+    "section": "",
+    "text": "9.1.1 Object-Based Image Analysis (OBIA)\nOBIA shifts focus from individual pixels to shapes or superpixels, based on their homogeneity (similarity) or heterogeneity (difference). SLIC (Simple Linear Iterative Clustering) is a common method for generating superpixels, analyzing spatial and color distances to define groups. Iterative process, typically 4-10 rounds, refines superpixel centers and boundaries, similar to k-means. Uses LAB color space for nuanced color analysis, classifying objects based on average values for interpretation.\nThe basic logic is: Divide the image into items that correspond to land-based features, and then categorize them based on their dimensions, spectral characteristics, form, and size (Geography 2024).\n Figure from (Geography 2024)\nObject-Based Image Analysis (OBIA) segmentation is a process that groups similar pixels into objects (Geography 2024).\n Figure from (Geography 2024)\nOBIA classification uses shape, size, and spectral properties of objects to classify each object (Geography 2024).\n\n\n9.1.2 OBIA workshop\n\nThis is the OBIA map, with the training data of urban, grass, bare earth and forest, the training group is shown on the map, but it is obvious that the output is not following the samples being given. I have tried to change the value of connectivity of 4 and 8 and followed 8 as at the start. I also changed the value of neighbourhood into 40 from 50, as a larger neighborhood size means that each segment will be influenced by a larger area around it, potentially leading to larger and smoother segments, but we want it to be smaller and contain more detailed as what sub-pixel analysis indicate\n\n\n9.1.3 Sub pixel analysis\nAllows us to deconstruct the observed spectral data of a pixel into its constituent materials, giving us a clearer understanding of what is present on the ground in that area.\nThe process involves comparing the spectral reflectance values of each pixel in a satellite image to the specific known spectral signatures of specific landcover types, called end members (like water, vegetation, soil). The algorithm estimates the proportion of each earth surface type as well as the main surface type within a pixel based on to what extent its reflectance matches these end members. This method helps to accurately identify and quantify the components of the land surface in each pixel, enhancing the understanding of the area’s ground conditions.\n\n\n9.1.4 Sub pixel workshop\n\npink: urban; light yellow: grass; gray: bare earth; green: forest\nThis contains more details than OBIA image, the performance is well. Compared with the result from last week, the texture of urban is basically the same, but it shows more bare earth.\n\n\n9.1.5 Accuracy assessment\nin machine learning is a process to evaluate how well a model’s predictions match the actual reality\nTrue Positive (TP): The model correctly predicts the positive class.\nFalse Positive (FP): The model incorrectly predicts the positive class.\nTrue Negative (TN): The model correctly predicts the negative class.\nFalse Negative (FN): The model incorrectly predicts the negative class.\nAccuracy assessment is can be divided into producer’s accuracy ((TP)/(TP+FN), user’s accuracy (TP)/(TP+FP), and overall accuracy (TP)+(TN)/(TP+TN+FP+FN).\nSometimes producer’s accuracy is high as for example, 21 out of 22 urban areas were being recognized, however a user may find that only 22/31 of the time visit an urban area is it actually urban. 1.4 Receiver Operating Characteristic Curve Developed during WW2 by the USA to enhance radar signal detection, aiming to identify aircraft (true positives) while minimizing false alarms (false positives) from other objects like clouds.\nThreshold Adjustment: Altering the classifier’s threshold affects the TPR and FPR, allowing for the optimization of the classifier’s performance based on the ROC curve.\nThe aim is to maximize true positives (aiming for a TPR of 1) while minimizing false positives (aiming for an FPR of 0), optimizing the classifier’s accuracy\nA perfect model scores 1, while a random guess scores 0.5, the higher the AUC, the better the model is at predicting true positives\n\n\n9.1.6 Cross validation and spatial autocorrelation.\nWhen we’re working with data in geography or maps, we usually divide our data into two parts: one part to learn from (train) and another part to see how well we’ve learned (test). However, there’s an important idea by Waldo Tobler, called the “First Law of Geography,” which says that things that are closer to each other are more alike than things that are far apart. This means when we’re training our model, if the training data includes information that’s very close to the test data, it might provide ‘sneak peek’ because the training data shouldn’t know anything about the test data.\nIn this figure, we prefer the lower row as the upper one’s training data and test data are near each other.\n\n\n9.1.7 SVM (Support Vector Machine classifier)\nSVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification (“Support Vector Machines in Scikit-Learn” 2023). \nC (Penalty parameter): Controls the strictness of the SVM; lower C allows more misclassifications, higher C aims for precise classification.\nGamma (σ): Affects the influence of data points; lower Gamma leads to broader grouping, higher Gamma results in tighter, smaller groups.\nTo optimize C and Gamma, they employ spatial fold division, using k-means to separate data into distinct spatial folds, ensuring unbiased training and testing.\nThey conduct cross-validation within these folds, with each spatial partition undergoing 5-fold validation, assessing 50 random hyperparameter sets, resulting in 1,250 models per cycle.\nRepeating the process 100 times, they evaluate 125,000 models to determine the ideal SVM settings.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week_8</span>"
+    ]
+  },
+  {
+    "objectID": "week_8.html#application",
+    "href": "week_8.html#application",
+    "title": "9  week_8",
+    "section": "9.2 Application:",
+    "text": "9.2 Application:\nIn the case study VerbeirenEtAl2008 (Verbeiren et al. 2008), sub-pixel classification was used to estimate regional crop areas in Belgium using low-resolution SPOT-VEGETATION NDVI images. It proved effective for generating reliable area estimates in regions with limited high-resolution data.\n\nFigure from (Verbeiren et al. 2008)\nThese AFIs (area fraction images) have the same 1 km resolution as the satellite images and they give for each pixel the area fraction occupied by the considered classes (per pixel, the fractions sum up to 1). The procedure for the AFI-creation is outlined in the picture. First, a 1 km × 1 km grid was created with the same spatial characteristics (projection, resolution, framing) as the NDVI-images. This grid was superimposed over the vectorial land use map, and the area fractions of the eight classes (Winter wheat, Winter barley, All maize, Sugar beets, All grassland, All forests, Urban areas, and All other vegetation) within each grid cell were computed and stored in a database. The latter numbers were then transferred to eight separate images: the (reference) AFIs.\nLiterature 2\nObject - based image analysis is also very useful. Building damage detection after earthquake would help to rapid relief and response of disaster. In this study (Janalipour and Mohammadzadeh 2016), an efficient method was proposed for building damage detection in urban area after earthquake using pre-event vector map and postevent pan-sharpened high spatial resolution image. At first, preprocessing was applied on the postevent satellite image. Second, results of pixel- and object-based classifications were integrated. In the following, geometric features of buildings were extracted including area, rectangular fit (rect_fit), and convexity. \nAfter a series of image analysis, we are able to define the category of the land as well as the degree of damage.\n\nFigures from (Janalipour and Mohammadzadeh 2016)\nSub-pixel classification with low-resolution NDVI images was used for crop area estimation in Belgium and OBIA for post-earthquake building damage detection. These methods enabled precise environmental and damage assessments, showing the value of different remote sensing techniques for land and structural analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week_8</span>"
+    ]
+  },
+  {
+    "objectID": "week_8.html#reflection",
+    "href": "week_8.html#reflection",
+    "title": "9  week_8",
+    "section": "9.3 Reflection",
+    "text": "9.3 Reflection\nReflecting on my learning journey through the class, I’ve learned many image analysis techniques, notably Object-Based Image Analysis (OBIA) and sub-pixel analysis. The OBIA method, groups pixels into objects based on their spectral, spatial, and textural characteristics, I found it particularly useful in areas like land use classification. Sub-pixel analysis helped me understand image analysis further by breaking down the spectral signatures within a pixel, thereby providing a clearer picture of the ground realities.\nIt was enlightening to see how famous concepts like the First Law of Geography play an important role in practical sections like cross-validation, impacting models’ reliability.\nThe application in assessing building damage after earthquake demonstrated the key use of OBIA, showing how these technologies can significantly contribute to disaster response and management.\nOverall, this class deepened my knowledge of the image analysis techniques and their practical implications in environmental monitoring and disaster management.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week_8</span>"
+    ]
+  },
+  {
+    "objectID": "week_8.html#reference",
+    "href": "week_8.html#reference",
+    "title": "9  week_8",
+    "section": "9.4 Reference",
+    "text": "9.4 Reference\n\n\n\n\nGeography, GIS. 2024. “OBIA - Object-Based Image Analysis (GEOBIA).” https://gisgeography.com/obia-object-based-image-analysis-geobia/.\n\n\nJanalipour, M., and A. Mohammadzadeh. 2016. “Building Damage Detection Using Object-Based Image Analysis and ANFIS from High-Resolution Image (Case Study: BAM Earthquake, Iran).” IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 9 (5): 1937–45.\n\n\n“Support Vector Machines in Scikit-Learn.” 2023. https://scikit-learn.org/stable/modules/svm.html.\n\n\nVerbeiren, S. et al. 2008. “Sub-Pixel Classification of SPOT-VEGETATION Time Series for the Assessment of Regional Crop Areas in Belgium.” International Journal of Applied Earth Observation and Geoinformation 10 (4): 486–97.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>week_8</span>"
+    ]
+  },
+  {
+    "objectID": "week_9.html",
+    "href": "week_9.html",
+    "title": "10  week_9",
+    "section": "",
+    "text": "10.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week_9</span>"
+    ]
+  },
+  {
+    "objectID": "week_9.html#summary",
+    "href": "week_9.html#summary",
+    "title": "10  week_9",
+    "section": "",
+    "text": "10.1.1 SAR Basics\nSAR is a radar device, and its primary measures are the backscattered signal’s intensity (or amplitude) and phase, which are sampled in time bins along the azimuth (the direction the sensor antenna is tracking) and range (the direction of the sensor antenna is either across the track or perpendicular to it) (Team 2023).The “Synthetic Aperture” of the SAR refers to using the motion of the sensor to virtually create a large antenna (Team 2023).\nSAR captures the backscattering energy of ground objects, which is related to surface roughness, complex dielectric constant and moisture of ground objects (Moreira et al. 2013). As it travels, it continuously sends and receives signals, creating detailed images of buildings, roads, and other structures, even in the absence of sunlight or through cloud cover, and is able to obtain data all day and all weather due to its long wavelength (Wu et al. 2022).\n\n\n10.1.2 SAR Polarization\nPolarization refers to the orientation of the electromagnetic wave, which can be vertical, horizontal, or circular. Different surfaces reflect these polarized waves differently, aiding in identifying materials and conditions.\nRough scattering (e.g. bare earth) = most sensitive to VV Volume scattering (e.g. leaves) = cross, VH or HV Double bounce (e.g. trees / buildings) = most sensitive to HH.\n\nFigure from (“Biomass Estimation Competition” 2023)\nFrom a student’s question during the class, comparing SAR images over time reveals structural changes: sudden shifts in VV and HH backscatter indicate damage, while gradual changes suggest construction or renovation.\n\n\n10.1.3 Understanding SAR Data\nSAR data’s amplitude (or backscatter) provides information about the surface properties, while the phase data helps determine the precise distance of the reflecting surface from the satellite.\n\n\n10.1.4 Change Detection with SAR\nChange detection in SAR involves comparing images from different times to identify changes. Directly subtracting one image from another can be misleading due to SAR’s unique properties, so statistical methods are used.\nt-tests: is used to determine if there are significant differences between two sets of data, comparing SAR images of an area before and after a natural disaster using t-tests can reveal the extent of changes or damages.\nStandard Deviation: measures the amount of variation or dispersion in a dataset. Analyzing the standard deviation over time across a series of images can help identify areas of high variability, indicating potential changes or unusual activities.\n\n\n10.1.5 SAR workshop\n\nIt shows the level of building chaning in york, the more yellow, the more change the building has experienced. The purple parts shows very little or no change.\n\n\n10.1.6 Image Fusion\nImage fusion in the context of SAR and optical data integration is a process where information from both types of imagery is combined to produce a single output that contains more comprehensive information than either of the individual images.\n\n10.1.6.1 Decision Level Fusion\nAfter processing and analyzing both SAR and optical images independently, the information is combined to make a final decision or analysis.\n\n\n10.1.6.2 Object Level Fusion\nFirst extracting texture, shape, and other features from source images, then combining them to create new features using layer-stacking for LCC or ensemble learning (Lin et al. 2020).\n\n\n10.1.6.3 Pixel Level Fusion\nDirect combination of pixel values from SAR and optical images, often using sophisticated algorithms to retain important features from both. According to Kulkarni and Rege (Kulkarni and Rege 2020), it includes component substitution, transforming images and swapping structural parts with SAR data; multi-scale decomposition, breaking images into sub-bands for fusion and reconstruction; hybrid methods, combining multiple techniques for efficient fusion; and model-based methods, using sparse representation or energy optimization for fusion. Hybrid methods are preferred for their balance of low computational load and good performance.\n\n\n\n10.1.7 Others\nPrincipal Component Analysis (PCA): Used for reducing dimensionality and emphasizing variation, where the first principal component of the optical image can be replaced with SAR data to enhance specific features.\nIntensity-Hue-Saturation (IHS) Transformation: Optical images are transformed into IHS components, and the intensity component is replaced with SAR data, enhancing structural details while retaining the color and texture information.\nWavelet Transformation: Uses wavelet decompositions to fuse the images at different scales, preserving both spatial and frequency details.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week_9</span>"
+    ]
+  },
+  {
+    "objectID": "week_9.html#application",
+    "href": "week_9.html#application",
+    "title": "10  week_9",
+    "section": "10.2 Application",
+    "text": "10.2 Application\nSAR can be applies in Volcanology (Pinel et al. 2014). Studies on volcanic surfaces using satellite SAR have traditionally used co-polarized data (HH or VV), which transmit and receive in the same polarization. However, airborne SAR research shows that cross-polarized data (HV or VH) more effectively differentiate lava flow textures and roughness. RADARSAT-2 images from Kīlauea Volcano, Hawai’i, highlight the advantage of cross-polarized data in distinguishing between ’a’ā and pāhoehoe lava flows, and between active flows and surrounding vegetation, regardless of time or weather.\n\nFig.1 Co- (A) and Cross-polarized (B) Figure from (Pinel et al. 2014)\nRADARSAT-2 images from July 7, 2010, show Kīlauea Volcano, revealing surface roughness differences between ’a’ā and pāhoehoe lava flows, with variations in shading best seen in cross-polarized data.\n\nFig. 2 Co- (A) and Cross-polarized (B) Figure from (Pinel et al. 2014)\nRADARSAT-2 images from January 23, 2014, show the active lava from the Pu’u ’Ō’ō eruption, with cross-polarized data clearly delineating flow margins against the forest due to backscatter contrast.\nIn another study (Singhroy and Molch 2004), InSAR (Interferometric Synthetic Aperture Radar) is used to monitor and characterize landslides in the Canadian Rockies, aiding in understanding landslide mechanisms and distribution. A near-circular fringe was detected in the revised differential interferogram by the InSAR investigation (Fig. 1). The highest displacement values that correspond to this are at −1.3 cm, suggesting that the rock face may have moved gradually before the rock fall in 2001.\n\nFig. 3 Differential interferogram (a) and vertical elevation change (b) for ERS-1/ERS-2 data pair Aug-95/Aug-97. Values are only displayed where scene coherence exceeds 0.5. At the north end of the detachment zone, there is a remaining fringe (circled) with a matching maximum elevation change of −1.3 cm. Figure from(Singhroy and Molch 2004)",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week_9</span>"
+    ]
+  },
+  {
+    "objectID": "week_9.html#reflection",
+    "href": "week_9.html#reflection",
+    "title": "10  week_9",
+    "section": "10.3 Reflection:",
+    "text": "10.3 Reflection:\nThrough my studies, I’ve gained a comprehensive understanding of SAR’s capabilities in capturing ground object backscattering, crucial for analyzing surface roughness and changes, particularly in volcanic and landslide monitoring. Learning about SAR’s amplitude and phase aspects enriched my comprehension of how these elements are pivotal in differentiating surface features and monitoring environmental changes. The distinction between co-polarized and cross-polarized data was particularly interesting, showing how each applied in different analytical requirements, with cross-polarized data proving more effective in certain contexts. The extended learning of in-SAR which extends the capabilities of SAR by using the phase difference between two or more SAR images taken from slightly different viewpoints to create interferograms, solved the policy question from week 4, which is a very useful tool in exploring land sinking.\nThe concept of image fusion, integrating SAR with optical imagery, was a significant learning point. Understanding various fusion levels, from pixel to object and decision levels, has gave me better understanding of combining information and get better outputs. This comprehensive understanding helps to understand the potential of SAR in geospatial science.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week_9</span>"
+    ]
+  },
+  {
+    "objectID": "week_9.html#reference",
+    "href": "week_9.html#reference",
+    "title": "10  week_9",
+    "section": "10.4 Reference",
+    "text": "10.4 Reference\n\n\n\n\n“Biomass Estimation Competition.” 2023. https://www.drivendata.org/competitions/99/biomass-estimation/page/535/.\n\n\nKulkarni, S. C., and P. P. Rege. 2020. “Pixel Level Fusion Techniques for SAR and Optical Images: A Review.” Information Fusion 59: 13–29.\n\n\nLin, Y. et al. 2020. “Incorporating Synthetic Aperture Radar and Optical Images to Investigate the Annual Dynamics of Anthropogenic Impervious Surface at Large Scale.” Remote Sensing of Environment 242: 111757.\n\n\nMoreira, A. et al. 2013. “A Tutorial on Synthetic Aperture Radar.” IEEE Geoscience and Remote Sensing Magazine 1 (1): 6–43.\n\n\nPinel, V. et al. 2014. “Volcanology: Lessons Learned from Synthetic Aperture Radar Imagery.” Journal of Volcanology and Geothermal Research 289: 81–113.\n\n\nSinghroy, V., and K. Molch. 2004. “Characterizing and Monitoring Rockslides from SAR Techniques.” Advances in Space Research 33 (3): 290–95.\n\n\nTeam, Google Earth Engine. 2023. “SAR Basics with the Earth Engine.” https://developers.google.com/earth-engine/tutorials/community/sar-basics.\n\n\nWu, W. et al. 2022. “Quantifying the Sensitivity of SAR and Optical Images Three-Level Fusions in Land Cover Classification to Registration Errors.” International Journal of Applied Earth Observation and Geoinformation 112: 102868.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>week_9</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Belgiu, M., and L. Drăguţ. 2016. “Random Forest in Remote Sensing:\nA Review of Applications and Future Directions.” ISPRS\nJournal of Photogrammetry and Remote Sensing 114: 24–31.\n\n\nBertsimas, D., and J. Dunn. 2017. “Optimal Classification\nTrees.” Machine Learning 106 (7): 1039–82.\n\n\n“Biomass Estimation Competition.” 2023. https://www.drivendata.org/competitions/99/biomass-estimation/page/535/.\n\n\nCanada, Natural Resources. 2015. “Satellites and Sensors: Spectral\nResolution.” https://natural-resources.canada.ca/maps-tools-and-publications/satellite-imagery-and-air-photos/tutorial-fundamentals-remote-sensing/satellites-and-sensors/spectral-resolution/9393.\n\n\nDave, C. P., R. Joshi, and S. S. Srivastava. 2015. “A Survey on\nGeometric Correction of Satellite Imagery.” International\nJournal of Computer Applications 116 (12).\n\n\nDe’ath, Glenn, and K. E. Fabricius. 2000. “Classification and\nRegression Trees: A Powerful yet Simple Technique for Ecological Data\nAnalysis.” Ecology 81 (11): 3178–92.\n\n\nEarthblox. 2023. “Advantages and Disadvantages of Google Earth\nEngine.” https://www.earthblox.io/blog/advantages-and-disadvantages-of-google-earth-engine.\n\n\nEarthdata, NASA. 2024. “Remote Sensing Backgrounders: Radiometric\nResolution.” https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=Radiometric%20resolution%20is%20the%20amount,%2D255)%20to%20store%20information.\n\n\nGeography, GIS. 2024. “OBIA - Object-Based Image Analysis\n(GEOBIA).” https://gisgeography.com/obia-object-based-image-analysis-geobia/.\n\n\nGoogle. 2023. “Google Earth Engine.” https://www.google.com/earth/education/tools/google-earth-engine/.\n\n\nInternational Earth Science Information Network (CIESIN), Center for.\nn.d. “Box 4-b–System Tradeoffs.” http://www.ciesin.org/docs/005-356/box4B.html#:~:text=Spectral%20resolution%20refers%20to%20the,these%20signals%20can%20be%20recorded.\n\n\nJanalipour, M., and A. Mohammadzadeh. 2016. “Building Damage\nDetection Using Object-Based Image Analysis and ANFIS from\nHigh-Resolution Image (Case Study: BAM Earthquake, Iran).”\nIEEE Journal of Selected Topics in Applied Earth Observations and\nRemote Sensing 9 (5): 1937–45.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nKulkarni, S. C., and P. P. Rege. 2020. “Pixel Level Fusion\nTechniques for SAR and Optical Images: A Review.” Information\nFusion 59: 13–29.\n\n\nKurita, T. 2019. “Principal Component Analysis (PCA).” In\nComputer Vision: A Reference Guide, 1–4.\n\n\nLin, Y. et al. 2020. “Incorporating Synthetic Aperture Radar and\nOptical Images to Investigate the Annual Dynamics of Anthropogenic\nImpervious Surface at Large Scale.” Remote Sensing of\nEnvironment 242: 111757.\n\n\nMartin, M. E. et al. 1998. “Determining Forest Species Composition\nUsing High Spectral Resolution Remote Sensing Data.” Remote\nSensing of Environment 65 (3): 249–54. https://www-sciencedirect-com.libproxy.ucl.ac.uk/science/article/pii/S0034425798000352.\n\n\nMassachusetts Boston, University of. 2023. “Terra and Aqua MODIS -\nBidirectional Reflectance Distribution Function (BRDF).” https://www.umb.edu/spectralmass/terra-aqua-modis/modis/#:~:text=The%20BRDF%20is%20the%20%22Bidirectional,illumination%20geometry%20and%20viewing%20geometry.\n\n\nMoreira, A. et al. 2013. “A Tutorial on Synthetic Aperture\nRadar.” IEEE Geoscience and Remote Sensing Magazine 1\n(1): 6–43.\n\n\nNASA Earthdata. 2023. “What Is SAR?” https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar.\n\n\nPinel, V. et al. 2014. “Volcanology: Lessons Learned from\nSynthetic Aperture Radar Imagery.” Journal of Volcanology and\nGeothermal Research 289: 81–113.\n\n\nRama Rao, N. et al. 2007. “Evaluation of Radiometric Resolution on\nLand Use/Land Cover Mapping in an Agricultural Area.”\nInternational Journal of Remote Sensing 28 (2): 443–50.\n\n\nResearchGate. 2016. “Differences Between Passive and Active\nSensors.” https://www.researchgate.net/figure/Differences-between-passive-and-active-sensors_fig1_339726853.\n\n\nRocchini, D., and A. Di Rita. 2005. “Relief Effects on Aerial\nPhotos Geometric Correction.” Applied Geography 25 (2):\n159–68.\n\n\nSchmitt, M., and Xiao Xiang Zhu. 2016. “Data Fusion and Remote\nSensing: An Ever-Growing Relationship.” IEEE Geoscience and\nRemote Sensing Magazine 4 (4): 6–23.\n\n\nSentinel-2, NASA Harmonized Landsat. 2023. “Algorithms:\nAtmospheric Correction.” https://hls.gsfc.nasa.gov/algorithms/atmospheric-correction/.\n\n\nSidhu, N. et al. 2018. “Using Google Earth Engine to Detect Land\nCover Change: Singapore as a Use Case.” European Journal of\nRemote Sensing 51 (1): 486–500.\n\n\nSinghroy, V., and K. Molch. 2004. “Characterizing and Monitoring\nRockslides from SAR Techniques.” Advances in Space\nResearch 33 (3): 290–95.\n\n\n“Support Vector Machines in Scikit-Learn.” 2023. https://scikit-learn.org/stable/modules/svm.html.\n\n\nTeam, Google Earth Engine. 2023. “SAR Basics with the Earth\nEngine.” https://developers.google.com/earth-engine/tutorials/community/sar-basics.\n\n\nVerbeiren, S. et al. 2008. “Sub-Pixel Classification of\nSPOT-VEGETATION Time Series for the Assessment of Regional Crop Areas in\nBelgium.” International Journal of Applied Earth Observation\nand Geoinformation 10 (4): 486–97.\n\n\nWang, L. a., X. Zhou, X. Zhu, Z. Dong, and W. Guo. 2016.\n“Estimation of Biomass in Wheat Using Random Forest Regression\nAlgorithm and Remote Sensing Data.” The Crop Journal 4:\n212–19.\n\n\nWu, W. et al. 2022. “Quantifying the Sensitivity of SAR and\nOptical Images Three-Level Fusions in Land Cover Classification to\nRegistration Errors.” International Journal of Applied Earth\nObservation and Geoinformation 112: 102868.\n\n\nXiong, J. et al. 2017. “Automated Cropland Mapping of Continental\nAfrica Using Google Earth Engine Cloud Computing.” ISPRS\nJournal of Photogrammetry and Remote Sensing 126: 225–44.\n\n\nZhao, X. et al. 2019. “Estimation of Poverty Using Random Forest\nRegression with Multi-Source Data: A Case Study in Bangladesh.”\nRemote Sensing 11 (4): 375.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 
 ---
-title: "Ninja Master SNAP in Remotely Sensing"
+title: "Jakarta"
 author: "Zihan Liu"
 institute: "UCL"
 date: "18/02/2024 (updated: `r Sys.Date()`)"
@@ -134,7 +134,7 @@ In panel A, we see a radar image (radargram) that captures what's below the luna
 
 .pull-right[
   ```{r  echo=FALSE, out.width='120%', fig.align='right'}
-  knitr::include_graphics('./week2_application1.png')
+  knitr::include_graphics('./Week2_application1.png')
   ```
   </br>
   .pull-right[([Li, 2020](https://www.science.org/doi/full/10.1126/sciadv.aay6898))]

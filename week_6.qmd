@@ -2,66 +2,77 @@
 title: "week_6"
 author: "Zihan Liu"
 ---
-#.Summary
-## Introduction of Google Earth Engine
 
-Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities (https://www.google.com/earth/education/tools/google-earth-engine/). Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth's surface https://www.google.com/earth/education/tools/google-earth-engine/.
+##Summary
 
-Google Earth Engine's data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, you can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages (https://www.earthblox.io/blog/advantages-and-disadvantages-of-google-earth-engine).
+### Introduction of Google Earth Engine
+
+Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities [@GoogleEarthEngine2023]. Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth's surface [@GoogleEarthEngine2023].
+
+Google Earth Engine's data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, you can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages [@EarthbloxGEE2022].
 
 ## Basic knowledge of GEE
+
 Raster Data: In GEE, raster data are represented as images, where each image consists of one or more bands. Each band contains values for a specific attribute (e.g., reflectance in a particular wavelength) across the covered area.
 
 Vector Data: Vector data in GEE is represented as Features or FeatureCollections. This data type is used to represent discrete objects or areas, such as rivers, roads, boundaries, or specific points of interest.
 
 The JavaScript API, accessible through the Code Editor, is widely used for interactive data exploration and analysis.
 
-Loops and Mapping:  we can't (or shouldn't) use a loop for something on the server as the loop doesn't know what is in the ee object. But GEE provides functionality for iterating over collections (e.g., ImageCollection) using mapping functions, which apply a specified operation to each element in the collection.
+Loops and Mapping: we can't (or shouldn't) use a loop for something on the server as the loop doesn't know what is in the ee object. But GEE provides functionality for iterating over collections (e.g., ImageCollection) using mapping functions, which apply a specified operation to each element in the collection.
 
-Scale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default. 
+Scale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default.
 
 ## How we use GEE
 
 In Google Earth Engine, typical processes include geometry operations like spatial analyses, joining datasets, and calculating zonal statistics like average temperature by area. We can filter images or values and use machine learning techniques for supervised and unsupervised classification, including deep learning with TensorFlow.
 
-### Reducing Images
+### NDVI
 
-Zonal Statistics: This process involves summarizing information within images based on specified zones or regions.
+As mentioned in week_3, NDVI is the instrument to measure the health of vegetable.
 
-For regional reduction, users apply statistical operations (e.g., mean, median) within predefined geometries like polygons, using .reduceRegion(). This method is ideal for extracting average values across diverse applications such as agriculture or urban planning. 
+![](week_6_NDVI_workshop.png)
 
-Neighborhood reduction, on the other hand, focuses on summarizing data around each pixel within a specified kernel, using .reduceNeighborhood(), suitable for image smoothing, feature enhancement, and local statistics calculation.
+Value of around 0 indicates areas of bare soil or rock, urban areas, or stressed vegetation. A value of around 0.19 shown on the map in Santa Clara is in this category, suggesting that there is some vegetation present, but it is not very dense. This could be indicative of grassland, scrub, or an area where the vegetation is not very healthy.
 
-For regression model, Using Google Earth Engine (GEE) for linear regression allows for the analysis of change over time across multiple sensors' imagery on a per-pixel basis. The linearFit() function, which employs a least squares approach, is particularly useful for this purpose. It requires two bands: one as the dependent variable and the other as the independent variable, often representing time. We can apply linear regression per pixel across an image collection crossing several years for temporal studies, and can also apply regression for all pixels within a specific polygon on a particular date for spatial studies.
+### PCA
 
-# Application
+PCA is a popular method used to simplify data by finding important patterns and reducing unnecessary details and noise, helps in making the data easier to work with and understand, and is used in various tasks like shrinking data size, improving data visualization, and highlighting key features [@Kurita2019].
 
-In the study "Using Google Earth Engine to detect land cover change: Singapore as a use case," Google Earth Engine (GEE) was employed to analyze land cover changes in Singapore, focusing on the Tuas industrial zone and the Central Catchment Reserve (CCR). The study aimed to evaluate GEE's capabilities in processing raster and vector data, conducting spatial and temporal analyses, and handling big Earth Observation (EO) data.
+![](week_6_PCA.png)
+
+In my case i can see that the first component explains 78.89% of the variance within the collection, suggests that most of the information in the dataset can be represented by this single principal component. The second component explains 11.84% of the variance, additional to the variance captured by the first component and gives more details that the first component might not capture.
+
+## Application
+
+### Application 1
+
+Google Earth Engine (GEE) was employed to analyze land cover changes in Singapore [@Sidhu2018], focusing on the Tuas industrial zone and the Central Catchment Reserve (CCR). The study aimed to evaluate GEE's capabilities in processing raster and vector data, conducting spatial and temporal analyses, and handling big Earth Observation (EO) data.
 
 The results indicated that GEE was effective in managing and processing large-scale satellite imagery data, providing access to diverse datasets, and facilitating spatial and temporal analyses. For Tuas, the analysis revealed rapid industrialization and land transformation, particularly through land reclamation processes. Meanwhile, in the CCR, a protected area, forest cover remained stable, largely unaffected by human activities and influenced more by natural monsoon cycles.
 
 Overall, GEE's robust platform supported detailed analysis of land cover changes in Singapore, demonstrating its utility for urban and environmental studies.
 
-Source from: https://www.tandfonline.com/doi/full/10.1080/22797254.2018.1451782
+Compare with the use of GEE in developed modern cities, my next article will focus on the less developed agriculture areas.
 
+### Application 2
 
-Compare with the use of GEE in developed modern cities, my next article will focus on the less developed agriculture areas. 
+The research article [@Xiong2017] discusses the use of Google Earth Engine (GEE) for creating automated cropland maps across Africa. Used Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, the study produced reference cropland layers for 2014 with high accuracy (around 90% for crop extent) across different agriculture zones.
 
-The research article "Automated cropland mapping of continental Africa using Google Earth Engine cloud computing" discusses the use of Google Earth Engine (GEE) for creating automated cropland maps across Africa. Used Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, the study produced reference cropland layers for 2014 with high accuracy (around 90% for crop extent) across different agriculture zones. 
+The study's results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rainfed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa. It demonstrated GEE's strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.
 
-The study's results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rainfed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa.
-
-In conclusion, the research demonstrated GEE's strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.
-
+### Application reflection
 
 Google Earth Engine (GEE) has been effectively used in diverse areas, from urban land cover change analysis in Singapore to large-scale agricultural mapping in Africa. In Singapore, GEE facilitated detailed studies of industrialization and natural reserves, while in Africa, it supported cropland monitoring. These applications highlighted GEE's capacity to manage satellite imagery datasets as well as spatial and temporal analyses across different scales and contexts. As a powerful tool for environmental monitoring, agricultural development, and many other areas, GEE may play more and more important role in urban planning.
 
-#. Reflection
+## Reflection
 
-Reflecting on my study of Google Earth Engine, I have understood its capabilities in environmental data analysis. GEE can process and analyze massive datasets, its ability of analyzing satellite imagery and geospatial datasets gave me the idea of how important and efficient a cloud-based platform can be used to understand and manage Earth's complexities.
+Reflecting on my study of Google Earth Engine, I have understood its ability in environmental data analysis. GEE can process and analyze massive datasets, its ability of analyzing satellite imagery and geospatial datasets gave me the idea of how important and efficient a cloud-based platform can be used to understand and manage Earth's complexities.
 
-What interesed me the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only more developed cities but also less developed places. 
+What interested me the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only more developed cities but also less developed places.
 
-GEE integrates various data types, from raster to vector, and employs advanced analysis techniques like zonal and neighborhood reduction, linear regression, and machine learning. These complex processes can be managed from a simple web browser or even a mobile device, using programming languages like JavaScript or Python.
+GEE integrates various data types, from raster to vector, and support large amount of picture analysis techniques like NDVI and PCA, linear regression, and machine learning. These complex processes can be managed from a simple web browser or even a mobile device, using programming languages like JavaScript or Python.
 
 Before, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes on the map, which is a new and interesting try.
+
+## **Reference**
