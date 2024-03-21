@@ -3,9 +3,9 @@ title: "week_8"
 author: "Zihan Liu"
 ---
 
-# Summary
+## Summary
 
-## Object-Based Image Analysis (OBIA)
+### Object-Based Image Analysis (OBIA)
 
 OBIA shifts focus from individual pixels to shapes or superpixels, based on their homogeneity (similarity) or heterogeneity (difference). SLIC (Simple Linear Iterative Clustering) is a common method for generating superpixels, analyzing spatial and color distances to define groups. Iterative process, typically 4-10 rounds, refines superpixel centers and boundaries, similar to k-means. Uses LAB color space for nuanced color analysis, classifying objects based on average values for interpretation.
 
@@ -19,7 +19,7 @@ Object-Based Image Analysis (OBIA) segmentation is a process that groups similar
 
 OBIA classification uses shape, size, and spectral properties of objects to classify each object [@GISGeographyOBIA2024].
 
-## Sub pixel analysis
+### Sub pixel analysis
 
 Allows us to deconstruct the observed spectral data of a pixel into its constituent materials, giving us a clearer understanding of what is present on the ground in that area.
 
@@ -29,7 +29,7 @@ Pixel Modeling: The goal here is to determine what mixture of these end members 
 
 Calculkation method: The left side of the equation represents the spectral signature of a pixel in bands 3 and 4, plus the condition that the sum of the fractions of end members equals 1. The matrix in the middle represents the spectral signatures of the end members (water, vegetation, soil) for bands 3 and 4, with an additional row of ones to enforce the sum-to-one constraint. The right side represents the fractions of each end member within the pixel that we are trying to find. Then calculate fraction by forming a new matrix with the left hand side being the fraction matrix, and the calculated value is the proportion of the different end members.
 
-## Accuracy assessment
+### Accuracy assessment
 
 in machine learning is a process to evaluate how well a model's predictions match the actual reality
 
@@ -51,13 +51,13 @@ The aim is to maximize true positives (aiming for a TPR of 1) while minimizing f
 
 A perfect model scores 1, while a random guess scores 0.5, the higher the AUC, the better the model is at predicting true positives
 
-## Cross validation and spatial autocorrelation.
+### Cross validation and spatial autocorrelation.
 
 When we're working with data in geography or maps, we usually divide our data into two parts: one part to learn from (train) and another part to see how well we've learned (test). However, there's an important idea by Waldo Tobler, called the "First Law of Geography," which says that things that are closer to each other are more alike than things that are far apart. This means when we're training our model, if the training data includes information that's very close to the test data, it might provide 'sneak peek' because the training data shouldn't know anything about the test data.
 
 In this figure, we prefer the lower row as the upper one's training data and test data are near each other.
 
-## SVM (Support Vector Machine classifier)
+### SVM (Support Vector Machine classifier)
 
 SVMs are a group of supervised learning techniques used in regression analysis, outlier identification, and classification [@ScikitLearnSVM2023]. 
 
@@ -71,7 +71,7 @@ They conduct cross-validation within these folds, with each spatial partition un
 
 Repeating the process 100 times, they evaluate 125,000 models to determine the ideal SVM settings.
 
-# Application:
+## Application:
 
 In the case study VerbeirenEtAl2008 [@VerbeirenEtAl2008], sub-pixel classification was used to estimate regional crop areas in Belgium using low-resolution SPOT-VEGETATION NDVI images. It proved effective for generating reliable area estimates in regions with limited high-resolution data.
 
@@ -93,7 +93,7 @@ Figures from [@JanalipourMohammadzadeh2016]
 
 Sub-pixel classification with low-resolution NDVI images was used for crop area estimation in Belgium and OBIA for post-earthquake building damage detection.   These methods enabled precise environmental and damage assessments, showing the value of different remote sensing techniques for land and structural analysis.
 
-# Reflection
+## Reflection
 
 Reflecting on my learning journey through the class, I've learned many image analysis techniques, notably Object-Based Image Analysis (OBIA) and sub-pixel analysis. The OBIA method, groups pixels into objects based on their spectral, spatial, and textural characteristics, I found it particularly useful in areas like land use classification. Sub-pixel analysis helped me understand image analysis further by breaking down the spectral signatures within a pixel, thereby providing a clearer picture of the ground realities.
 

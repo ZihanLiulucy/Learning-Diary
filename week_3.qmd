@@ -3,85 +3,71 @@ title: "week_3"
 author: "Zihan Liu"
 ---
 
-#Summary
+##Summary
 
-## Introduction
+### Introduction
 
-In this section we learned how to deal with the mistakes and unclearities in the remote sensed images. They sometimes include lots of biases and flaws like in UK the atmosphere us always a problem in reading all the photos.
+In this section we learned how to deal with the mistakes and unclearities in the remote sensed images. Sometimes there are lots of biases and flaws like in UK the atmosphere is always a problem in reading all the photos.
 
-## 1. Why we need Data Fusion
+### Why we need Data Fusion
 
-Data fusion in remote sensing refers to the integration of data from multiple sources or sensors to obtain a more comprehensive understanding of the Earth's surface or atmosphere
+Data fusion in remote sensing refers to the practice of merging data, signals, or observations from various sources to produce an outcome that is better than what could have been obtained from any single source individually [@SchmittZhu2016].
 
-It can Enhance Information Content: Different sensors capture different types of information on Earth's surface. By combining data, it can provide a more complete picture of environmental phenomena such as land cover, vegetation health, or atmospheric conditions.
+It can enhance information content: different sensors capture different types of information on earth's surface. By combining data, it can provide a more complete picture of environmental phenomena such as land cover, vegetation health, or atmospheric conditions.
 
-Geometric correction is the process of correcting the image geometry to ensure that it accurately represents the Earth's surface as if the image were captured from directly overhead (nadir point of view). This correction is necessary because images are often taken at an angle and from a moving platform.
-
-## Data correction
+### Data correction
 
 We mainly introduce 4 types of data correction here
 
-### Geometric correlation
+#### Geometric correction
 
-Geometric correction in remote sensing adjusts satellite images for distortions caused by off-nadir viewing angles, topography, wind, and Earth's rotation.
-We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients.
-The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), Jensen suggesting a value of 0.5.
-Transformation algorithms correct coordinates, ensuring the rectified image aligns accurately with real-world locations.
-Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment. 
+Geometric correction is the process of correcting the image geometry to ensure that it accurately represents the earth's surface as if the image were captured from directly overhead. This correction is necessary because images are often taken at an angle and from a moving platform.
+
+We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients. The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), which Jensen suggesting a value of 0.5.Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment.
 
 ### Atmospheric correction
 
-Atmospheric correction is used to counteract atmospheric scattering and topographic attenuation.
-Necessary for biophysical parameters needed, but not for single image classification or multi-date imagery without biophysical parameter analysis.
-Correction methods include relative approaches and absolute approaches. Relative atmospheric correction normalizes pixel values within images based on reference points, used to reduce atmospheric effects like haze. Absolute correction converts observed data to physical quantities like surface reflectance using atmospheric models, ensuring comparability across images and time. Methods like Dark Object Subtraction (DOS) and Pseudo-Invariant Features (PIFs) are typical in relative correction, while absolute approaches use models like MODTRAN and tools like FLAASH for precise corrections.
+Atmospheric correction is used to counteract atmospheric scattering and topographic attenuation. Necessary for biophysical parameters needed, but not for single image classification or multi-date imagery without biophysical parameter analysis. Correction methods include relative approaches and absolute approaches. Relative atmospheric correction normalizes pixel values within images based on reference points, used to reduce atmospheric effects like haze. Absolute correction converts observed data to physical quantities like surface reflectance using atmospheric models, ensuring comparability across images and time. Methods like Dark Object Subtraction (DOS) and Pseudo-Invariant Features (PIFs) are typical in relative correction, while absolute approaches use models like MODTRAN and tools like FLAASH for precise corrections.
 
 ### Empirical Line Correction
 
-Reflectance (field spectrum) = gain * radiance (input data)
-Orthorectification correction aim to removing distortions
-
+Reflectance (field spectrum) = gain \* radiance (input data) Orthorectification correction aim to removing distortions
 
 Empirical Methods: Include simple Dark Object Subtraction (DS) and the more complex FLAASH correction, optimizing images by simulating atmospheric scattering and absorption.
-
 
 Absolute Correction: Transforms digital brightness values into scaled surface reflectance, requiring atmospheric models and local condition data for accurate Earth surface representation.
 
 Empirical Line Correction: Directly corrects images through field spectrometer measurements taken concurrently with satellite overpasses, enhancing the accuracy of reflectance data.
 
-###  Orthorectification correction
+### Orthorectification correction
 
 Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas(https://www.satimagingcorp.com/services/orthorectification/).
 
+## Joining data
 
-
-##  Joining data
-
-Remote sensing data is often captured as individual, discrete images, each covering a specific geographical area like pieces of a larger puzzle, to get a comprehensive understanding of larger regions or to analyze spatial relationships and patterns across these areas, we need to merge them together. 
+Remote sensing data is often captured as individual, discrete images, each covering a specific geographical area like pieces of a larger puzzle, to get a comprehensive understanding of larger regions or to analyze spatial relationships and patterns across these areas, we need to merge them together.
 
 Mosaicking in remote sensing is similar to merging in GIS, where multiple datasets are joined to create a seamless image, by blends the edges of images, minimizing the visibility of seamlines between joined images. A base image and a second image are overlapped (20-30%) to ensure continuity. Histogram matching algorithms are used within the overlap area to align brightness values, aiding in seamless integration before feathering.
 
-#   Application
-2.I am interested in atmospheric correction as it is useful especially in cloud-prone areas like the UK. I did a research about four atmospheric correction methods. Pseudo-Invariant Features (PIF): Uses stable ground targets to normalize image data, but can struggle with sample selection and coverage.
-Radiometric Control Sets (RCS): Utilizes bright and dark features in images for normalization, balancing atmospheric effects across the scene.
-Cost of Sensor Zenith Angle (COST): An image-based method that corrects using the sun's zenith angle to adjust for atmospheric absorption and scattering.
-Second Simulation of the Satellite Signal in the Solar Spectrum (6S): A modeling approach that calculates atmospheric impact on reflectance, requiring detailed input parameters for precise correction.
-Each method was evaluated for its effectiveness in dealing with atmospheric interference in satellite imagery, particularly focusing on vegetation monitoring. The analysis included image quality, classification results, and landscape metric changes, identifying COST, RCS, and 6S are better than PIF as they are more stable and more accurate.
+# Application
+
+2.I am interested in atmospheric correction as it is useful especially in cloud-prone areas like the UK. I did a research about four atmospheric correction methods. Pseudo-Invariant Features (PIF): Uses stable ground targets to normalize image data, but can struggle with sample selection and coverage. Radiometric Control Sets (RCS): Utilizes bright and dark features in images for normalization, balancing atmospheric effects across the scene. Cost of Sensor Zenith Angle (COST): An image-based method that corrects using the sun's zenith angle to adjust for atmospheric absorption and scattering. Second Simulation of the Satellite Signal in the Solar Spectrum (6S): A modeling approach that calculates atmospheric impact on reflectance, requiring detailed input parameters for precise correction. Each method was evaluated for its effectiveness in dealing with atmospheric interference in satellite imagery, particularly focusing on vegetation monitoring. The analysis included image quality, classification results, and landscape metric changes, identifying COST, RCS, and 6S are better than PIF as they are more stable and more accurate.
 
 https://www.asprs.org/wp-content/uploads/pers/2007journal/april/2007_apr_361-368.pdf
 
-Another literature mentioned that analysis of remote sensing data requires not only technical data analysis but also expert judgment. In the scenario of a flood causing potential chemical spills, remote sensing is employed to identify hazardous substances like ethylene glycol leaking into waterways near residential areas. Spectral sensors from an aerial flyover detect a discolored water plume, and specialists analyze this data against known chemical signatures to assess the spill.  However, this analysis is fraught with challenges: sensor accuracy can't be guaranteed, similar substances might confuse the identification, and unknown chemicals may be present, complicating the analysis.  Despite these uncertainties, experts must quickly make informed decisions using their judgment.  This situation underscores the complexities of using remote sensing in emergencies, where rapid, accurate decision-making is crucial despite the inherent limitations of the data and the analysis process.  This exemplifies broader issues in technical data analysis, particularly under urgent conditions where expert judgment is pivotal yet often unexamined for reliability.
+Another literature mentioned that analysis of remote sensing data requires not only technical data analysis but also expert judgment. In the scenario of a flood causing potential chemical spills, remote sensing is employed to identify hazardous substances like ethylene glycol leaking into waterways near residential areas. Spectral sensors from an aerial flyover detect a discolored water plume, and specialists analyze this data against known chemical signatures to assess the spill. However, this analysis is fraught with challenges: sensor accuracy can't be guaranteed, similar substances might confuse the identification, and unknown chemicals may be present, complicating the analysis. Despite these uncertainties, experts must quickly make informed decisions using their judgment. This situation underscores the complexities of using remote sensing in emergencies, where rapid, accurate decision-making is crucial despite the inherent limitations of the data and the analysis process. This exemplifies broader issues in technical data analysis, particularly under urgent conditions where expert judgment is pivotal yet often unexamined for reliability.
 
 In summary, atmospheric methods enhance image analysis, crucial for monitoring environmental changes. However, in emergency situations, the process may face challenges like sensor reliability and unknown substances, require expert judgment together with technical analysis.
 
 https://ieeexplore-ieee-org.libproxy.ucl.ac.uk/document/4717831
 
-#    Reflection
+# Reflection
 
 Reflecting on my journey as a new student in remote sensing, I've learned the complex of data fusion and correction.
 
 Data fusion and correction in remote sensing are essential for accurate Earth observation. Data fusion integrates information from multiple sources, providing a more comprehensive and detailed view of the environment, enhancing the analysis of land cover, vegetation health, and other phenomena. These processes improve the reliability and accuracy of remote sensing data, essential for environmental monitoring, disaster management, and various scientific research applications.
 
-Geometric correction was another thing that I’m interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear.
+Geometric correction was another thing that I'm interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear.
 
 Atmospheric correction, especially in cloudy areas like the UK, became my focusing point. The exploration of various correction methods, from Pseudo-Invariant Features (PIF) to the others, showed the complexity and necessity.
 

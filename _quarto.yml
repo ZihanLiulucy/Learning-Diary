@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - self_introduction.qmd
     - week1.qmd
     - week_3.qmd
     - week_4.qmd
