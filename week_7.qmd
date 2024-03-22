@@ -119,4 +119,4 @@ Random Forests (RF) gave me an idea of how to avoid the bad effects of multicoll
 
 Unsupervised methods like k-means and supervised techniques, including Support Vector Machines (SVM), expanded my understanding of machine learning's diversity.Through these insights, I gained a comprehensive view of machine learning's role in data analysis, from theoretical foundations to real-world applications.
 
-## **Reference**
+## **References**

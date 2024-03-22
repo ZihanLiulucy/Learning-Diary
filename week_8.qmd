@@ -115,4 +115,4 @@ It is interesting to see how the result of OBIA and sub-pixel analysis show a la
 
 Overall, this class deepened my knowledge of the image analysis techniques and their practical implications in environmental monitoring and disaster management.
 
-## **Reference**
+## **References**

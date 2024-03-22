@@ -11,7 +11,7 @@ Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environm
 
 Google Earth Engine's data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, we can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages [@EarthbloxGEE2022].
 
-## Basic knowledge of GEE
+### Basic knowledge of GEE
 
 Raster Data: In GEE, raster data are represented as images, where each image consists of one or more bands. Each band contains values for a specific attribute (e.g., reflectance in a particular wavelength) across the covered area.
 
@@ -21,7 +21,7 @@ The JavaScript API, accessible through the Code Editor, is widely used for inter
 
 Scale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default.
 
-## How we use GEE
+### How we use GEE
 
 In Google Earth Engine, typical processes include geometry operations like spatial analyses, joining datasets, and calculating zonal statistics like average temperature by area. We can filter images or values and use machine learning techniques for supervised and unsupervised classification, including deep learning with TensorFlow.
 
@@ -73,4 +73,4 @@ GEE integrates various data types, from raster to vector, and support large amou
 
 Before, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes, which is a new and interesting try.
 
-## **Reference**
+## **References**

@@ -243,19 +243,18 @@ window.Quarto = {
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">5.1.1</span> Introduction</a></li>
   <li><a href="#why-we-need-data-fusion" id="toc-why-we-need-data-fusion" class="nav-link" data-scroll-target="#why-we-need-data-fusion"><span class="header-section-number">5.1.2</span> Why we need Data Fusion</a></li>
   <li><a href="#data-correction" id="toc-data-correction" class="nav-link" data-scroll-target="#data-correction"><span class="header-section-number">5.1.3</span> Data correction</a></li>
+  <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data"><span class="header-section-number">5.1.4</span> Joining data</a></li>
+  <li><a href="#enhancements-of-remote-sensing-imagery-ndvi" id="toc-enhancements-of-remote-sensing-imagery-ndvi" class="nav-link" data-scroll-target="#enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.1.5</span> Enhancements of remote sensing imagery (NDVI)</a></li>
+  <li><a href="#ndvi-workshop" id="toc-ndvi-workshop" class="nav-link" data-scroll-target="#ndvi-workshop"><span class="header-section-number">5.1.6</span> NDVI workshop</a></li>
   </ul></li>
-  <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data"><span class="header-section-number">5.2</span> Joining data</a></li>
-  <li><a href="#enhancements-of-remote-sensing-imagery-ndvi" id="toc-enhancements-of-remote-sensing-imagery-ndvi" class="nav-link" data-scroll-target="#enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.3</span> Enhancements of remote sensing imagery (NDVI)</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.4</span> Application</a>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1"><span class="header-section-number">5.4.1</span> Application 1</a></li>
-  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2"><span class="header-section-number">5.4.2</span> Application 2</a></li>
-  <li><a href="#application-reflection" id="toc-application-reflection" class="nav-link" data-scroll-target="#application-reflection"><span class="header-section-number">5.4.3</span> Application reflection</a></li>
+  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1"><span class="header-section-number">5.2.1</span> Application 1</a></li>
+  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2"><span class="header-section-number">5.2.2</span> Application 2</a></li>
+  <li><a href="#application-reflection" id="toc-application-reflection" class="nav-link" data-scroll-target="#application-reflection"><span class="header-section-number">5.2.3</span> Application reflection</a></li>
   </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6</span> Reflection</a>
-  <ul class="collapse">
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">6.1</span> <strong>Reference</strong></a></li>
-  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.4</span> <strong>References</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -324,28 +323,35 @@ window.Quarto = {
 <p>Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas <span class="citation" data-cites="SatImagingCorpOrtho2022">(<a href="references.html#ref-SatImagingCorpOrtho2022" role="doc-biblioref">Satellite Imaging Corporation 2022</a>)</span>.</p>
 </section>
 </section>
-</section>
-<section id="joining-data" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="joining-data"><span class="header-section-number">5.2</span> Joining data</h2>
+<section id="joining-data" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="joining-data"><span class="header-section-number">5.1.4</span> Joining data</h3>
 <p>Remote sensing data is often captured as individual, discrete images, each covering a specific geographical area like pieces of a larger puzzle, to get a comprehensive understanding of larger regions or to analyze spatial relationships and patterns across these areas, we need to merge them together.</p>
 <p>Mosaicking in remote sensing is similar to merging in GIS, where multiple datasets are joined to create a seamless image, by blends the edges of images, minimizing the visibility of seamlines between joined images. A base image and a second image are overlapped (20-30%) to ensure continuity. Histogram matching algorithms are used within the overlap area to align brightness values, aiding in seamless integration before feathering.</p>
 </section>
-<section id="enhancements-of-remote-sensing-imagery-ndvi" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.3</span> Enhancements of remote sensing imagery (NDVI)</h2>
+<section id="enhancements-of-remote-sensing-imagery-ndvi" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.1.5</span> Enhancements of remote sensing imagery (NDVI)</h3>
 <p>The Normalized Difference Vegetation Index (NDVI) leverages the near-infrared and red spectral bands to identify healthy vegetation, as such vegetation strongly reflects near-infrared light and absorbs most of the red light. Regions that exhibit a high NDVI value are indicative of robust vegetation health. The NDVI metric is derived using the following calculation:</p>
 <p><span class="math display">\[ NDVI = \frac{NIR - Red}{NIR + Red}\]</span></p>
 </section>
-<section id="application" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="application"><span class="header-section-number">5.4</span> Application</h2>
-<section id="application-1" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">5.4.1</span> Application 1</h3>
+<section id="ndvi-workshop" class="level3" data-number="5.1.6">
+<h3 data-number="5.1.6" class="anchored" data-anchor-id="ndvi-workshop"><span class="header-section-number">5.1.6</span> NDVI workshop</h3>
+<p><img src="week_3_workshop_2.png" class="img-fluid" width="315"> <img src="week_3_workshop_3.png" class="img-fluid" width="270"></p>
+<p>The figure on the left hand side shows the NDVI map in York, we can distinguish the water, land and greenery on the map. The NDVI value of water is less than 0.2, while land is a little bit higher, and the greenery is the highest, with the color of green shown on the map, NDVI is higher than 0.4.</p>
+<p>The basic logic is that Water bodies usually have very low NDVI values because water absorbs most of the sunlight in the visible and near-infrared wavelengths, leading to negative NDVI values or values close to zero. Land often contains some vegetation, so the value would be higher than water, and values close to +1 suggest dense and healthy green vegetation as these areas are reflecting more infrared and less visible lights.</p>
+<p>The right hand side figure shows the points where NDVI is higher than 0.2, filtering out most water bodies, the remained textures are mainly solid.</p>
+</section>
+</section>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+<section id="application-1" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">5.2.1</span> Application 1</h3>
 <p><span class="citation" data-cites="NASA_HLS2023">(<a href="references.html#ref-NASA_HLS2023" role="doc-biblioref">Sentinel-2 2023</a>)</span></p>
 <p>I am interested in atmospheric correction as it is useful especially in cloudy areas like the UK. The Land Surface Reflectance Code (LaSRC), created by Eric Vermote at NASA/GSFC and adapted by the USGS, is used for atmospheric correction on data from Landsat 8 and Sentinel-2 sensors. LaSRC used the 6SV radiative transfer model and a MODIS-derived ratio to determine surface reflectance. Its accuracy is verified through the CEOS Atmospheric Correction Inter-Comparison Exercises. Additionally, the Fmask algorithm identifies clouds, shadows, snow/ice, and water in the top-of-atmosphere (TOA) data. HLS enhances this by expanding cloud/shadow areas and incorporating LaSRC aerosol data into the Fmask results, aiding in precise environmental monitoring and analysis.</p>
 <p><img src="atmospheric_correction.jpeg" class="img-fluid"> Figure from <span class="citation" data-cites="NASA_HLS2023">(<a href="references.html#ref-NASA_HLS2023" role="doc-biblioref">Sentinel-2 2023</a>)</span></p>
 <p>The figure shows a comparison of two satellite images from Sentinel-2B. On the left, there is a true color composite image using bands 4-3-2 with top-of-atmosphere (TOA) reflectance, which has not been corrected for atmospheric effects and therefore may include atmosphere distortions. On the right, there is an image processed with the Land Surface Reflectance Code (LaSRC) to correct for these atmospheric distortions, resulting in surface reflectance that more accurately represents the actual colors and features of the earth’s surface.</p>
 </section>
-<section id="application-2" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">5.4.2</span> Application 2</h3>
+<section id="application-2" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">5.2.2</span> Application 2</h3>
 <p><span class="citation" data-cites="Rocchini2005">(<a href="references.html#ref-Rocchini2005" role="doc-biblioref">Rocchini and Di Rita 2005</a>)</span></p>
 <p><img src="geometric_application.jpg" class="img-fluid"> Figure from <span class="citation" data-cites="Rocchini2005">(<a href="references.html#ref-Rocchini2005" role="doc-biblioref">Rocchini and Di Rita 2005</a>)</span></p>
 <p>The image shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.</p>
@@ -354,19 +360,20 @@ window.Quarto = {
 <p>Orthorectification is a more advanced technique to correct images for the effects of sensor perspective and terrain relief. It’s particularly important in areas with significant topographic variation, such as Etna’s volcanic terrain (the study area). This process provides the most accurate location of features on the ground because it compensates for the actual surface geometry.</p>
 <p>The study results demonstrated that polynomial functions are sufficient for flat areas but become less accurate with more complex terrains. In contrast, orthorectification consistently produced accurate results across different terrain types.</p>
 </section>
-<section id="application-reflection" class="level3" data-number="5.4.3">
-<h3 data-number="5.4.3" class="anchored" data-anchor-id="application-reflection"><span class="header-section-number">5.4.3</span> Application reflection</h3>
+<section id="application-reflection" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="application-reflection"><span class="header-section-number">5.2.3</span> Application reflection</h3>
 <p>Atmospheric correction, particularly through LaSRC, requires accurate atmospheric inputs. I’ve also understood that geometric correction isn’t one-size-fits-all, while polynomial methods may be a proper method for uniform terrains, orthorectification is very useful for complex and rugged landscapes. This knowledge highlights the need for distinguish correction techniques, use them in the appropriate landscape’s characteristics and the atmospheric conditions.</p>
 </section>
 </section>
-<section id="reflection" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Reflection</h1>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
 <p>Reflecting on my journey as a new student in remote sensing, I’ve learned the complex of data fusion and correction.</p>
 <p>Data fusion and correction in remote sensing are essential for accurate earth observation. Data fusion integrates information from multiple sources, providing a more comprehensive and detailed view of the environment, enhancing the analysis of land cover, vegetation health, and other phenomena. These processes improve the reliability and accuracy of remote sensing data, essential for environmental monitoring, disaster management, and various scientific research applications.</p>
 <p>Geometric correction was another thing that I’m interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear.</p>
 <p>In conclusion, my interest into remote sensing has increased. The blend of technical knowledge, practical application, and the key role of choosing the right correction method has enriched my understanding.</p>
-<section id="reference" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.1</span> <strong>Reference</strong></h2>
+</section>
+<section id="references" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> <strong>References</strong></h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -386,7 +393,6 @@ Schmitt, M., and Xiao Xiang Zhu. 2016. <span>“Data Fusion and Remote Sensing: 
 Sentinel-2, NASA Harmonized Landsat. 2023. <span>“Algorithms: Atmospheric Correction.”</span> <a href="https://hls.gsfc.nasa.gov/algorithms/atmospheric-correction/" class="uri">https://hls.gsfc.nasa.gov/algorithms/atmospheric-correction/</a>.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->

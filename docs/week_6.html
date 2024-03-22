@@ -212,21 +212,19 @@ div.csl-indent {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
   <ul class="collapse">
   <li><a href="#introduction-of-google-earth-engine" id="toc-introduction-of-google-earth-engine" class="nav-link" data-scroll-target="#introduction-of-google-earth-engine"><span class="header-section-number">7.1.1</span> Introduction of Google Earth Engine</a></li>
+  <li><a href="#basic-knowledge-of-gee" id="toc-basic-knowledge-of-gee" class="nav-link" data-scroll-target="#basic-knowledge-of-gee"><span class="header-section-number">7.1.2</span> Basic knowledge of GEE</a></li>
+  <li><a href="#how-we-use-gee" id="toc-how-we-use-gee" class="nav-link" data-scroll-target="#how-we-use-gee"><span class="header-section-number">7.1.3</span> How we use GEE</a></li>
+  <li><a href="#ndvi" id="toc-ndvi" class="nav-link" data-scroll-target="#ndvi"><span class="header-section-number">7.1.4</span> NDVI</a></li>
+  <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca"><span class="header-section-number">7.1.5</span> PCA</a></li>
   </ul></li>
-  <li><a href="#basic-knowledge-of-gee" id="toc-basic-knowledge-of-gee" class="nav-link" data-scroll-target="#basic-knowledge-of-gee"><span class="header-section-number">7.2</span> Basic knowledge of GEE</a></li>
-  <li><a href="#how-we-use-gee" id="toc-how-we-use-gee" class="nav-link" data-scroll-target="#how-we-use-gee"><span class="header-section-number">7.3</span> How we use GEE</a>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#ndvi" id="toc-ndvi" class="nav-link" data-scroll-target="#ndvi"><span class="header-section-number">7.3.1</span> NDVI</a></li>
-  <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca"><span class="header-section-number">7.3.2</span> PCA</a></li>
+  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1"><span class="header-section-number">7.2.1</span> Application 1</a></li>
+  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2"><span class="header-section-number">7.2.2</span> Application 2</a></li>
+  <li><a href="#application-reflection" id="toc-application-reflection" class="nav-link" data-scroll-target="#application-reflection"><span class="header-section-number">7.2.3</span> Application reflection</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.4</span> Application</a>
-  <ul class="collapse">
-  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1"><span class="header-section-number">7.4.1</span> Application 1</a></li>
-  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2"><span class="header-section-number">7.4.2</span> Application 2</a></li>
-  <li><a href="#application-reflection" id="toc-application-reflection" class="nav-link" data-scroll-target="#application-reflection"><span class="header-section-number">7.4.3</span> Application reflection</a></li>
-  </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.5</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">7.6</span> <strong>Reference</strong></a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> <strong>References</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -265,58 +263,58 @@ div.csl-indent {
 <p>Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis abilities. Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth’s surface <span class="citation" data-cites="GoogleEarthEngine2023">(<a href="references.html#ref-GoogleEarthEngine2023" role="doc-biblioref">Google 2023</a>)</span>.</p>
 <p>Google Earth Engine’s data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, we can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages <span class="citation" data-cites="EarthbloxGEE2022">(<a href="references.html#ref-EarthbloxGEE2022" role="doc-biblioref">Earthblox 2023</a>)</span>.</p>
 </section>
-</section>
-<section id="basic-knowledge-of-gee" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="basic-knowledge-of-gee"><span class="header-section-number">7.2</span> Basic knowledge of GEE</h2>
+<section id="basic-knowledge-of-gee" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="basic-knowledge-of-gee"><span class="header-section-number">7.1.2</span> Basic knowledge of GEE</h3>
 <p>Raster Data: In GEE, raster data are represented as images, where each image consists of one or more bands. Each band contains values for a specific attribute (e.g., reflectance in a particular wavelength) across the covered area.</p>
 <p>Vector Data: Vector data in GEE is represented as Features or FeatureCollections. This data type is used to represent discrete objects or areas, such as rivers, roads, boundaries, or specific points of interest.</p>
 <p>The JavaScript API, accessible through the Code Editor, is widely used for interactive data exploration and analysis.</p>
 <p>Scale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default.</p>
 </section>
-<section id="how-we-use-gee" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="how-we-use-gee"><span class="header-section-number">7.3</span> How we use GEE</h2>
+<section id="how-we-use-gee" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="how-we-use-gee"><span class="header-section-number">7.1.3</span> How we use GEE</h3>
 <p>In Google Earth Engine, typical processes include geometry operations like spatial analyses, joining datasets, and calculating zonal statistics like average temperature by area. We can filter images or values and use machine learning techniques for supervised and unsupervised classification, including deep learning with TensorFlow.</p>
-<section id="ndvi" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="ndvi"><span class="header-section-number">7.3.1</span> NDVI</h3>
+</section>
+<section id="ndvi" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="ndvi"><span class="header-section-number">7.1.4</span> NDVI</h3>
 <p>As mentioned in week_3, NDVI is the instrument to measure the health of vegetable.</p>
 <p><img src="week_6_NDVI_workshop.png" class="img-fluid"></p>
 <p>Value of around 0 indicates areas of bare soil or rock, urban areas, or stressed vegetation. A value of around 0.19 shown on the map in Santa Clara is in this category, suggesting that there is some vegetation present, but it is not very dense. This could be indicative of grassland, scrub, or an area where the vegetation is not very healthy.</p>
 </section>
-<section id="pca" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="pca"><span class="header-section-number">7.3.2</span> PCA</h3>
+<section id="pca" class="level3" data-number="7.1.5">
+<h3 data-number="7.1.5" class="anchored" data-anchor-id="pca"><span class="header-section-number">7.1.5</span> PCA</h3>
 <p>PCA is a popular method used to simplify data by finding important patterns and reducing unnecessary details and noise, helps in making the data easier to work with and understand, and is used in various tasks like shrinking data size, improving data visualization, and highlighting key features <span class="citation" data-cites="Kurita2019">(<a href="references.html#ref-Kurita2019" role="doc-biblioref">Kurita 2019</a>)</span>.</p>
 <p><img src="week_6_PCA.png" class="img-fluid"></p>
 <p>In my case i can see that the first component explains 78.89% of the variance within the collection, suggests that most of the information in the dataset can be represented by this single principal component. The second component explains 11.84% of the variance, additional to the variance captured by the first component and gives more details that the first component might not capture.</p>
 </section>
 </section>
-<section id="application" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="application"><span class="header-section-number">7.4</span> Application</h2>
-<section id="application-1" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">7.4.1</span> Application 1</h3>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<section id="application-1" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">7.2.1</span> Application 1</h3>
 <p>Google Earth Engine (GEE) was employed to analyze land cover changes in Singapore <span class="citation" data-cites="Sidhu2018">(<a href="references.html#ref-Sidhu2018" role="doc-biblioref">Sidhu et al. 2018</a>)</span>, focusing on the Tuas industrial zone and the Central Catchment Reserve (CCR). The study aimed to evaluate GEE’s capabilities in processing raster and vector data, conducting spatial and temporal analyses, and handling big Earth Observation (EO) data.</p>
 <p>The results indicated that GEE was effective in managing and processing large-scale satellite imagery data, providing access to diverse datasets, and facilitating spatial and temporal analyses. For Tuas, the analysis revealed rapid industrialization and land transformation, particularly through land reclamation processes. Meanwhile, in the CCR, a protected area, forest cover remained stable, largely unaffected by human activities and influenced more by natural monsoon cycles.</p>
 <p>Overall, GEE’s robust platform supported detailed analysis of land cover changes in Singapore, demonstrating its utility for urban and environmental studies.</p>
 <p>Compare with the use of GEE in developed modern cities, my next article will focus on the less developed agriculture areas.</p>
 </section>
-<section id="application-2" class="level3" data-number="7.4.2">
-<h3 data-number="7.4.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">7.4.2</span> Application 2</h3>
+<section id="application-2" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">7.2.2</span> Application 2</h3>
 <p>The research article <span class="citation" data-cites="Xiong2017">(<a href="references.html#ref-Xiong2017" role="doc-biblioref">Xiong et al. 2017</a>)</span> discusses the use of Google Earth Engine (GEE) for creating automated cropland maps across Africa. Used Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, the study produced reference cropland layers for 2014 with high accuracy (around 90% for crop extent) across different agriculture zones.</p>
 <p>The study’s results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rain-fed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa. It demonstrated GEE’s strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.</p>
 </section>
-<section id="application-reflection" class="level3" data-number="7.4.3">
-<h3 data-number="7.4.3" class="anchored" data-anchor-id="application-reflection"><span class="header-section-number">7.4.3</span> Application reflection</h3>
+<section id="application-reflection" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="application-reflection"><span class="header-section-number">7.2.3</span> Application reflection</h3>
 <p>Google Earth Engine (GEE) has been effectively used in diverse areas, from urban land cover change analysis in Singapore to large-scale agricultural mapping in Africa. In Singapore, GEE facilitated detailed studies of industrialization and natural reserves, while in Africa, it supported cropland monitoring. These applications highlighted GEE’s capacity to manage satellite imagery datasets as well as spatial and temporal analyses across different scales and contexts. As a powerful tool for environmental monitoring, agricultural development, and many other areas, GEE may play more and more important role in urban planning.</p>
 </section>
 </section>
-<section id="reflection" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.5</span> Reflection</h2>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
 <p>Reflecting on my study of Google Earth Engine, I have understood its ability in environmental data analysis. GEE can process and analyze massive datasets, its ability of analyzing satellite imagery and geospatial datasets gave me the idea of how important and efficient a cloud-based platform can be used to understand and manage Earth’s complexities.</p>
 <p>What I am interested in the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only developed cities but also less developed places.</p>
 <p>GEE integrates various data types, from raster to vector, and support large amount of picture analysis techniques like NDVI and PCA. These complex processes can be managed from a simple web browser and we can see the processes on the map, the visibility is much better than simply doing processes via R studio.</p>
 <p>Before, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes, which is a new and interesting try.</p>
 </section>
-<section id="reference" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="reference"><span class="header-section-number">7.6</span> <strong>Reference</strong></h2>
+<section id="references" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> <strong>References</strong></h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

@@ -75,7 +75,7 @@ Co- (A) and Cross-polarized (B) Figure from [@PinelEtAl2014]
 
 RADARSAT-2 images from January 23, 2014, show the active lava from the Pu'u 'Ō'ō eruption, with cross-polarized data clearly delineating flow margins against the forest due to backscatter contrast.
 
-## Application 2
+### Application 2
 
 In another study [@SinghroyMolch2004], InSAR (Interferometric Synthetic Aperture Radar) is used to monitor and characterize landslides in the Canadian Rockies, aiding in understanding landslide mechanisms and distribution. A near-circular fringe was detected in the revised differential interferogram by the InSAR investigation (Fig. 1). The highest displacement values that correspond to this are at −1.3 cm, suggesting that the rock face may have moved gradually before the rock fall in 2001.
 
@@ -95,4 +95,4 @@ Through my studies, I've gained a comprehensive understanding of SAR's capabilit
 
 The distinction between co-polarized and cross-polarized data was particularly interesting, showing how each applied in different analytical requirements, with cross-polarized data proving more effective in certain contexts. The extended learning of in-SAR which extends the capabilities of SAR by using the phase difference between two or more SAR images taken from slightly different viewpoints to create interferograms, can solve the Jakarta urban issue from week 4 (city seeking). This comprehensive understanding helps to understand the potential of SAR in environment study and geospatial science.
 
-## **Reference**
+## **References**

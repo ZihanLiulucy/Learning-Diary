@@ -47,17 +47,28 @@ Empirical Line Correction: Directly corrects images through field spectrometer m
 
 Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas [@SatImagingCorpOrtho2022].
 
-## Joining data
+### Joining data
 
 Remote sensing data is often captured as individual, discrete images, each covering a specific geographical area like pieces of a larger puzzle, to get a comprehensive understanding of larger regions or to analyze spatial relationships and patterns across these areas, we need to merge them together.
 
 Mosaicking in remote sensing is similar to merging in GIS, where multiple datasets are joined to create a seamless image, by blends the edges of images, minimizing the visibility of seamlines between joined images. A base image and a second image are overlapped (20-30%) to ensure continuity. Histogram matching algorithms are used within the overlap area to align brightness values, aiding in seamless integration before feathering.
 
-## Enhancements of remote sensing imagery (NDVI)
+### Enhancements of remote sensing imagery (NDVI)
 
 The Normalized Difference Vegetation Index (NDVI) leverages the near-infrared and red spectral bands to identify healthy vegetation, as such vegetation strongly reflects near-infrared light and absorbs most of the red light. Regions that exhibit a high NDVI value are indicative of robust vegetation health. The NDVI metric is derived using the following calculation:
 
 $$ NDVI = \frac{NIR - Red}{NIR + Red}$$
+
+### NDVI workshop
+
+![](week_3_workshop_2.png){width="315"} ![](week_3_workshop_3.png){width="270"}
+
+The figure on the left hand side shows the NDVI map in York, we can distinguish the water, land and greenery on the map. The NDVI value of water is less than 0.2, while land is a little bit higher, and the greenery is the highest, with the color of green shown on the map, NDVI is higher than 0.4.
+
+The basic logic is that Water bodies usually have very low NDVI values because water absorbs most of the sunlight in the visible and near-infrared wavelengths, leading to negative NDVI values or values close to zero. Land often contains some vegetation, so the value would be higher than water, and values close to +1 suggest dense and healthy green vegetation as these areas are reflecting more infrared and less visible lights.
+
+The right hand side figure shows the points where NDVI is higher than 0.2, filtering out most water bodies, the remained textures are mainly solid.
+
 
 ## Application
 
@@ -91,7 +102,7 @@ The study results demonstrated that polynomial functions are sufficient for flat
 
 Atmospheric correction, particularly through LaSRC, requires accurate atmospheric inputs. I've also understood that geometric correction isn't one-size-fits-all, while polynomial methods may be a proper method for uniform terrains, orthorectification is very useful for complex and rugged landscapes. This knowledge highlights the need for distinguish correction techniques, use them in the appropriate landscape's characteristics and the atmospheric conditions.
 
-# Reflection
+## Reflection
 
 Reflecting on my journey as a new student in remote sensing, I've learned the complex of data fusion and correction.
 
@@ -101,4 +112,4 @@ Geometric correction was another thing that I'm interested. Learning about the p
 
 In conclusion, my interest into remote sensing has increased. The blend of technical knowledge, practical application, and the key role of choosing the right correction method has enriched my understanding.
 
-## **Reference**
+## **References**

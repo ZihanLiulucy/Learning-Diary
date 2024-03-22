@@ -33,27 +33,27 @@ SAR data, or Synthetic Aperture Radar, involves active data obtain in which the 
 
 ![](week_1SAR.jpg) Figure from [@nasasar2023]
 
-## Four resolutions
+### Four resolutions
 
-### Spatial
+#### Spatial
 
 Refers to the smallest dimension of an image unit that can differentiate between objects, or the minimum angular or linear separation needed to discern separate objects within an image, the characteristic is the ability to identify and divide two close objects in an image [@ScienceDirectSpatialResolution2023].
 
-### Spectral
+#### Spectral
 
 Spectral resolution describes the capacity of a sensor to define fine wavelength intervals [@CanadaNR2015], not just the visible light (red, green, blue). An object's color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands measuring spectral reflectance, it isn't limited to remote sensors; it can also be conducted using 'spectroradiometers' in labs or fields, requiring calibration with a pure white reference panel.
 
-### Temporal
+#### Temporal
 
 Refers to the duration required to return to and collect information from the identical spot again, it is to say, is how often something is measured or recorded over time. There maybe trade-offs between temporal and spatial resolution according to the limitation of technology.
 
-### Radiometric
+#### Radiometric
 
 Radiometric resolution refers to the level of detail in a pixel's recorded energy, quantified in bits, each bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 [@NASA2024].
 
 ![](radiometric_resolution.png) Figure from [@NASA2024]
 
-## Biases
+### Biases
 
 In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the earth's surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK, which will be seen after week 6 in google earth engine processes.
 

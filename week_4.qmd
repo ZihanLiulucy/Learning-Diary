@@ -5,49 +5,41 @@ author: "Zihan Liu"
 
 ## Jakarta city challenge
 
+### City sinking
+
+As global temperatures increase and ice melting, many coastal cities are increasingly threatened by rising sea levels. However, the situation in the Jakarta metropolitan area is especially challenging. In recent years, Jakarta has seen an exacerbation of its flooding issues, largely due to the extensive extraction of groundwater [@CNA2020], leading to significant land subsidence.
+
 ### Flood
 
-Flood-prone Jakarta is the world's fastest sinking city --- as fast as 10 centimetres per year. In parts of North Jakarta, which is particularly susceptible to flooding, the ground has sunk 2.5 metres in 10 years. Excessive extraction of groundwater for drinking and commercial use is largely responsible for this: When water is pumped out of an underground aquifer, the land above it sinks [@CNA2020].
+Flood-prone Jakarta is the world's fastest sinking city, with the speed of 10 cm per year.In certain areas of North Jakarta, which are highly prone to flooding, there has been a land subsidence of 2.5 meters over the last decade. This significant sinking combined with the impact of climate change (atmosphere warms, rainstorms), residents in Jakarta are always in the danger of seasonal flooding.
 
 ![](Jakarta_flood.png) Figure from [@EAF2021]
 
-### City sinking
-
-With global temperatures rising and ice sheets melting, plenty of coastal cities face a growing risk of flooding due to sea level rise. Few places, however, face challenges like those in front of the Jakarta metropolitan area. In recent decades, Jakarta flooding problems have grown even worse, driven partly by widespread pumping of groundwater that has caused the land to sink, or subside, at rapid rates. By some estimates, as much as 40 percent of the city now sits below sea level. There are signs showing that rainstorms are getting more intense as the atmosphere heats up, damaging floods have become commonplace.
-
-The picture below shows The Landsat images above show the evolution of the city over the past three decades. The widespread replacement of forests and other vegetation with impervious surfaces in inland areas along the Ciliwung and Cisadane rivers has reduced how much water the landscape can absorb, contributing to runoff and flash floods.
+The picture below shows the evolution of the city over the past three decades. The widespread replacement of forests and other vegetation with impervious surfaces in inland areas has reduced how much water the landscape can absorb, contributing to runoff and flash floods.
 
 ![](Jakarta_3decades_ago.png){width="250"} ![](Jakarta%20now.png){width="250"}
-
-### Policy goal
-
-In September 2022, the Jakarta Environmental Agency introduced a Strategy for Air Pollution Control (SPPU), which included more than 70 action plans to improve air quality. Focusing on 1) governing air pollution controls, 2) reducing emissions from mobile sources, and 3) reducing emissions from stationary sources [@UrbanLinks2023].
-
-Also there are plicites for flooding risks: The Jakarta Coastal Defense Strategy (JCDS) in 2011 became the National Capital Integrated Coastal Development Masterplan (NCICD) in 2014, with further revisions in 2016 and the Integrated Flood Safety Plan (IFSP) in 2019 [@Hsiao2023].
-
-In a broader national context, Universal Sustainable Development Goals (SDG) is set to keep sustainability, environment sustainability is also included here.
 
 ## The actions we can do
 
 ### Water management to reduce groundwater extraction
 
-Implementing effective water management to reduce groundwater extraction can align with sustainable urban development goals. As the widespread pumping of groundwater is the human factor of sinking and flooding, it is necessary to pretend residents from doing it and worsen the situation.
+Implementing effective water management to reduce groundwater extraction can align with sustainable urban development goals. As the widespread pumping of groundwater is the human factor of sinking and flooding, it is necessary to pretend residents from doing it and worsen the situation. Pilot points of desalination of seawater could be inplemented.
 
 ### Add more green plants to improve the environment
 
-Investing in green infrastructure, can mitigate sinking and enhance urban resilience, aligning with global climate action and sustainable city planning. It is obvious from the picture before that the greenery has been replaced by city land.
+Investing in green infrastructure can mitigate sinking and enhance urban resilience, aligning with global climate action and sustainable city planning. It is obvious from the picture before that the greenery has been replaced by city land which need action.
 
 #### Benefits from greenery
 
-Rain hits the ground at higher speeds where there is a lack of tree cover, a canopy of leaves, branches and trunks slows down the rain before it hits the ground simply by getting in the way; in addition, root systems help water penetrate deeper into the soil at a faster rate under and around trees [@WoodlandTrust2024].
+Rain hits the ground at higher speeds where there is a lack of tree cover, a canopy of leaves, branches and trunks slows down the rain before it hits the ground simply by getting in the way; in addition, root systems help water penetrate deeper into the soil at a faster rate around and under the trees [@WoodlandTrust2024].
 
 ### Reduce emission
 
-Jakarta was again ranked the most polluted city in the world by Swiss technology company IQAir in 2023. Transport is a very important source of Jakarta's Pollution while  Industry and Power Plants Are Also Contributors.
+Jakarta was again ranked the most polluted city in the world by Swiss technology company IQAir in 2023. Transport is a very important source of Jakarta's pollution while industry and power plants are also contributors.
 
 Warmer temperatures caused by pollution could lead to the ground swelling and expanding upwards by up to 12mm (0.5 inches) and the ground could sink downwards, beneath the weight of a building, by as much as 8mm (0.3 inches) [@SkyNews2023].
 
-## To manage the emission using remotely sensed data
+## Use of remote sensing data
 
 ### NO2 and CO2 monitoring
 
@@ -55,7 +47,7 @@ Use data from NO2 from [@CREA2024] , there are before and after maps that we ca
 
 ### Vegetation Mapping and Monitoring
 
-To manage the pollution, greenery is an indirect method. Satellite and aerial imagery provide detailed information on vegetation cover, allowing for the assessment of the extent and health of greenery across large areas. This helps in tracking changes over time, such as the growth or decline of forests, parks, and urban green spaces.
+To manage the pollution, greenery is an indirect method. Satellite and aerial imagery provide detailed information on vegetation cover, allowing for the assessment of the extent and health of greenery across large areas using NDVI. This helps in tracking changes over time, such as the growth or decline of forests, parks, and urban green spaces.
 
 ## Link with agendas and policies
 
@@ -63,7 +55,7 @@ In September 2022, the Jakarta Environmental Agency introduced a Strategy for A
 
 Also there are plicites for flooding risks: The Jakarta Coastal Defense Strategy (JCDS) in 2011 became the National Capital Integrated Coastal Development Masterplan (NCICD) in 2014, with further revisions in 2016 and the Integrated Flood Safety Plan (IFSP) in 2019 [@Hsiao2023].
 
-In an international view, sustainable Development Goals (SDGs): Particularly relevant policies are SDG 11 (Sustainable Cities and Communities), SDG 13 (Climate Action), and SDG 15 (Life on Land). Addressing Jakarta's issues contributes to creating sustainable and resilient cities, taking urgent action to manage climate change and its impacts, and managing forests and combating desertification, halting and reversing land degradation, and halting biodiversity loss.
+In an international view, sustainable Development Goals (SDGs): Particularly relevant policies are SDG 11 (Sustainable Cities and Communities), SDG 13 (Climate Action), and SDG 15 (Life on Land). Addressing Jakarta's problems can help create sustainable and resilient cities, take urgent action to manage climate change and its effects, manage forests and combat desertification, reverse land degradation, and aviod biodiversity loss.
 
 New Urban Agenda: emphasizes the need for cities to be inclusive, safe, resilient, and sustainable. By addressing its sinking and flooding issues, Jakarta works towards creating a more inclusive urban environment, ensuring safety and resilience for all its inhabitants.
 
@@ -73,8 +65,10 @@ Jakarta may set a practical example for sustainable urban development. By addres
 
 ## Reflection
 
-My research revealed plenty of existing strategies addressing urban challenges; however, it seemed like many straightforward, sensible solutions are often overlooked by local governments. For Jakarta, the issue isn't just about addressing the immediate impacts of these problems but also about considering long-term, sustainable solutions.
+My research revealed plenty of existing strategies addressing urban challenges. However, it seems like many straightforward, sensible solutions are often overlooked by local governments. For Jakarta, the issue isn't just about addressing the immediate impacts of these problems but also about considering long-term, sustainable solutions.
 
 While exploring Jakarta's situation, I noticed a tendency for short-term, reactive measures rather than long-term systemic changes. For instance, the focus has often been on building sea walls or improving drainage, which, although necessary, failed to manage the root causes such as excessive groundwater extraction and less comprehensive urban planning.
 
-Jakarta requires comprehensive urban planning that considers environmental sustainability, infrastructure resilience, and community safe water.
+Jakarta requires urban planning agendas that considers environmental sustainability, infrastructure resilience, and community safe water.
+
+## **References**
