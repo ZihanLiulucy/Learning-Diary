@@ -87,7 +87,9 @@ The figure shows a comparison of two satellite images from Sentinel-2B. On the l
 
 [@Rocchini2005]
 
-![](geometric_application.jpg) Figure from [@Rocchini2005]
+![](geometric_application.jpg)
+
+Figure from [@Rocchini2005]
 
 The image shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.
 

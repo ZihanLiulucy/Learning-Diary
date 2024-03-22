@@ -33,7 +33,9 @@ Figure from [@umbModis2023]
 
 SAR data, or Synthetic Aperture Radar, involves active data obtain in which the sensor emits its own energy and then measures the amount of this energy that is reflected back after it interacts with the Earth's surface [@nasasar2023]. The detail of it will be in week 9.
 
-![](week_1SAR.jpg) Figure from [@nasasar2023]
+![](week_1SAR.jpg)
+
+Figure from [@nasasar2023]
 
 ### Four resolutions
 
@@ -53,7 +55,9 @@ Refers to the duration required to return to and collect information from the id
 
 Radiometric resolution refers to the level of detail in a pixel's recorded energy, quantified in bits, each bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 [@NASA2024].
 
-![](radiometric_resolution.png) Figure from [@NASA2024]
+![](radiometric_resolution.png)
+
+Figure from [@NASA2024]
 
 ### Biases
 
