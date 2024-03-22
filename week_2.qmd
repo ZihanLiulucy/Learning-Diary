@@ -1,6 +1,6 @@
-# pre
+# week_2
 
-- title
+-   title
 
 ```{r echo=FALSE, out.width='100%'}
 xaringanExtra::embed_xaringan(
@@ -8,4 +8,3 @@ xaringanExtra::embed_xaringan(
   ratio= '16:9'
 )
 ```
-

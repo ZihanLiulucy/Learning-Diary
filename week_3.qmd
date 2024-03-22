@@ -25,7 +25,9 @@ Geometric correction is the process of correcting the image geometry to ensure t
 
 We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients. The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), which Jensen suggesting a value of 0.5. Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment.
 
-![](geometric_correction.png) Figure from [@DaveEtAl2015]
+![](geometric_correction.png)
+
+Figure from [@DaveEtAl2015]
 
 Showing that align one image with another so that the same geographical area is accurately superimposed on both.
 
@@ -68,7 +70,6 @@ The figure on the left hand side shows the NDVI map in York, we can distinguish 
 The basic logic is that Water bodies usually have very low NDVI values because water absorbs most of the sunlight in the visible and near-infrared wavelengths, leading to negative NDVI values or values close to zero. Land often contains some vegetation, so the value would be higher than water, and values close to +1 suggest dense and healthy green vegetation as these areas are reflecting more infrared and less visible lights.
 
 The right hand side figure shows the points where NDVI is higher than 0.2, filtering out most water bodies, the remained textures are mainly solid.
-
 
 ## Application
 

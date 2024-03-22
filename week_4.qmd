@@ -13,11 +13,15 @@ As global temperatures increase and ice melting, many coastal cities are increas
 
 Flood-prone Jakarta is the world's fastest sinking city, with the speed of 10 cm per year.In certain areas of North Jakarta, which are highly prone to flooding, there has been a land subsidence of 2.5 meters over the last decade. This significant sinking combined with the impact of climate change (atmosphere warms, rainstorms), residents in Jakarta are always in the danger of seasonal flooding.
 
-![](Jakarta_flood.png) Figure from [@EAF2021]
+![](Jakarta_flood.png)
+
+Figure from [@EAF2021]
 
 The picture below shows the evolution of the city over the past three decades. The widespread replacement of forests and other vegetation with impervious surfaces in inland areas has reduced how much water the landscape can absorb, contributing to runoff and flash floods.
 
 ![](Jakarta_3decades_ago.png){width="250"} ![](Jakarta%20now.png){width="250"}
+
+Figures from [@NASAVisibleEarth2024]
 
 ## The actions we can do
 

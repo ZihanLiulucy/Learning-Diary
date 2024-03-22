@@ -4,11 +4,11 @@ The definition of remote sensing
 
 ## Summary：
 
-Remotely sensed images and the corresponding analytical techniques offer a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data
+Remotely sensed images and the corresponding analytical techniques offer a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data.
 
 ### Passive sensor and active sensors
 
-There are passive sensors and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray
+There are passive sensors and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray.
 
 ![](Differences-between-passive-and-active-sensors.png) Figure from [@ResearchGate2016]
 
@@ -27,7 +27,9 @@ Why the sky is orange and red at sunset: when the sun's angle changes, the blue 
 
 BRDF quantifies how a surface reflects light, varying with illumination and viewing angles, wavelength, and surface properties, factors like shadowing, scattering, reflection, absorption, and surface texture influence the BRDF [@umbModis2023].
 
-![](BRDF.png){width="500"} Figure from [@umbModis2023]
+![](BRDF.png){width="500"}
+
+Figure from [@umbModis2023]
 
 SAR data, or Synthetic Aperture Radar, involves active data obtain in which the sensor emits its own energy and then measures the amount of this energy that is reflected back after it interacts with the Earth's surface [@nasasar2023]. The detail of it will be in week 9.
 
@@ -81,7 +83,7 @@ The study investigated the impact of radiometric resolution on the classificatio
 
 Spectral resolution refers to a sensor's ability to distinguish between different electromagnetic wavelengths, while radiometric resolution describes the precision with which the sensor measures the strength of these electromagnetic signals [@CIESIN]. And it is also very interesting to see it is not the fact that the higher radiometric resolution result in higher accuracy significantly, it is important to balance data details with processing capabilities.
 
-## Reflection:
+## Reflection
 
 Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the earth from space, but I now have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to learn the knowledge. Sensors could either rely on the earth's natural energy or create their own to study the environment.
 
