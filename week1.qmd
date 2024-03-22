@@ -8,7 +8,7 @@ Remotely sensed images and the corresponding analytical techniques offer a comp
 
 ### Passive sensor and active sensors
 
-There are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray
+There are passive sensors and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray
 
 ![](Differences-between-passive-and-active-sensors.png) Figure from [@ResearchGate2016]
 
@@ -25,7 +25,7 @@ Why the sky is orange and red at sunset: when the sun's angle changes, the blue 
 
 ### Interacting with earth's surface
 
-BRDF quantifies how a surface reflects light, varying with illumination and viewing angles, wavelength, and surface properties, factors like shadowing, scattering, reflection, absorption, and surface texture (including facet orientation and density) influence the BRDF [@umbModis2023].
+BRDF quantifies how a surface reflects light, varying with illumination and viewing angles, wavelength, and surface properties, factors like shadowing, scattering, reflection, absorption, and surface texture influence the BRDF [@umbModis2023].
 
 ![](BRDF.png){width="500"} Figure from [@umbModis2023]
 
@@ -37,25 +37,25 @@ SAR data, or Synthetic Aperture Radar, involves active data obtain in which the 
 
 ### Spatial
 
-Size of raster cells varies from 10cm to several kilometers.
+Refers to the smallest dimension of an image unit that can differentiate between objects, or the minimum angular or linear separation needed to discern separate objects within an image, the characteristic is the ability to identify and divide two close objects in an image [@ScienceDirectSpatialResolution2023].
 
 ### Spectral
 
-Spectral resolution describes the capacity of a sensor to define fine wavelength intervals [@CanadaNR2015], not just the visible light (red, green, blue). An object's color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands Measuring spectral reflectance  isn't limited to remote sensors; it can also be conducted using 'spectroradiometers' in labs or fields, requiring calibration with a pure white reference panel.
+Spectral resolution describes the capacity of a sensor to define fine wavelength intervals [@CanadaNR2015], not just the visible light (red, green, blue). An object's color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands measuring spectral reflectance, it isn't limited to remote sensors; it can also be conducted using 'spectroradiometers' in labs or fields, requiring calibration with a pure white reference panel.
 
 ### Temporal
 
-Sensor's sensitivity to energy is different, with higher resolution offering more details (8 bit = 256 values, 4 bit = 16 values).
+Refers to the duration required to return to and collect information from the identical spot again, it is to say, is how often something is measured or recorded over time. There maybe trade-offs between temporal and spatial resolution according to the limitation of technology.
 
 ### Radiometric
 
-Radiometric resolution refers to the level of detail in a pixel's recorded energy, quantified in bits, ach bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 [@NASA2024].
+Radiometric resolution refers to the level of detail in a pixel's recorded energy, quantified in bits, each bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 [@NASA2024].
 
 ![](radiometric_resolution.png) Figure from [@NASA2024]
 
 ## Biases
 
-In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the Earth's surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK.
+In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the earth's surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK, which will be seen after week 6 in google earth engine processes.
 
 ## Application
 
@@ -65,7 +65,9 @@ I am particularly interested in the resolutions of remote sensing data, since I 
 
 The study investigates forest species classification using high spectral resolution remote sensing data [@Martin1998], specifically from the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS). It differentiates 11 forest types based on spectral signatures correlated with chemical properties like nitrogen and lignin in foliage. Using selected spectral bands and a maximum likelihood algorithm, the study achieved a classification accuracy of 75% at Harvard Forest, and it was been varified by field measurements of foliar biomass and stand structure. This approach demonstrates the effectiveness of high spectral resolution in detailed forest composition analysis, it also showed a significant potential of forest management as well as the environment science.
 
-![](spectral_resolution.jpg) species map Figure from [@Martin1998]
+![](spectral_resolution.jpg)
+
+species map Figure from [@Martin1998]
 
 ### Application 2
 
@@ -77,11 +79,11 @@ The study investigated the impact of radiometric resolution on the classificatio
 
 ### Application critique
 
-Spectral resolution refers to a sensor's ability to distinguish between different electromagnetic wavelengths, while radiometric resolution describes the precision with which the sensor measures the strength of these electromagnetic signals [@CIESIN]. And it is also very interesting to see it is not the fact that the highrt rafiometric resolution result in higher accuracy significantlym it is important to balance data details with processing capabilities.
+Spectral resolution refers to a sensor's ability to distinguish between different electromagnetic wavelengths, while radiometric resolution describes the precision with which the sensor measures the strength of these electromagnetic signals [@CIESIN]. And it is also very interesting to see it is not the fact that the higher radiometric resolution result in higher accuracy significantly, it is important to balance data details with processing capabilities.
 
 ## Reflection:
 
-Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the Earth from space, but have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to learn the knowledge. Sensors could either rely on the Earth's natural energy or create their own to study the environment.
+Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the earth from space, but I now have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to learn the knowledge. Sensors could either rely on the earth's natural energy or create their own to study the environment.
 
 It's interesting how these sensors, through different mechanisms, contribute to a comprehensive view of our planet's surface and atmosphere. The scientific foundation, particularly the principles of light wavelength, speed, and frequency has remind me the basic knowledge from a-level physics. The explanation of why the sky is blue, based on the scattering of light, provided a down-to-earth example of how remote sensing blends physics with environmental science, making the abstract more understandable. Facing the challenges of atmospheric interference in remote sensing, especially in regions like the UK where there are always cloud cover, emphasized the complexities and limitations. It made me realize the importance of keeping low bias when practice.
 

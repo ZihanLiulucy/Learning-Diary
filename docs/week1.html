@@ -291,7 +291,7 @@ window.Quarto = {
 <p>Remotely sensed images and the corresponding analytical techniques offer&nbsp;a comprehensive approach to observing and monitoring urban environments in real-time through high spatial-temporal-spectral-resolution data</p>
 <section id="passive-sensor-and-active-sensors" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="passive-sensor-and-active-sensors"><span class="header-section-number">3.1.1</span> Passive sensor and active sensors</h3>
-<p>There are passive sensor and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray</p>
+<p>There are passive sensors and active sensors, which the difference is the passive sensor reflect energy from the sun, but active sensors actively emits electormagentic waves and then waits to receive them. Example of passive sensors: camera, infrared,thermometers, human eyes; example of active sensors: radar, sonar, x-ray</p>
 <p><img src="Differences-between-passive-and-active-sensors.png" class="img-fluid"> Figure from <span class="citation" data-cites="ResearchGate2016">(<a href="references.html#ref-ResearchGate2016" role="doc-biblioref">ResearchGate 2016</a>)</span></p>
 </section>
 <section id="formula" class="level3" data-number="3.1.2">
@@ -306,7 +306,7 @@ window.Quarto = {
 </section>
 <section id="interacting-with-earths-surface" class="level3" data-number="3.1.4">
 <h3 data-number="3.1.4" class="anchored" data-anchor-id="interacting-with-earths-surface"><span class="header-section-number">3.1.4</span> Interacting with earth’s surface</h3>
-<p>BRDF quantifies how a surface reflects light, varying with illumination and viewing angles, wavelength, and surface properties, factors like shadowing, scattering, reflection, absorption, and surface texture (including facet orientation and density) influence the BRDF <span class="citation" data-cites="umbModis2023">(<a href="references.html#ref-umbModis2023" role="doc-biblioref">Massachusetts Boston 2023</a>)</span>.</p>
+<p>BRDF quantifies how a surface reflects light, varying with illumination and viewing angles, wavelength, and surface properties, factors like shadowing, scattering, reflection, absorption, and surface texture influence the BRDF <span class="citation" data-cites="umbModis2023">(<a href="references.html#ref-umbModis2023" role="doc-biblioref">Massachusetts Boston 2023</a>)</span>.</p>
 <p><img src="BRDF.png" class="img-fluid" width="500"> Figure from <span class="citation" data-cites="umbModis2023">(<a href="references.html#ref-umbModis2023" role="doc-biblioref">Massachusetts Boston 2023</a>)</span></p>
 <p>SAR data, or Synthetic Aperture Radar, involves active data obtain in which the sensor emits its own energy and then measures the amount of this energy that is reflected back after it interacts with the Earth’s surface <span class="citation" data-cites="nasasar2023">(<a href="references.html#ref-nasasar2023" role="doc-biblioref">NASA Earthdata 2023</a>)</span>. The detail of it will be in week 9.</p>
 <p><img src="week_1SAR.jpg" class="img-fluid"> Figure from <span class="citation" data-cites="nasasar2023">(<a href="references.html#ref-nasasar2023" role="doc-biblioref">NASA Earthdata 2023</a>)</span></p>
@@ -316,25 +316,25 @@ window.Quarto = {
 <h2 data-number="3.2" class="anchored" data-anchor-id="four-resolutions"><span class="header-section-number">3.2</span> Four resolutions</h2>
 <section id="spatial" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="spatial"><span class="header-section-number">3.2.1</span> Spatial</h3>
-<p>Size of raster cells varies from 10cm to several kilometers.</p>
+<p>Refers to the smallest dimension of an image unit that can differentiate between objects, or the minimum angular or linear separation needed to discern separate objects within an image, the characteristic is the ability to identify and divide two close objects in an image <span class="citation" data-cites="ScienceDirectSpatialResolution2023">(<a href="references.html#ref-ScienceDirectSpatialResolution2023" role="doc-biblioref">ScienceDirect 2023</a>)</span>.</p>
 </section>
 <section id="spectral" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="spectral"><span class="header-section-number">3.2.2</span> Spectral</h3>
-<p>Spectral resolution describes the capacity of a sensor to define fine wavelength intervals <span class="citation" data-cites="CanadaNR2015">(<a href="references.html#ref-CanadaNR2015" role="doc-biblioref">Canada 2015</a>)</span>, not just the visible light (red, green, blue). An object’s color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands Measuring spectral reflectance&nbsp; isn’t limited to remote sensors; it can also be conducted using ‘spectroradiometers’ in labs or fields, requiring calibration with a pure white reference panel.</p>
+<p>Spectral resolution describes the capacity of a sensor to define fine wavelength intervals <span class="citation" data-cites="CanadaNR2015">(<a href="references.html#ref-CanadaNR2015" role="doc-biblioref">Canada 2015</a>)</span>, not just the visible light (red, green, blue). An object’s color depend on which wavelengths they reflect, with others being absorbed or scattered. Our observation are limited due to the wavelengths absorbed by water vapour, ozone, and other gases. Spectral resolution classification is based on the number of observed bands measuring spectral reflectance, it isn’t limited to remote sensors; it can also be conducted using ‘spectroradiometers’ in labs or fields, requiring calibration with a pure white reference panel.</p>
 </section>
 <section id="temporal" class="level3" data-number="3.2.3">
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="temporal"><span class="header-section-number">3.2.3</span> Temporal</h3>
-<p>Sensor’s sensitivity to energy is different, with higher resolution offering more details (8 bit = 256 values, 4 bit = 16 values).</p>
+<p>Refers to the duration required to return to and collect information from the identical spot again, it is to say, is how often something is measured or recorded over time. There maybe trade-offs between temporal and spatial resolution according to the limitation of technology.</p>
 </section>
 <section id="radiometric" class="level3" data-number="3.2.4">
 <h3 data-number="3.2.4" class="anchored" data-anchor-id="radiometric"><span class="header-section-number">3.2.4</span> Radiometric</h3>
-<p>Radiometric resolution refers to the level of detail in a pixel’s recorded energy, quantified in bits, ach bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 <span class="citation" data-cites="NASA2024">(<a href="references.html#ref-NASA2024" role="doc-biblioref">Earthdata 2024</a>)</span>.</p>
+<p>Radiometric resolution refers to the level of detail in a pixel’s recorded energy, quantified in bits, each bit doubles the range of energy values, so an 8-bit resolution means the sensor can distinguish between 256 different energy levels, ranging from 0 to 255 <span class="citation" data-cites="NASA2024">(<a href="references.html#ref-NASA2024" role="doc-biblioref">Earthdata 2024</a>)</span>.</p>
 <p><img src="radiometric_resolution.png" class="img-fluid"> Figure from <span class="citation" data-cites="NASA2024">(<a href="references.html#ref-NASA2024" role="doc-biblioref">Earthdata 2024</a>)</span></p>
 </section>
 </section>
 <section id="biases" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="biases"><span class="header-section-number">3.3</span> Biases</h2>
-<p>In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the Earth’s surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK.</p>
+<p>In the UK, cloud cover and atmospheric constituents like water vapor and carbon dioxide can significantly impact remote sensing data. These factors obstruct parts of the electromagnetic spectrum, preventing certain wavelengths from reaching the earth’s surface or sensors. This interference distorts accurate observations and analysis, leading to challenges in capturing clear remote sensing imagery. Thus, atmospheric conditions and clouds are key considerations in remote sensing applications in the UK, which will be seen after week 6 in google earth engine processes.</p>
 </section>
 <section id="application" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="application"><span class="header-section-number">3.4</span> Application</h2>
@@ -342,7 +342,8 @@ window.Quarto = {
 <section id="application-1" class="level3" data-number="3.4.1">
 <h3 data-number="3.4.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">3.4.1</span> Application 1</h3>
 <p>The study investigates forest species classification using high spectral resolution remote sensing data <span class="citation" data-cites="Martin1998">(<a href="references.html#ref-Martin1998" role="doc-biblioref">Martin et al. 1998</a>)</span>, specifically from the Airborne Visible/Infrared Imaging Spectrometer (AVIRIS). It differentiates 11 forest types based on spectral signatures correlated with chemical properties like nitrogen and lignin in foliage. Using selected spectral bands and a maximum likelihood algorithm, the study achieved a classification accuracy of 75% at Harvard Forest, and it was been varified by field measurements of foliar biomass and stand structure. This approach demonstrates the effectiveness of high spectral resolution in detailed forest composition analysis, it also showed a significant potential of forest management as well as the environment science.</p>
-<p><img src="spectral_resolution.jpg" class="img-fluid"> species map Figure from <span class="citation" data-cites="Martin1998">(<a href="references.html#ref-Martin1998" role="doc-biblioref">Martin et al. 1998</a>)</span></p>
+<p><img src="spectral_resolution.jpg" class="img-fluid"></p>
+<p>species map Figure from <span class="citation" data-cites="Martin1998">(<a href="references.html#ref-Martin1998" role="doc-biblioref">Martin et al. 1998</a>)</span></p>
 </section>
 <section id="application-2" class="level3" data-number="3.4.2">
 <h3 data-number="3.4.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">3.4.2</span> Application 2</h3>
@@ -354,12 +355,12 @@ window.Quarto = {
 </section>
 <section id="application-critique" class="level3" data-number="3.4.3">
 <h3 data-number="3.4.3" class="anchored" data-anchor-id="application-critique"><span class="header-section-number">3.4.3</span> Application critique</h3>
-<p>Spectral resolution refers to a sensor’s ability to distinguish between different electromagnetic wavelengths, while radiometric resolution describes the precision with which the sensor measures the strength of these electromagnetic signals <span class="citation" data-cites="CIESIN">(<a href="references.html#ref-CIESIN" role="doc-biblioref">International Earth Science Information Network (CIESIN), n.d.</a>)</span>. And it is also very interesting to see it is not the fact that the highrt rafiometric resolution result in higher accuracy significantlym it is important to balance data details with processing capabilities.</p>
+<p>Spectral resolution refers to a sensor’s ability to distinguish between different electromagnetic wavelengths, while radiometric resolution describes the precision with which the sensor measures the strength of these electromagnetic signals <span class="citation" data-cites="CIESIN">(<a href="references.html#ref-CIESIN" role="doc-biblioref">International Earth Science Information Network (CIESIN), n.d.</a>)</span>. And it is also very interesting to see it is not the fact that the higher radiometric resolution result in higher accuracy significantly, it is important to balance data details with processing capabilities.</p>
 </section>
 </section>
 <section id="reflection" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.5</span> Reflection:</h2>
-<p>Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the Earth from space, but have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to learn the knowledge. Sensors could either rely on the Earth’s natural energy or create their own to study the environment.</p>
+<p>Reflecting on my journey through learning remote sensing, I noticed the depth and of this field. Initially, I thought it as a straightforward method of observing the earth from space, but I now have understood the complex of its technologies and principles. Understanding the difference between passive and active sensors was a key learning moment for me. And the example of passive sensor of human eye helped me to learn the knowledge. Sensors could either rely on the earth’s natural energy or create their own to study the environment.</p>
 <p>It’s interesting how these sensors, through different mechanisms, contribute to a comprehensive view of our planet’s surface and atmosphere. The scientific foundation, particularly the principles of light wavelength, speed, and frequency has remind me the basic knowledge from a-level physics. The explanation of why the sky is blue, based on the scattering of light, provided a down-to-earth example of how remote sensing blends physics with environmental science, making the abstract more understandable. Facing the challenges of atmospheric interference in remote sensing, especially in regions like the UK where there are always cloud cover, emphasized the complexities and limitations. It made me realize the importance of keeping low bias when practice.</p>
 <p>What I’m most interested in this learning journey is the resolution of the remote sensing data, it established a linked between this module and the urban design modules I learnt before, and it is much deeper as they can be used to do for example, forest species classification, and many other environment fields which I am interested in.</p>
 </section>
@@ -391,6 +392,9 @@ Rama Rao, N. et al. 2007. <span>“Evaluation of Radiometric Resolution on Land 
 </div>
 <div id="ref-ResearchGate2016" class="csl-entry" role="listitem">
 ResearchGate. 2016. <span>“Differences Between Passive and Active Sensors.”</span> <a href="https://www.researchgate.net/figure/Differences-between-passive-and-active-sensors_fig1_339726853" class="uri">https://www.researchgate.net/figure/Differences-between-passive-and-active-sensors_fig1_339726853</a>.
+</div>
+<div id="ref-ScienceDirectSpatialResolution2023" class="csl-entry" role="listitem">
+ScienceDirect. 2023. <span>“Spatial Resolution in Earth and Planetary Sciences.”</span> <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/spatial-resolution" class="uri">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/spatial-resolution</a>.
 </div>
 </div>
 </section>

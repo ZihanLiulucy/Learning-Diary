@@ -2,63 +2,44 @@
 title: "self_introduction"
 author: "Zihan Liu"
 ---
-# Introduction of myself
 
 ## My academic background
-The Bartlett School of Planning, University College London (UCL) 
-Sep 2020-Jun 2023 
-Programme of Study: BSc Urban Planning, Design and Management
 
-CASA (UCL)
-Sep 2023-Now
-Programme of Study: Urban Spatial Science
+The Bartlett School of Planning, University College London (UCL) Sep 2020-Jun 2023 Programme of Study: BSc Urban Planning, Design and Management
+
+CASA (UCL) Sep 2023-Now Programme of Study: Urban Spatial Science
 
 ## My previous research projects
 
-### Sep 2022-present 
+### Sep 2022-present
 
-Whether Green Space Intervention Triggers Housing Premium and Gentrification: evidence from Olympic 
-Park, London 
+Whether Green Space Intervention Triggers Housing Premium and Gentrification: evidence from Olympic Park, London
 
-This project aims to fill current knowledge gap by assessing the multiple gentrification indicators and providing 
-the causal inference of green space and gentrification. Conduct data processing and analysis with STATA and Difference in Differences (DID) Models based on the census data in 2011 and 2021 
+This project aims to fill current knowledge gap by assessing the multiple gentrification indicators and providing the causal inference of green space and gentrification. Conduct data processing and analysis with STATA and Difference in Differences (DID) Models based on the census data in 2011 and 2021
 
 ### Nov 2021-Dec 2021
 
 Examining the Association Between Housing Price and Birth Rate: evidence from London
 
-Investigated the association between housing price and fertility rate in London based on the 2011 census dataset 
-through data crawling, calculation and visualisation, linear regression model and QGIS analysis, offered feasible 
-advice on promoting fertility rate to the government according to the research result.
+Investigated the association between housing price and fertility rate in London based on the 2011 census dataset through data crawling, calculation and visualisation, linear regression model and QGIS analysis, offered feasible advice on promoting fertility rate to the government according to the research result.
 
-### Apr 2022 
- 
-Analysis of Acclimatization and Mitigation Concerning Urban Climate—A Case Study of London 
+### Apr 2022
 
+Analysis of Acclimatization and Mitigation Concerning Urban Climate---A Case Study of London
 
-This project focused on mitigation and adaptation of greenhouse gases emission from transport and food security, 
-examined how these problems are being tackled from city competence, instrument, and socio-technical solution 
-aspects respectively, identified the effectiveness and limitations of these approaches, and introduced successful 
-cases of other countries to propose an improvement plan for the climate governance of London. 
+This project focused on mitigation and adaptation of greenhouse gases emission from transport and food security, examined how these problems are being tackled from city competence, instrument, and socio-technical solution aspects respectively, identified the effectiveness and limitations of these approaches, and introduced successful cases of other countries to propose an improvement plan for the climate governance of London.
 
-### Nov 2021-Dec 2021 
-Influence of Growing Gentrification on Historic Small Commodity Street—A Case Study of Chapel Market in 
-Islington 
+### Nov 2021-Dec 2021
 
-Searched online materials and carried out field investigations and interviews with street pedlars, studied the 
-negative impacts caused by gentrification (the surge in housing price and emergence of chain supermarkets and 
-shopping malls) and the continuity of residents’ habit of shopping online which was formed during COVID-19 
-pandemic, offered feasible advice to revive Chapel Market with redevelopment plans 
+Influence of Growing Gentrification on Historic Small Commodity Street---A Case Study of Chapel Market in Islington
+
+Searched online materials and carried out field investigations and interviews with street pedlars, studied the negative impacts caused by gentrification (the surge in housing price and emergence of chain supermarkets and shopping malls) and the continuity of residents' habit of shopping online which was formed during COVID-19 pandemic, offered feasible advice to revive Chapel Market with redevelopment plans
 
 ### Jan 2022-Mar 2022
 
-Better and Healthier Manchester—Analysis and Strategic Planning of Manchester
+Better and Healthier Manchester---Analysis and Strategic Planning of Manchester
 
-Dissected existing urban problems of Manchester, provided well-planned strategies from 5 aspects including
-housing, greenery, economic, transportation and public health, hoping to achieve four objectives, including
-improvements in access to services, promotion of healthier lifestyles, reductions in economic inequality and
-betterment of housing provision to help Manchester to be a more sustainable, livable, and equitable city by 2040
-
+Dissected existing urban problems of Manchester, provided well-planned strategies from 5 aspects including housing, greenery, economic, transportation and public health, hoping to achieve four objectives, including improvements in access to services, promotion of healthier lifestyles, reductions in economic inequality and betterment of housing provision to help Manchester to be a more sustainable, livable, and equitable city by 2040
 
 ## My interested fields
 

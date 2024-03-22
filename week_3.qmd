@@ -3,7 +3,7 @@ title: "week_3"
 author: "Zihan Liu"
 ---
 
-##Summary
+## Summary
 
 ### Introduction
 
@@ -21,9 +21,9 @@ We mainly introduce 4 types of data correction here
 
 #### Geometric correction
 
-Geometric correction is the process of correcting the image geometry to ensure that it accurately represents the earth's surface as if the image were captured from directly overhead. This correction is necessary is needed when the image is to be compared with other images or existing maps [@DaveEtAl2015].
+Geometric correction is the process of correcting the image geometry to ensure that it accurately represents the earth's surface as if the image were captured from directly overhead. This correction is necessary when the image is to be compared with other images or existing maps [@DaveEtAl2015].
 
-We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients. The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), which Jensen suggesting a value of 0.5.Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment.
+We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients. The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), which Jensen suggesting a value of 0.5. Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment.
 
 ![](geometric_correction.png) Figure from [@DaveEtAl2015]
 
@@ -31,11 +31,11 @@ Showing that align one image with another so that the same geographical area is 
 
 #### Atmospheric correction
 
-Atmospheric correction is used to counteract atmospheric scattering and topographic attenuation. It is necessary for biophysical parameters analysis. Correction methods include relative approaches and absolute approaches. Relative atmospheric correction normalizes pixel values within images based on reference points, used to reduce atmospheric effects like haze. Absolute correction converts observed data to physical quantities like surface reflectance using atmospheric models, ensuring comparability across images and time. Methods like Dark Object Subtraction (DOS) and Pseudo-Invariant Features (PIFs) are typical in relative correction, while absolute approaches use models like MODTRAN and tools like FLAASH for precise corrections. This will be further mentioned in application.
+Atmospheric correction is used to counteract atmospheric scattering and topographic attenuation. It is necessary for biophysical parameters analysis. Correction methods include relative approaches and absolute approaches. Relative atmospheric correction normalizes pixel values within images based on reference points, used to reduce atmospheric effects like haze. Absolute correction converts observed data to physical quantities like surface reflectance using atmospheric models, ensuring comparability across images and time. Methods like Dark Object Subtraction (DOS) and Pseudo-Invariant Features (PIFs) are typical in relative correction, while absolute approaches use models like MODTRAN and tools like FLAASH for precise corrections.
 
 #### Empirical Line Correction
 
-Reflectance (field spectrum) = gain \* radiance (input data)
+$$ Reflectance (field spectrum) = \frac{gain}{radiance (input data)}$$
 
 Empirical Methods: Include simple Dark Object Subtraction (DS) and the more complex FLAASH correction, optimizing images by simulating atmospheric scattering and absorption.
 
@@ -45,7 +45,7 @@ Empirical Line Correction: Directly corrects images through field spectrometer m
 
 #### Orthorectification correction
 
-Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas(https://www.satimagingcorp.com/services/orthorectification/).
+Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas [@SatImagingCorpOrtho2022].
 
 ## Joining data
 
@@ -77,15 +77,15 @@ The figure shows a comparison of two satellite images from Sentinel-2B. On the l
 
 ![](geometric_application.jpg) Figure from [@Rocchini2005]
 
-The image you provided shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.
+The image shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.
 
-First-order polynomial rectification is a linear correction that adjusts for image displacements in the x and y directions. It's a simple model that assumes the earth is flat and only corrects for basic image shift and rotation. This method is generally less accurate on rugged terrain, as it doesn't account for changes in elevation.
+First-order polynomial rectification is a linear correction that adjusts for image displacements in the x and y directions. It's a simple model that assumes the earth is flat and only corrects for basic image shift and rotation.
 
 Second-order polynomial rectification includes terms for quadratic distortions, allowing it to handle slight curvature and more complex distortions than the first-order method. However, it still may not be sufficient for highly irregular terrain, as it does not use a full terrain model.
 
-Orthorectification is a more advanced technique that uses elevation data from a Digital Terrain Model (DTM) or Digital Elevation Model (DEM) to correct images for the effects of sensor perspective and terrain relief. It's particularly important in areas with significant topographic variation, such as Etna's volcanic terrain, as seen in the third image. This process provides the most accurate location of features on the ground because it compensates for the actual surface geometry.
+Orthorectification is a more advanced technique to correct images for the effects of sensor perspective and terrain relief. It's particularly important in areas with significant topographic variation, such as Etna's volcanic terrain (the study area). This process provides the most accurate location of features on the ground because it compensates for the actual surface geometry.
 
-The results demonstrated that polynomial functions are sufficient for flat areas but become less accurate with more complex terrains. In contrast, orthorectification consistently produced accurate results across different terrain types.
+The study results demonstrated that polynomial functions are sufficient for flat areas but become less accurate with more complex terrains. In contrast, orthorectification consistently produced accurate results across different terrain types.
 
 ### Application reflection
 
@@ -97,8 +97,8 @@ Reflecting on my journey as a new student in remote sensing, I've learned the co
 
 Data fusion and correction in remote sensing are essential for accurate earth observation. Data fusion integrates information from multiple sources, providing a more comprehensive and detailed view of the environment, enhancing the analysis of land cover, vegetation health, and other phenomena. These processes improve the reliability and accuracy of remote sensing data, essential for environmental monitoring, disaster management, and various scientific research applications.
 
-Geometric correction was another thing that I'm interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear. Atmospheric correction, especially in cloudy areas like the UK, became my focusing point. The exploration of various correction methods, from Pseudo-Invariant Features (PIF) to the others, showed the complexity and necessity.
+Geometric correction was another thing that I'm interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear.
 
-In conclusion, my interest into remote sensing has increased. The blend of technical knowledge, practical application, and the key role of human judgment in interpreting complex data has enriched my understanding.
+In conclusion, my interest into remote sensing has increased. The blend of technical knowledge, practical application, and the key role of choosing the right correction method has enriched my understanding.
 
 ## **Reference**

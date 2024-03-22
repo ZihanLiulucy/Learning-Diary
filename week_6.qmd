@@ -3,13 +3,13 @@ title: "week_6"
 author: "Zihan Liu"
 ---
 
-##Summary
+## Summary
 
 ### Introduction of Google Earth Engine
 
-Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities [@GoogleEarthEngine2023]. Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth's surface [@GoogleEarthEngine2023].
+Google Earth Engine (GEE) is a cloud-based platform for planetary-scale environmental data analysis, provides a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis abilities. Scientists, researchers, and developers use GEE to detect changes, map trends, and quantify differences on the Earth's surface [@GoogleEarthEngine2023].
 
-Google Earth Engine's data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, you can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages [@EarthbloxGEE2022].
+Google Earth Engine's data archive contains more than 40 years of historical imagery and scientific datasets that are updated and expanded daily, we can access to high-performance computing, even from a mobile device , but requires users to code in JavaScript or Python programming languages [@EarthbloxGEE2022].
 
 ## Basic knowledge of GEE
 
@@ -18,8 +18,6 @@ Raster Data: In GEE, raster data are represented as images, where each image con
 Vector Data: Vector data in GEE is represented as Features or FeatureCollections. This data type is used to represent discrete objects or areas, such as rivers, roads, boundaries, or specific points of interest.
 
 The JavaScript API, accessible through the Code Editor, is widely used for interactive data exploration and analysis.
-
-Loops and Mapping: we can't (or shouldn't) use a loop for something on the server as the loop doesn't know what is in the ee object. But GEE provides functionality for iterating over collections (e.g., ImageCollection) using mapping functions, which apply a specified operation to each element in the collection.
 
 Scale: GEE fits data into a 256x256 pixel grid, choosing the closest pyramid layer for the analysis scale and resampling using nearest neighbor by default.
 
@@ -59,7 +57,7 @@ Compare with the use of GEE in developed modern cities, my next article will foc
 
 The research article [@Xiong2017] discusses the use of Google Earth Engine (GEE) for creating automated cropland maps across Africa. Used Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, the study produced reference cropland layers for 2014 with high accuracy (around 90% for crop extent) across different agriculture zones.
 
-The study's results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rainfed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa. It demonstrated GEE's strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.
+The study's results revealed a net increase of croplands by 1 million hectares per year and a decrease in cropland with the same amount. The proportion of rain-fed cropland has also been caluculated. Seasonal analysis showed highlighting the agricultural dynamics within Africa. It demonstrated GEE's strong capacity of analyzing extensive satellite imagery datasets, facilitatedaccurate and detailed agricultural mapping across Africa. This supports the understanding of cropland dynamics, which is essential for agricultural development and food security planning in Africa.
 
 ### Application reflection
 
@@ -69,10 +67,10 @@ Google Earth Engine (GEE) has been effectively used in diverse areas, from urban
 
 Reflecting on my study of Google Earth Engine, I have understood its ability in environmental data analysis. GEE can process and analyze massive datasets, its ability of analyzing satellite imagery and geospatial datasets gave me the idea of how important and efficient a cloud-based platform can be used to understand and manage Earth's complexities.
 
-What interested me the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only more developed cities but also less developed places.
+What I am interested in the most is the diversity of applications GEE supports, evidenced by the case studies in Singapore and Africa. It can give us a comprehensive understanding of the temporal and spatial changes of not only developed cities but also less developed places.
 
-GEE integrates various data types, from raster to vector, and support large amount of picture analysis techniques like NDVI and PCA, linear regression, and machine learning. These complex processes can be managed from a simple web browser or even a mobile device, using programming languages like JavaScript or Python.
+GEE integrates various data types, from raster to vector, and support large amount of picture analysis techniques like NDVI and PCA. These complex processes can be managed from a simple web browser and we can see the processes on the map, the visibility is much better than simply doing processes via R studio.
 
-Before, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes on the map, which is a new and interesting try.
+Before, I just used google map to view the details on the map (buildings, transportation, etc..) but on google earth engine I can do more analyzes, which is a new and interesting try.
 
 ## **Reference**

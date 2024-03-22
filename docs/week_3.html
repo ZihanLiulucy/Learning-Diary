@@ -238,16 +238,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">5.0.1</span> Introduction</a></li>
-  <li><a href="#why-we-need-data-fusion" id="toc-why-we-need-data-fusion" class="nav-link" data-scroll-target="#why-we-need-data-fusion"><span class="header-section-number">5.0.2</span> Why we need Data Fusion</a></li>
-  <li><a href="#data-correction" id="toc-data-correction" class="nav-link" data-scroll-target="#data-correction"><span class="header-section-number">5.0.3</span> Data correction</a></li>
-  <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data"><span class="header-section-number">5.1</span> Joining data</a></li>
-  <li><a href="#enhancements-of-remote-sensing-imagery-ndvi" id="toc-enhancements-of-remote-sensing-imagery-ndvi" class="nav-link" data-scroll-target="#enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.2</span> Enhancements of remote sensing imagery (NDVI)</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.3</span> Application</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1"><span class="header-section-number">5.3.1</span> Application 1</a></li>
-  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2"><span class="header-section-number">5.3.2</span> Application 2</a></li>
-  <li><a href="#application-reflection" id="toc-application-reflection" class="nav-link" data-scroll-target="#application-reflection"><span class="header-section-number">5.3.3</span> Application reflection</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">5.1.1</span> Introduction</a></li>
+  <li><a href="#why-we-need-data-fusion" id="toc-why-we-need-data-fusion" class="nav-link" data-scroll-target="#why-we-need-data-fusion"><span class="header-section-number">5.1.2</span> Why we need Data Fusion</a></li>
+  <li><a href="#data-correction" id="toc-data-correction" class="nav-link" data-scroll-target="#data-correction"><span class="header-section-number">5.1.3</span> Data correction</a></li>
+  </ul></li>
+  <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data"><span class="header-section-number">5.2</span> Joining data</a></li>
+  <li><a href="#enhancements-of-remote-sensing-imagery-ndvi" id="toc-enhancements-of-remote-sensing-imagery-ndvi" class="nav-link" data-scroll-target="#enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.3</span> Enhancements of remote sensing imagery (NDVI)</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.4</span> Application</a>
+  <ul class="collapse">
+  <li><a href="#application-1" id="toc-application-1" class="nav-link" data-scroll-target="#application-1"><span class="header-section-number">5.4.1</span> Application 1</a></li>
+  <li><a href="#application-2" id="toc-application-2" class="nav-link" data-scroll-target="#application-2"><span class="header-section-number">5.4.2</span> Application 2</a></li>
+  <li><a href="#application-reflection" id="toc-application-reflection" class="nav-link" data-scroll-target="#application-reflection"><span class="header-section-number">5.4.3</span> Application reflection</a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6</span> Reflection</a>
   <ul class="collapse">
@@ -284,73 +287,75 @@ window.Quarto = {
 </header>
 
 
-<p>##Summary</p>
-<section id="introduction" class="level3" data-number="5.0.1">
-<h3 data-number="5.0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.0.1</span> Introduction</h3>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<section id="introduction" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">5.1.1</span> Introduction</h3>
 <p>In this section we learned how to deal with the mistakes and unclearities in the remote sensed images. Sometimes there are lots of biases and flaws like in UK the atmosphere is always a problem in reading all the photos.</p>
 </section>
-<section id="why-we-need-data-fusion" class="level3" data-number="5.0.2">
-<h3 data-number="5.0.2" class="anchored" data-anchor-id="why-we-need-data-fusion"><span class="header-section-number">5.0.2</span> Why we need Data Fusion</h3>
+<section id="why-we-need-data-fusion" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="why-we-need-data-fusion"><span class="header-section-number">5.1.2</span> Why we need Data Fusion</h3>
 <p>Data fusion in remote sensing refers to the practice of merging data, signals, or observations from various sources to produce an outcome that is better than what could have been obtained from any single source individually <span class="citation" data-cites="SchmittZhu2016">(<a href="references.html#ref-SchmittZhu2016" role="doc-biblioref">Schmitt and Zhu 2016</a>)</span>.</p>
 <p>It can enhance information content: different sensors capture different types of information on earth’s surface. By combining data, it can provide a more complete picture of environmental phenomena such as land cover, vegetation health, or atmospheric conditions.</p>
 </section>
-<section id="data-correction" class="level3" data-number="5.0.3">
-<h3 data-number="5.0.3" class="anchored" data-anchor-id="data-correction"><span class="header-section-number">5.0.3</span> Data correction</h3>
+<section id="data-correction" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="data-correction"><span class="header-section-number">5.1.3</span> Data correction</h3>
 <p>We mainly introduce 4 types of data correction here</p>
-<section id="geometric-correction" class="level4" data-number="5.0.3.1">
-<h4 data-number="5.0.3.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">5.0.3.1</span> Geometric correction</h4>
-<p>Geometric correction is the process of correcting the image geometry to ensure that it accurately represents the earth’s surface as if the image were captured from directly overhead. This correction is necessary is needed when the image is to be compared with other images or existing maps <span class="citation" data-cites="DaveEtAl2015">(<a href="references.html#ref-DaveEtAl2015" role="doc-biblioref">Dave, Joshi, and Srivastava 2015</a>)</span>.</p>
-<p>We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients. The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), which Jensen suggesting a value of 0.5.Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment.</p>
+<section id="geometric-correction" class="level4" data-number="5.1.3.1">
+<h4 data-number="5.1.3.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">5.1.3.1</span> Geometric correction</h4>
+<p>Geometric correction is the process of correcting the image geometry to ensure that it accurately represents the earth’s surface as if the image were captured from directly overhead. This correction is necessary when the image is to be compared with other images or existing maps <span class="citation" data-cites="DaveEtAl2015">(<a href="references.html#ref-DaveEtAl2015" role="doc-biblioref">Dave, Joshi, and Srivastava 2015</a>)</span>.</p>
+<p>We take the coordinates and model them to give geometric transformation coefficients. Ground Control Points (GCPs) are identified and matched with known points on local maps, other images, or GPS data to model geometric transformation coefficients. The process involves linear regression to align distorted coordinates, aiming to minimize the Root Mean Square Error (RMSE), which Jensen suggesting a value of 0.5. Resampling the final raster image involves methods like Nearest Neighbor, Linear, Cubic, and Cubic spline to ensure data accuracy and alignment.</p>
 <p><img src="geometric_correction.png" class="img-fluid"> Figure from <span class="citation" data-cites="DaveEtAl2015">(<a href="references.html#ref-DaveEtAl2015" role="doc-biblioref">Dave, Joshi, and Srivastava 2015</a>)</span></p>
 <p>Showing that align one image with another so that the same geographical area is accurately superimposed on both.</p>
 </section>
-<section id="atmospheric-correction" class="level4" data-number="5.0.3.2">
-<h4 data-number="5.0.3.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">5.0.3.2</span> Atmospheric correction</h4>
-<p>Atmospheric correction is used to counteract atmospheric scattering and topographic attenuation. It is necessary for biophysical parameters analysis. Correction methods include relative approaches and absolute approaches. Relative atmospheric correction normalizes pixel values within images based on reference points, used to reduce atmospheric effects like haze. Absolute correction converts observed data to physical quantities like surface reflectance using atmospheric models, ensuring comparability across images and time. Methods like Dark Object Subtraction (DOS) and Pseudo-Invariant Features (PIFs) are typical in relative correction, while absolute approaches use models like MODTRAN and tools like FLAASH for precise corrections. This will be further mentioned in application.</p>
+<section id="atmospheric-correction" class="level4" data-number="5.1.3.2">
+<h4 data-number="5.1.3.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">5.1.3.2</span> Atmospheric correction</h4>
+<p>Atmospheric correction is used to counteract atmospheric scattering and topographic attenuation. It is necessary for biophysical parameters analysis. Correction methods include relative approaches and absolute approaches. Relative atmospheric correction normalizes pixel values within images based on reference points, used to reduce atmospheric effects like haze. Absolute correction converts observed data to physical quantities like surface reflectance using atmospheric models, ensuring comparability across images and time. Methods like Dark Object Subtraction (DOS) and Pseudo-Invariant Features (PIFs) are typical in relative correction, while absolute approaches use models like MODTRAN and tools like FLAASH for precise corrections.</p>
 </section>
-<section id="empirical-line-correction" class="level4" data-number="5.0.3.3">
-<h4 data-number="5.0.3.3" class="anchored" data-anchor-id="empirical-line-correction"><span class="header-section-number">5.0.3.3</span> Empirical Line Correction</h4>
-<p>Reflectance (field spectrum) = gain * radiance (input data)</p>
+<section id="empirical-line-correction" class="level4" data-number="5.1.3.3">
+<h4 data-number="5.1.3.3" class="anchored" data-anchor-id="empirical-line-correction"><span class="header-section-number">5.1.3.3</span> Empirical Line Correction</h4>
+<p><span class="math display">\[ Reflectance (field spectrum) = \frac{gain}{radiance (input data)}\]</span></p>
 <p>Empirical Methods: Include simple Dark Object Subtraction (DS) and the more complex FLAASH correction, optimizing images by simulating atmospheric scattering and absorption.</p>
 <p>Absolute Correction: Transforms digital brightness values into scaled surface reflectance, requiring atmospheric models and local condition data for accurate earth surface representation.</p>
 <p>Empirical Line Correction: Directly corrects images through field spectrometer measurements taken concurrently with satellite overpasses, enhancing the accuracy of reflectance data.</p>
 </section>
-<section id="orthorectification-correction" class="level4" data-number="5.0.3.4">
-<h4 data-number="5.0.3.4" class="anchored" data-anchor-id="orthorectification-correction"><span class="header-section-number">5.0.3.4</span> Orthorectification correction</h4>
-<p>Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas(https://www.satimagingcorp.com/services/orthorectification/).</p>
+<section id="orthorectification-correction" class="level4" data-number="5.1.3.4">
+<h4 data-number="5.1.3.4" class="anchored" data-anchor-id="orthorectification-correction"><span class="header-section-number">5.1.3.4</span> Orthorectification correction</h4>
+<p>Orthorectification is a subset of georectification, focusing on removing distortions to make pixels appear as viewed from nadir. Requires understanding sensor geometry and an elevation model to correct image distortions.The aim is to make direct and accurate measurements of distances, angles, positions, and areas <span class="citation" data-cites="SatImagingCorpOrtho2022">(<a href="references.html#ref-SatImagingCorpOrtho2022" role="doc-biblioref">Satellite Imaging Corporation 2022</a>)</span>.</p>
 </section>
 </section>
-<section id="joining-data" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="joining-data"><span class="header-section-number">5.1</span> Joining data</h2>
+</section>
+<section id="joining-data" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="joining-data"><span class="header-section-number">5.2</span> Joining data</h2>
 <p>Remote sensing data is often captured as individual, discrete images, each covering a specific geographical area like pieces of a larger puzzle, to get a comprehensive understanding of larger regions or to analyze spatial relationships and patterns across these areas, we need to merge them together.</p>
 <p>Mosaicking in remote sensing is similar to merging in GIS, where multiple datasets are joined to create a seamless image, by blends the edges of images, minimizing the visibility of seamlines between joined images. A base image and a second image are overlapped (20-30%) to ensure continuity. Histogram matching algorithms are used within the overlap area to align brightness values, aiding in seamless integration before feathering.</p>
 </section>
-<section id="enhancements-of-remote-sensing-imagery-ndvi" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.2</span> Enhancements of remote sensing imagery (NDVI)</h2>
+<section id="enhancements-of-remote-sensing-imagery-ndvi" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="enhancements-of-remote-sensing-imagery-ndvi"><span class="header-section-number">5.3</span> Enhancements of remote sensing imagery (NDVI)</h2>
 <p>The Normalized Difference Vegetation Index (NDVI) leverages the near-infrared and red spectral bands to identify healthy vegetation, as such vegetation strongly reflects near-infrared light and absorbs most of the red light. Regions that exhibit a high NDVI value are indicative of robust vegetation health. The NDVI metric is derived using the following calculation:</p>
 <p><span class="math display">\[ NDVI = \frac{NIR - Red}{NIR + Red}\]</span></p>
 </section>
-<section id="application" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="application"><span class="header-section-number">5.3</span> Application</h2>
-<section id="application-1" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">5.3.1</span> Application 1</h3>
+<section id="application" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="application"><span class="header-section-number">5.4</span> Application</h2>
+<section id="application-1" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="application-1"><span class="header-section-number">5.4.1</span> Application 1</h3>
 <p><span class="citation" data-cites="NASA_HLS2023">(<a href="references.html#ref-NASA_HLS2023" role="doc-biblioref">Sentinel-2 2023</a>)</span></p>
 <p>I am interested in atmospheric correction as it is useful especially in cloudy areas like the UK. The Land Surface Reflectance Code (LaSRC), created by Eric Vermote at NASA/GSFC and adapted by the USGS, is used for atmospheric correction on data from Landsat 8 and Sentinel-2 sensors. LaSRC used the 6SV radiative transfer model and a MODIS-derived ratio to determine surface reflectance. Its accuracy is verified through the CEOS Atmospheric Correction Inter-Comparison Exercises. Additionally, the Fmask algorithm identifies clouds, shadows, snow/ice, and water in the top-of-atmosphere (TOA) data. HLS enhances this by expanding cloud/shadow areas and incorporating LaSRC aerosol data into the Fmask results, aiding in precise environmental monitoring and analysis.</p>
 <p><img src="atmospheric_correction.jpeg" class="img-fluid"> Figure from <span class="citation" data-cites="NASA_HLS2023">(<a href="references.html#ref-NASA_HLS2023" role="doc-biblioref">Sentinel-2 2023</a>)</span></p>
 <p>The figure shows a comparison of two satellite images from Sentinel-2B. On the left, there is a true color composite image using bands 4-3-2 with top-of-atmosphere (TOA) reflectance, which has not been corrected for atmospheric effects and therefore may include atmosphere distortions. On the right, there is an image processed with the Land Surface Reflectance Code (LaSRC) to correct for these atmospheric distortions, resulting in surface reflectance that more accurately represents the actual colors and features of the earth’s surface.</p>
 </section>
-<section id="application-2" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">5.3.2</span> Application 2</h3>
+<section id="application-2" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="application-2"><span class="header-section-number">5.4.2</span> Application 2</h3>
 <p><span class="citation" data-cites="Rocchini2005">(<a href="references.html#ref-Rocchini2005" role="doc-biblioref">Rocchini and Di Rita 2005</a>)</span></p>
 <p><img src="geometric_application.jpg" class="img-fluid"> Figure from <span class="citation" data-cites="Rocchini2005">(<a href="references.html#ref-Rocchini2005" role="doc-biblioref">Rocchini and Di Rita 2005</a>)</span></p>
-<p>The image you provided shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.</p>
-<p>First-order polynomial rectification is a linear correction that adjusts for image displacements in the x and y directions. It’s a simple model that assumes the earth is flat and only corrects for basic image shift and rotation. This method is generally less accurate on rugged terrain, as it doesn’t account for changes in elevation.</p>
+<p>The image shows three different rectified versions of an area on the Etna volcanic terrain, each processed with a different method. From left to right, the first image has been rectified using a first-order polynomial, the second image with a second-order polynomial, and the third image using orthorectification.</p>
+<p>First-order polynomial rectification is a linear correction that adjusts for image displacements in the x and y directions. It’s a simple model that assumes the earth is flat and only corrects for basic image shift and rotation.</p>
 <p>Second-order polynomial rectification includes terms for quadratic distortions, allowing it to handle slight curvature and more complex distortions than the first-order method. However, it still may not be sufficient for highly irregular terrain, as it does not use a full terrain model.</p>
-<p>Orthorectification is a more advanced technique that uses elevation data from a Digital Terrain Model (DTM) or Digital Elevation Model (DEM) to correct images for the effects of sensor perspective and terrain relief. It’s particularly important in areas with significant topographic variation, such as Etna’s volcanic terrain, as seen in the third image. This process provides the most accurate location of features on the ground because it compensates for the actual surface geometry.</p>
-<p>The results demonstrated that polynomial functions are sufficient for flat areas but become less accurate with more complex terrains. In contrast, orthorectification consistently produced accurate results across different terrain types.</p>
+<p>Orthorectification is a more advanced technique to correct images for the effects of sensor perspective and terrain relief. It’s particularly important in areas with significant topographic variation, such as Etna’s volcanic terrain (the study area). This process provides the most accurate location of features on the ground because it compensates for the actual surface geometry.</p>
+<p>The study results demonstrated that polynomial functions are sufficient for flat areas but become less accurate with more complex terrains. In contrast, orthorectification consistently produced accurate results across different terrain types.</p>
 </section>
-<section id="application-reflection" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="application-reflection"><span class="header-section-number">5.3.3</span> Application reflection</h3>
+<section id="application-reflection" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="application-reflection"><span class="header-section-number">5.4.3</span> Application reflection</h3>
 <p>Atmospheric correction, particularly through LaSRC, requires accurate atmospheric inputs. I’ve also understood that geometric correction isn’t one-size-fits-all, while polynomial methods may be a proper method for uniform terrains, orthorectification is very useful for complex and rugged landscapes. This knowledge highlights the need for distinguish correction techniques, use them in the appropriate landscape’s characteristics and the atmospheric conditions.</p>
 </section>
 </section>
@@ -358,8 +363,8 @@ window.Quarto = {
 <h1 data-number="6"><span class="header-section-number">6</span> Reflection</h1>
 <p>Reflecting on my journey as a new student in remote sensing, I’ve learned the complex of data fusion and correction.</p>
 <p>Data fusion and correction in remote sensing are essential for accurate earth observation. Data fusion integrates information from multiple sources, providing a more comprehensive and detailed view of the environment, enhancing the analysis of land cover, vegetation health, and other phenomena. These processes improve the reliability and accuracy of remote sensing data, essential for environmental monitoring, disaster management, and various scientific research applications.</p>
-<p>Geometric correction was another thing that I’m interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear. Atmospheric correction, especially in cloudy areas like the UK, became my focusing point. The exploration of various correction methods, from Pseudo-Invariant Features (PIF) to the others, showed the complexity and necessity.</p>
-<p>In conclusion, my interest into remote sensing has increased. The blend of technical knowledge, practical application, and the key role of human judgment in interpreting complex data has enriched my understanding.</p>
+<p>Geometric correction was another thing that I’m interested. Learning about the process, from identifying Ground Control Points (GCPs) to applying transformation algorithms to correct distortions, was like complete a puzzle, once done, the true earth surface just appear.</p>
+<p>In conclusion, my interest into remote sensing has increased. The blend of technical knowledge, practical application, and the key role of choosing the right correction method has enriched my understanding.</p>
 <section id="reference" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.1</span> <strong>Reference</strong></h2>
 
@@ -370,6 +375,9 @@ Dave, C. P., R. Joshi, and S. S. Srivastava. 2015. <span>“A Survey on Geometri
 </div>
 <div id="ref-Rocchini2005" class="csl-entry" role="listitem">
 Rocchini, D., and A. Di Rita. 2005. <span>“Relief Effects on Aerial Photos Geometric Correction.”</span> <em>Applied Geography</em> 25 (2): 159–68.
+</div>
+<div id="ref-SatImagingCorpOrtho2022" class="csl-entry" role="listitem">
+Satellite Imaging Corporation. 2022. <span>“Orthorectification Services.”</span> <a href="https://www.satimagingcorp.com/services/orthorectification/" class="uri">https://www.satimagingcorp.com/services/orthorectification/</a>.
 </div>
 <div id="ref-SchmittZhu2016" class="csl-entry" role="listitem">
 Schmitt, M., and Xiao Xiang Zhu. 2016. <span>“Data Fusion and Remote Sensing: An Ever-Growing Relationship.”</span> <em>IEEE Geoscience and Remote Sensing Magazine</em> 4 (4): 6–23.
